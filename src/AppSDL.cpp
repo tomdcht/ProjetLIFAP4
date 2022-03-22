@@ -1,17 +1,30 @@
+/**
+* \file AppSDL.cpp
+* \brief 
+* \version 1.0
+* \date 22 Mars 2022
+* \include AppSDL.h
+*/
 
-#include "Jeu.h"
 #include <iostream>
+#include <assert.h>
+#include <string>
+#include <fstream>
+
+#include "AppSDL.h"
+
 using namespace std;
 
-Jeu::Jeu(){
+
+AppSDL::AppSDL(){
 
 }
 
-Jeu::~Jeu(){
+AppSDL::~AppSDL(){
 
 }
 
-void Jeu::SDLAffInit(){
+void AppSDL::SDLAffInit(){
 
     if(SDL_Init(SDL_INIT_VIDEO) < 0){
         cout << "Erreur lors de l'initialisation de la SDL : " << SDL_GetError() << endl;
@@ -19,7 +32,7 @@ void Jeu::SDLAffInit(){
         exit(1);
     }
 
-    window = SDL_CreateWindow("SDL", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH_WINDOW, HEIGHT_WINDOW, 0);
+    window = SDL_CreateWindow("LifaPower Defense", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1920, 1080, SDL_WINDOW_FULLSCREEN_DESKTOP);
     if(!window){
         cout << "Erreur lors de la création de la fenêtre ! " << SDL_GetError() << endl;
         SDL_Quit();
@@ -50,23 +63,23 @@ void Jeu::SDLAffInit(){
         exit(1);
     }
 
-    if(SDL_QueryTexture(texture, NULL, NULL, &dest_rect.w, &dest_rect.h) != 0){
-        cout << "Erreur lors de l'application de la texture ! " << SDL_GetError() << endl;
-        SDL_Quit();
-        exit(1);
-    }
+    //if(SDL_QueryTexture(texture, NULL, NULL, &dest_rect.w, &dest_rect.h) != 0){
+    //    cout << "Erreur lors de l'application de la texture ! " << SDL_GetError() << endl;
+    //    SDL_Quit();
+    //    exit(1);
+    //}
 
-    if(SDL_RenderCopy(renderer, texture, &src_rect, &dest_rect) != 0){
-        cout << "Erreur lors de l'application du rendu ! " << SDL_GetError() << endl;
-        SDL_Quit();
-        exit(1);
-    }
+    //if(SDL_RenderCopy(renderer, texture, &src_rect, &dest_rect) != 0){
+    //    cout << "Erreur lors de l'application du rendu ! " << SDL_GetError() << endl;
+    //    SDL_Quit();
+    //    exit(1);
+    //}
 
     SDL_RenderPresent(renderer);
 
 }
 
-void Jeu::SDLAffLoop(){
+void AppSDL::SDLAffLoop(){
     SDL_Event events;
 	bool quit = false;
 
@@ -91,7 +104,7 @@ void Jeu::SDLAffLoop(){
     }
 }
 
-void Jeu::SDLAffQuit(){
+void AppSDL::SDLAffQuit(){
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_DestroyTexture(texture);
@@ -99,13 +112,7 @@ void Jeu::SDLAffQuit(){
     SDL_Quit();
 }
 
-void Jeu::run(){
+void AppSDL::run(){
     SDLAffInit();
     SDLAffLoop();
-}
-
-
-int main(){
-    jeu.run();
-    return 0;
 }
