@@ -8,13 +8,20 @@ class Entity{
         double posx, posy;
         int damage;
         int PV;
+        bool isDead;
 
     public:
         Entity();
         ~Entity();
 
-        Vec2 GetPos() const;
-        void SetPos(int _posx, int _posy);
+        Vec2 getPos() const;
+        void setPos(int _posx, int _posy);
+
+        int getDamage() const;
+        void setDamage(int _damage);
+
+        int getPV() const;
+        void setPV(int _PV);
 
 
 

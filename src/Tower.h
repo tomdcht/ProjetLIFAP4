@@ -5,9 +5,9 @@
 
 class Tower : public Entity{
     private :
-        int range; 
-    
-    public: 
+        int range;
+
+    public:
         Tower();
         ~Tower();
         setTower(int PV);

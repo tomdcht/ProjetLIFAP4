@@ -12,6 +12,4 @@ class Castle : public Entity{
 }
 
 
-
-
 #endif
