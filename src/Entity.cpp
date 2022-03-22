@@ -11,6 +11,11 @@ Entity::~Entity(){
 
 }
 
-std::vector<double> Entity::GetPos() const{
+Vec2 Entity::GetPos() const{
+    return Vec2(posx, posy);
+}
 
+void Entity::SetPos(int _posx, int _posy){
+    posx = _posx;
+    posy = _posy;
 }

@@ -15,14 +15,23 @@ Vec2::~Vec2(){
 
 }
 
-Vec2 Vec2::operator= (const Vec2 opdDroite){
-
+Vec2 Vec2::operator= (const Vec2& opdDroite){
+    Vec2 vec;
+    vec.x = opdDroite.x;
+    vec.y = opdDroite.y;
+    return vec;
 }
 
-Vec2 Vec2::operator+ (const Vec2 opdDroite){
+Vec2 Vec2::operator+ (const Vec2& opdDroite){
     Vec2 vec;
     vec.x += opdDroite.x;
     vec.y += opdDroite.y;
     return vec;
+}
 
+Vec2 Vec2::operator- (const Vec2& opdDroite){
+    Vec2 vec;
+    vec.x -= opdDroite.x;
+    vec.y -= opdDroite.y;
+    return vec;
 }

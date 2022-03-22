@@ -17,9 +17,9 @@ class Vec2{
         /** \fn Destructeur **/
         ~Vec2();
 
-        Vec2 operator= (const Vec2 opdDroite);
-        Vec2 operator+ (const Vec2 opdDroite);
-
+        Vec2 operator= (const Vec2& opdDroite);
+        Vec2 operator+ (const Vec2& opdDroite);
+        Vec2 operator- (const Vec2& opdDroite);
 };
 
 #endif // _VEC2_H_
