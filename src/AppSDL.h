@@ -1,9 +1,8 @@
 /**
-* \file jeu.h
+* \file AppSDL.h
 * \brief 
 * \version 1.0
 * \date 22 Mars 2022
-* \include Pixel.h
 * \include Castle.h
 * \include Enemy.h
 * \include Entity.h
@@ -18,19 +17,19 @@
 #include "Entity.h"
 #include "Projectile.h"
 #include "Tower.h"
-#include "Vec.h"
+#include "Vec2.h"
 
-#include <SDL2/SDL.h>
-#include <cassert>
-#include <time.h>
-#include <stdlib.h>
+#include "SDL2/SDL.h"
+#include "cassert"
+#include "time.h"
+#include "stdlib.h"
 
-#include <imgui_impl_sdl.h>
-#include <imgui_impl_opengl3.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_opengl.h>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL_ttf.h>
+#include "imgui_impl_sdl.h"
+#include "imgui_impl_opengl3.h"
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_opengl.h"
+#include "SDL2/SDL_image.h"
+#include "SDL2/SDL_ttf.h"
 
 
 /** \brief Constante de la largeur de la fenêtre SDL */
@@ -46,7 +45,7 @@
  * Déclaration des données membres et des fonctions de la class Jeu
  */
 
-class Jeu {
+class AppSDL {
     private:
 
         /** \brief Fonctions gérant l'affichage avec SDL */
@@ -70,10 +69,10 @@ class Jeu {
 
 
         /** \brief Constructeur par défaut de la classe jeu*/
-        Jeu ();
+        AppSDL ();
 
         /** \brief Destructeur de la classe jeu */
-        ~Jeu ();
+        ~AppSDL ();
 
         /** \brief Fonction qui effectue le lancement de l'application */
         void run();
