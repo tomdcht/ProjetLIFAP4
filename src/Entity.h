@@ -1,4 +1,7 @@
-#include <vector>
+#ifndef _ENTITY_H_
+#define _ENTITY_H_
+
+#include "Vec2.h"
 
 class Entity{
     private:
@@ -10,9 +13,11 @@ class Entity{
         Entity();
         ~Entity();
 
-        std::vector<double> GetPos() const;
+        Vec2 GetPos() const;
         void SetPos(int _posx, int _posy);
 
 
 
 };
+
+#endif // _ENTITY_H_
