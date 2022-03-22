@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Entity.h"
 
-class Tower : public : Entity{
+class Tower : public Entity{
     private :
         int range; 
     
@@ -13,8 +13,6 @@ class Tower : public : Entity{
         setTower(int PV);
         getTower(itn PV, double posx, double posy);
 }
-
-
 
 
 

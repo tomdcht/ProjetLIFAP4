@@ -3,15 +3,13 @@
 #include "Entity.h"
 #include <iostream>
 
-class Castle : public : Entity{
+class Castle : public Entity{
     private:
 
     public:
         Castle();
         ~Castle();
 }
-
-
 
 
 
