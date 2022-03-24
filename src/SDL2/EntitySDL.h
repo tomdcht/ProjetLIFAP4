@@ -1,27 +1,17 @@
-#ifndef _ENTITY_H_
-#define _ENTITY_H_
+#ifndef _ENTITYSDL_H_
+#define _ENTITYSDL_H_
 
-#include "Vec2.h"
+#include "../core/Entity.h"
+#include "SDL2/SDL_image.h"
 
-class Entity{
+class EntitySDL:public Entity{
     private:
-        double posx, posy;
-        int damage;
-        int PV;
-        bool isDead;
 
     public:
-        Entity();
-        ~Entity();
+        EntitySDL();
+        ~EntitySDL();
 
-        Vec2 getPos() const;
-        void setPos(int _posx, int _posy);
-
-        int getDamage() const;
-        void setDamage(int _damage);
-
-        int getPV() const;
-        void setPV(int _PV);
+        void Show(const char* img);
 };
 
-#endif // _ENTITY_H_
+#endif // _ENTITYSDL_H_

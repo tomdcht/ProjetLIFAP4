@@ -16,12 +16,12 @@
 #include <time.h>
 #include <stdlib.h>
 
-#include "Castle.h"
-#include "Enemy.h"
-#include "Entity.h"
-#include "Projectile.h"
-#include "Tower.h"
-#include "Vec2.h"
+#include "../core/Castle.h"
+#include "../core/Enemy.h"
+#include "../core/Entity.h"
+#include "../core/Projectile.h"
+#include "../core/Tower.h"
+#include "../core/Vec2.h"
 
 // #include <GLFW/glfw3.h>
 // #include "../lib/imgui/imgui_impl_sdl.h"
