@@ -23,9 +23,9 @@
 #include "Tower.h"
 #include "Vec2.h"
 
-#include <GLFW/glfw3.h>
-#include "../lib/imgui/imgui_impl_sdl.h"
-#include "../lib/imgui/imgui_impl_opengl3.h"
+// #include <GLFW/glfw3.h>
+// #include "../lib/imgui/imgui_impl_sdl.h"
+// #include "../lib/imgui/imgui_impl_opengl3.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_image.h>

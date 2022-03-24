@@ -22,9 +22,6 @@ class Entity{
 
         int getPV() const;
         void setPV(int _PV);
-
-
-
 };
 
 #endif // _ENTITY_H_

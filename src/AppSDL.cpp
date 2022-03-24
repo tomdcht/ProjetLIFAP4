@@ -53,14 +53,6 @@ void AppSDL::SDLAffInit(){
     //    exit(1);
     //}
 
-    texture = SDL_CreateTextureFromSurface(renderer, picture);
-    SDL_FreeSurface(picture);
-    if(!texture){
-        cout << "Erreur concernant la création de la texture ! " << SDL_GetError() << endl;
-        SDL_Quit();
-        exit(1);
-    }
-
     //if(SDL_QueryTexture(texture, NULL, NULL, &dest_rect.w, &dest_rect.h) != 0){
     //    cout << "Erreur lors de l'application de la texture ! " << SDL_GetError() << endl;
     //    SDL_Quit();
@@ -99,11 +91,6 @@ void AppSDL::SDLAffLoop(){
                         quit = true; break;
             }
         }
-
-        ImGui_ImplOpenGL3_Init();
-        ImGui_ImplOpenGL3_NewFrame();
-        ImGui_ImplSDL2_NewFrame();
-        ImGui::NewFrame();
     }
 }
 

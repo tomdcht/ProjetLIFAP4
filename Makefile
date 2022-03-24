@@ -18,10 +18,13 @@ _OBJ= $(notdir $(SRC:.cpp=.o))
 OBJ = $(addprefix $(ODIR)/, $(_OBJ))
 
 $(BDIR)/App: $(OBJ)
-	$(CC) $^ -o $@ -L$(SDLLIB) -lSDL2_image -lSDL2 -lSDL2_ttf -L/usr/include/GLFW
+	$(CC) $^ -o $@ -L$(SDLLIB) -lSDL2_image -lSDL2 -lSDL2_ttf
 
-$(ODIR)%.o : $(SDIR)/%.cpp $(SDIR)/%.h
+$(ODIR)/%.o : $(SDIR)/%.cpp $(SDIR)/%.h
 	$(CC) -c $< -o $@
 
 obj/App.o: src/App.cpp src/AppSDL.h
 	g++ -c src/App.cpp -o obj/App.o
+
+clean:
+	rm -r $(ODIR)/*
