@@ -1,5 +1,5 @@
-#ifndef _TOWER.H_
-#define _TOWER.H_
+#ifndef _TOWER_H_
+#define _TOWER_H_
 #include <iostream>
 #include "Entity.h"
 
@@ -10,13 +10,8 @@ class Tower : public Entity{
     public:
         Tower();
         ~Tower();
-        setTower(int PV);
-        getTower(itn PV, double posx, double posy);
-}
-
-
-
-
-
+        void setTower(int PV);
+        int getTower(int PV);
+};
 
 #endif

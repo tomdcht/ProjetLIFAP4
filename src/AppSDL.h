@@ -1,6 +1,6 @@
 /**
 * \file AppSDL.h
-* \brief 
+* \brief
 * \version 1.0
 * \date 22 Mars 2022
 * \include Castle.h
@@ -12,6 +12,10 @@
 */
 
 #include <string>
+#include <assert.h>
+#include <time.h>
+#include <stdlib.h>
+
 #include "Castle.h"
 #include "Enemy.h"
 #include "Entity.h"
@@ -19,17 +23,13 @@
 #include "Tower.h"
 #include "Vec2.h"
 
-#include "SDL2/SDL.h"
-#include "cassert"
-#include "time.h"
-#include "stdlib.h"
-
-#include "imgui_impl_sdl.h"
-#include "imgui_impl_opengl3.h"
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_opengl.h"
-#include "SDL2/SDL_image.h"
-#include "SDL2/SDL_ttf.h"
+#include <GLFW/glfw3.h>
+#include "../lib/imgui/imgui_impl_sdl.h"
+#include "../lib/imgui/imgui_impl_opengl3.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_opengl.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 
 
 /** \brief Constante de la largeur de la fenêtre SDL */

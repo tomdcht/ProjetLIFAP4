@@ -1,5 +1,5 @@
-#ifndef _CASTLE.H_
-#define _CASTLE.H_
+#ifndef _CASTLE_H_
+#define _CASTLE_H_
 #include "Entity.h"
 #include <iostream>
 
@@ -9,7 +9,7 @@ class Castle : public Entity{
     public:
         Castle();
         ~Castle();
-}
+};
 
 
 #endif

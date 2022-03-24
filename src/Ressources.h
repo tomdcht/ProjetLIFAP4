@@ -1,17 +1,18 @@
-#ifndef _RESSOURCES.H_
-#define _RESSOURCES.H_
+#ifndef _RESSOURCES_H_
+#define _RESSOURCES_H_
 #include "Entity.h"
 #include <iostream>
 
 
 class Ressources{
-    private: 
+    private:
     int gold;
-    
-    public: 
+
+    public:
     Ressources();
     ~Ressources();
-    getResources(int gold);
-    getRessources(int gold);
-}
+    int getGold() const;
+    void setGold(int _gold);
+};
+
 #endif

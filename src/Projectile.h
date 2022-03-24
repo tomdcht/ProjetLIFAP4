@@ -1,19 +1,17 @@
-#ifndef _PROJECTILE.H_
-#define _PROJECTILE.H_
+#ifndef _PROJECTILE_H_
+#define _PROJECTILE_H_
 #include "Entity.h"
 #include <iostream>
 
-class Projectile : public : Entity{
+class Projectile : public Entity{
         private:
-            
-        public: 
+
+        public:
             Projectile();
             ~Projectile();
-            getProjectile(int damage);
-            setProjectile(int damage);
-
-
-}
+            int getProjectile(int damage);
+            void setProjectile(int damage);
+};
 
 
 

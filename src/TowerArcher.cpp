@@ -3,12 +3,12 @@
 #include <iostream>
 
 TowerArcher::TowerArcher(){
-    range=1; 
+    range=1;
     price=100;
 }
 
 TowerArcher::~TowerArcher(){
-        
+
 }
 
 void TowerArcher::setRange(int _range){

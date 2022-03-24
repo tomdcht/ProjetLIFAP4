@@ -1,5 +1,5 @@
-#ifndef _ENEMY.H_
-#define _ENEMY.H_
+#ifndef _ENEMY_H_
+#define _ENEMY_H_
 #include "Entity.h"
 #include <iostream>
 
@@ -10,9 +10,9 @@ class Enemy : public Entity{
     public:
         Enemy();
         ~Enemy();
-        getEnemy(double posx, double posy, int PV);
-        setEnemy(int PV);
-}
+        int getEnemy(int PV);
+        void setEnemy(int PV);
+};
 
 
 #endif

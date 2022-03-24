@@ -10,7 +10,7 @@ Ressources::~Ressources(){
 
 }
 
-int Ressources::getGold(int gold)const{
+int Ressources::getGold() const{
     return gold;
 }
 

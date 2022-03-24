@@ -1,16 +1,16 @@
-#ifndef _TOWER_H_
-#define _TOWER_H_
+#ifndef _TOWER_MAGIC_H_
+#define _TOWER_MAGIC_H_
 #include <iostream>
 #include "Entity.h"
 
-class TowerArcher : public Entity{
+class TowerMagic : public Entity{
     private :
         int range;
         int price;
 
     public:
-        TowerArcher();
-        ~TowerArcher();
+        TowerMagic();
+        ~TowerMagic();
         void setRange(int range);
         int getRange() const;
 

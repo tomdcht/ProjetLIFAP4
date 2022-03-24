@@ -1,14 +1,12 @@
 /**
 * \file AppSDL.cpp
-* \brief 
+* \brief
 * \version 1.0
 * \date 22 Mars 2022
 * \include AppSDL.h
 */
 
 #include <iostream>
-#include <assert.h>
-#include <string>
 #include <fstream>
 
 #include "AppSDL.h"
@@ -26,7 +24,7 @@ AppSDL::~AppSDL(){
 
 void AppSDL::SDLAffInit(){
 
-    if(SDL_Init(SDL_INIT_VIDEO) < 0){
+    if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) < 0){
         cout << "Erreur lors de l'initialisation de la SDL : " << SDL_GetError() << endl;
         SDL_Quit();
         exit(1);
@@ -101,6 +99,11 @@ void AppSDL::SDLAffLoop(){
                         quit = true; break;
             }
         }
+
+        ImGui_ImplOpenGL3_Init();
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplSDL2_NewFrame();
+        ImGui::NewFrame();
     }
 }
 
