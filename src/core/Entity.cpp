@@ -47,7 +47,7 @@ void Entity::setSpeed(int _speed) {
     speed = _speed;
 }
 
-const int Entity::getSpeed() {
+const int Entity::getConstSpeed() const {
     return speed;
 }
 

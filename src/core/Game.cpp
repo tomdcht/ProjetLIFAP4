@@ -22,4 +22,5 @@ const Projectile& Game::getConstProjectile() const { return arrow;}
 
 void Game::autoEvents(){
     enemy.walk(map);
+    arrow.track(enemy,towerArch);
 }

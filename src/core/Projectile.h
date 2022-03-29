@@ -8,8 +8,9 @@
 class Projectile : public Entity{
         private:
 
+        TowerArcher towerArch;
         int time;
-            
+
         public:
             Projectile();
             Projectile(const TowerArcher& towerArch);
@@ -22,7 +23,7 @@ class Projectile : public Entity{
             const int getTime();
 
             void track(const Enemy& enemy, const TowerArcher& towerArch);
-            
+
 };
 
 

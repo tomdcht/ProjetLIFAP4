@@ -35,7 +35,7 @@ void txtLoop(Game& game){
     do{
         txtShow(win, game);
 
-        usleep(100000);
+        usleep(1000000);
 
         game.autoEvents();
 

@@ -2,16 +2,14 @@
 #include <iostream>
 using namespace std;
 
-Projectile::Projectile(){
-
-}
-
-Projectile::Projectile(){
-
+Projectile::Projectile() : towerArch(){
+    setPos(towerArch.getConstPosX(), towerArch.getConstPosY());
+    setTime(2);
+    setSpeed(2);
 }
 
 Projectile::~Projectile(){
-    
+
 }
 
 
@@ -23,8 +21,6 @@ const int Projectile::getTime() {
     return time;
 }
 
-
-
 void Projectile::track(const Enemy& enemy, const TowerArcher& tower) {
 
     float avancementX, avancementY;
@@ -32,18 +28,17 @@ void Projectile::track(const Enemy& enemy, const TowerArcher& tower) {
     avancementX = 0;
     avancementY = 0;
 
+    avancementX = ((enemy.getConstPosX()+ getTime() * enemy.getConstSpeed() * 1 - tower.getConstPosX() ) / (getTime() * getConstSpeed())); // 1 = direction E
+    avancementY = ((enemy.getConstPosY()+ getTime() * enemy.getConstSpeed() * 0 - tower.getConstPosY() ) / (getTime() * getConstSpeed())); // 0 = direction E
 
-    setPosX( getPosX()+ avancementX);
-    setPosY( getPosX()+ avancementY);
-
-    avancementX = (enemy.getConstPosX()+ getTime() * enemy.getConstSpeed() * 1 - tower.getConstPosX() ) / (getTime() * getConstSpeed()); // 1 = direction E
-    avancementY = (enemy.getConstPosY()+ getTime() * enemy.getConstSpeed() * 0 - tower.getConstPosY() ) / (getTime() * getConstSpeed()); // 0 = direction E
+    setPosX( getPosX()+ (int)avancementX);
+    setPosY( getPosX()+ (int)avancementY);
 
 
     int xpos = getPosX();
     int ypos = getPosY();
 
-    if ( xpos == enemy.getConstPosX() && ypos == enemy.getConstPosY() ) {
+    if ( getPosX() == enemy.getConstPosX() && getPosY() == enemy.getConstPosY() ) {
         setPosX(tower.getConstPosX() );
         setPosX(tower.getConstPosY() );
     }
