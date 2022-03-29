@@ -42,6 +42,16 @@ void Entity::setPosY(int _posy){
 }
 
 
+
+void Entity::setSpeed(int _speed) {
+    speed = _speed;
+}
+
+const int Entity::getSpeed() {
+    return speed;
+}
+
+
 int Entity::getDamage() const{
     return damage;
 }

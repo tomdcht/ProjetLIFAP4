@@ -10,6 +10,8 @@ class Entity{
         int PV;
         bool isDead;
 
+        int speed;
+
     public:
         Entity();
         ~Entity();
@@ -24,6 +26,9 @@ class Entity{
 
         void setPosX(int _posx);
         void setPosY(int _posy);
+
+        void setSpeed(int _speed);
+        const int getConstSpeed() const ;
 
         int getDamage() const;
         void setDamage(int _damage);
