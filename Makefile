@@ -29,8 +29,11 @@ OBJCORE = $(addprefix $(ODIR)/, $(_OBJCORE))
 OBJSDL = $(addprefix $(ODIR)/, $(_OBJSDL))
 OBJTXT = $(addprefix $(ODIR)/, $(_OBJTXT))
 
-$(BDIR)/App: $(OBJCORE) $(OBJSDL) $(OBJTXT) 
+$(BDIR)/App: $(OBJCORE) $(OBJSDL) $(OBJTXT)
 	$(CC) $^ -o $@ -L$(SDLLIB) -lSDL2_image -lSDL2 -lSDL2_ttf
+
+$(BDIR)/AppTxt: $(OBJTXT) $(OBJCORE)
+	$(CC) $^ -o $@
 
 $(ODIR)/%.o : $(SDIRCORE)/%.cpp $(SDIRCORE)/%.h
 	$(CC) -c $< -o $@
@@ -43,6 +46,9 @@ $(ODIR)/%.o : $(SDIRTXT)/%.cpp $(SDIRTXT)/%.h
 
 obj/App.o: src/SDL2/App.cpp src/SDL2/AppSDL.h
 	g++ -c src/SDL2/App.cpp -o obj/App.o
+
+obj/mainTXT.o: src/txt/mainTXT.cpp src/txt/GameTXT.cpp
+	g++ -c src/txt/mainTXT.cpp -o obj/mainTXT.o
 
 clean:
 	rm -r $(ODIR)/*
