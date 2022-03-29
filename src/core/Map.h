@@ -6,18 +6,16 @@ class Map {
 
 private :
 
-	int m_dimx;
-	int m_dimy;
-	char m_map [100][100];
+	int dimx;
+	int dimy;
+	char map [100][100];
 
 public :
 
     Map();
 
-    
-    bool estPositionPersoValide (const int x, const int y) const;
 
-    
+    bool IsValidPosition (const int x, const int y) const;
 
     /**
     @brief Renvoie le type d'objet se trouvant en (x,y)

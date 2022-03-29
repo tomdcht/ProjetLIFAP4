@@ -3,6 +3,8 @@
 #include <iostream>
 
 TowerArcher::TowerArcher(){
+    setPosX(12);
+    setPosY(8);
     range=1;
     price=100;
 }

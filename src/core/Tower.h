@@ -10,8 +10,8 @@ class Tower : public Entity{
     public:
         Tower();
         ~Tower();
-        void setTower(int PV);
-        int getTower(int PV);
+        void setTower();
+        int getTower();
 };
 
 #endif

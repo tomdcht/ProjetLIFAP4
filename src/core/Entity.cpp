@@ -12,14 +12,35 @@ Entity::~Entity(){
 
 }
 
-Vec2 Entity::getPos() const{
-    return Vec2(posx, posy);
+int Entity::getPosX(){
+    return posx;
+}
+
+int Entity::getPosY(){
+    return posy;
+}
+
+const int Entity::getConstPosX() const {
+    return posx;
+}
+
+const int Entity::getConstPosY() const {
+    return posy;
 }
 
 void Entity::setPos(int _posx, int _posy){
     posx = _posx;
     posy = _posy;
 }
+
+void Entity::setPosX(int _posx){
+    posx = _posx;
+}
+
+void Entity::setPosY(int _posy){
+    posy = _posy;
+}
+
 
 int Entity::getDamage() const{
     return damage;

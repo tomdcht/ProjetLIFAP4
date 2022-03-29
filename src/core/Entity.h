@@ -5,7 +5,7 @@
 
 class Entity{
     private:
-        double posx, posy;
+        int posx, posy;
         int damage;
         int PV;
         bool isDead;
@@ -14,8 +14,16 @@ class Entity{
         Entity();
         ~Entity();
 
-        Vec2 getPos() const;
+        int getPosX();
+        int getPosY();
+
+        const int getConstPosX() const;
+        const int getConstPosY() const;
+
         void setPos(int _posx, int _posy);
+
+        void setPosX(int _posx);
+        void setPosY(int _posy);
 
         int getDamage() const;
         void setDamage(int _damage);
