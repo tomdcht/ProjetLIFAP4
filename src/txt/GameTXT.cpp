@@ -10,15 +10,15 @@ void txtShow(WindowTXT& win, const Game& game){
 
     win.clear();
 
-    for(int x = 0; x < map.getDimX(); x++){
-        for(int y = 0; y < map.getDimY(); y++){
+    for(int x = 0; x < map.getDimX(); ++x){
+        for(int y = 0; y < map.getDimY(); ++y){
             win.print(x, y, map.getXY(x, y));
         }
     }
 
-    // win.print(enemy.getConstPosX(), enemy.getConstPosY(), 'X');
+    win.print(enemy.getConstPosX(), enemy.getConstPosY(), 'X');
 
-    // win.print(towerArch.getConstPosX(), towerArch.getConstPosY(), 'O');
+    win.print(towerArch.getConstPosX(), towerArch.getConstPosY(), 'O');
 
     win.draw();
 }
@@ -32,7 +32,7 @@ void txtLoop(Game& game){
     do{
         txtShow(win, game);
 
-        usleep(1000);
+        usleep(100000);
 
         game.autoEvents();
 

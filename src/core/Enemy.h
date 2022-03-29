@@ -7,12 +7,17 @@
 
 class Enemy : public Entity{
     private:
-
+        bool isArrived;
+        bool isDead;
 
     public:
         Enemy();
+        ~Enemy();
 
         void walk(const Map& map);
+
+
+
 };
 
 
