@@ -7,6 +7,7 @@ void txtShow(WindowTXT& win, const Game& game){
     const Enemy& enemy = game.getConstEnemy();
     const TowerArcher& towerArch = game.getConstTowerArcher();
     const Map& map = game.getConstMap();
+    const Projectile& arrow = game.getConstProjectile();
 
     win.clear();
 
@@ -19,6 +20,8 @@ void txtShow(WindowTXT& win, const Game& game){
     win.print(enemy.getConstPosX(), enemy.getConstPosY(), 'X');
 
     win.print(towerArch.getConstPosX(), towerArch.getConstPosY(), 'O');
+
+    win.print(arrow.getConstPosX(), arrow.getConstPosY(), '.');
 
     win.draw();
 }

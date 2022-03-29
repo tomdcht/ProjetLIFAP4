@@ -4,6 +4,7 @@
 #include "Enemy.h"
 #include "Map.h"
 #include "TowerArcher.h"
+#include "Projectile.h"
 
 class Game{
 
@@ -12,6 +13,7 @@ class Game{
         Enemy enemy;
         Map map;
         TowerArcher towerArch;
+        Projectile arrow;
 
     public:
 
@@ -24,9 +26,9 @@ class Game{
         const Enemy& getConstEnemy () const;
         const Map& getConstMap () const;
         const TowerArcher& getConstTowerArcher () const;
+        const Projectile& getConstProjectile () const;
 
         void autoEvents();
-
 };
 
 #endif

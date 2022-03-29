@@ -18,6 +18,8 @@ const Map& Game::getConstMap() const { return map;}
 
 const TowerArcher& Game::getConstTowerArcher() const { return towerArch;}
 
+const Projectile& Game::getConstProjectile() const { return arrow;}
+
 void Game::autoEvents(){
     enemy.walk(map);
 }
