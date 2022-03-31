@@ -5,7 +5,7 @@
 
 class Entity{
     private:
-        int posx, posy;
+        float posx, posy;
         int damage;
         int PV;
         bool isDead;
@@ -16,16 +16,16 @@ class Entity{
         Entity();
         ~Entity();
 
-        int getPosX();
-        int getPosY();
+        float getPosX();
+        float getPosY();
 
-        const int getConstPosX() const;
-        const int getConstPosY() const;
+        const float getConstPosX() const;
+        const float getConstPosY() const;
 
-        void setPos(int _posx, int _posy);
+        void setPos(float _posx, float _posy);
 
-        void setPosX(int _posx);
-        void setPosY(int _posy);
+        void setPosX(float _posx);
+        void setPosY(float _posy);
 
         void setSpeed(int _speed);
         const int getConstSpeed() const ;
@@ -35,6 +35,8 @@ class Entity{
 
         int getPV() const;
         void setPV(int _PV);
+
+
 };
 
 #endif // _ENTITY_H_

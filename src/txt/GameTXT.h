@@ -4,7 +4,7 @@
 #include "windowTXT.h"
 #include "../core/Game.h"
 
-void txtShow(WindowTXT& win, const Game& game);
+void txtShow(WindowTXT& win, Game& game);
 void txtLoop(Game& game);
 
 

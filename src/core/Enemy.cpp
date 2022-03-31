@@ -6,7 +6,10 @@ using namespace std;
 
 Enemy::Enemy(){
     isArrived = false;
-    setPos(0, 10);
+    setPos(0.f, 11.f);
+    setSpeed(1);
+    setPV(10);
+    _isDead = false;
 }
 
 Enemy::~Enemy(){
@@ -25,6 +28,15 @@ void Enemy::walk(const Map& map){
     if(isArrived == true){
 
     }
+}
+
+bool Enemy::isDead() {
+
+    if (getPV() <= 0) {
+        _isDead = true;
+    }
+
+    return _isDead;
 }
 
 

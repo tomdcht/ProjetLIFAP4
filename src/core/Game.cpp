@@ -20,7 +20,14 @@ const TowerArcher& Game::getConstTowerArcher() const { return towerArch;}
 
 const Projectile& Game::getConstProjectile() const { return arrow;}
 
-void Game::autoEvents(){
+void Game::autoEvents() {
+
+    arrow.inRange(enemy,towerArch);
+
+    if (arrow.isInRange() == true && enemy.isDead()== false ) {
+        arrow.track(enemy,towerArch);
+    }
+
     enemy.walk(map);
-    arrow.track(enemy,towerArch);
+
 }

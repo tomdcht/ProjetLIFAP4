@@ -2,7 +2,7 @@
 #include <vector>
 
 Entity::Entity(){
-    posx, posy = 0;
+    posx, posy = 0.f;
     PV = 0;
     damage = 0;
     isDead = false;
@@ -12,32 +12,32 @@ Entity::~Entity(){
 
 }
 
-int Entity::getPosX(){
+float Entity::getPosX(){
     return posx;
 }
 
-int Entity::getPosY(){
+float Entity::getPosY(){
     return posy;
 }
 
-const int Entity::getConstPosX() const {
+const float Entity::getConstPosX() const {
     return posx;
 }
 
-const int Entity::getConstPosY() const {
+const float Entity::getConstPosY() const {
     return posy;
 }
 
-void Entity::setPos(int _posx, int _posy){
+void Entity::setPos(float _posx, float _posy){
     posx = _posx;
     posy = _posy;
 }
 
-void Entity::setPosX(int _posx){
+void Entity::setPosX(float _posx){
     posx = _posx;
 }
 
-void Entity::setPosY(int _posy){
+void Entity::setPosY(float _posy){
     posy = _posy;
 }
 
@@ -59,11 +59,12 @@ int Entity::getDamage() const{
 void Entity::setDamage(int _damage){
     damage = _damage;
 }
-
+ 
 int Entity::getPV() const{
     return PV;
 }
 
-void Entity::setPV(int _PV){
+void Entity::setPV(int _PV) {
     PV = _PV;
 }
+

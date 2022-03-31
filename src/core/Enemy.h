@@ -8,13 +8,15 @@
 class Enemy : public Entity{
     private:
         bool isArrived;
-        bool isDead;
+        bool _isDead;
 
     public:
         Enemy();
         ~Enemy();
 
         void walk(const Map& map);
+
+        bool isDead();
 
 
 

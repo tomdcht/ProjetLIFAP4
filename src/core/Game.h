@@ -19,9 +19,9 @@ class Game{
 
         Game ();
 
-        Enemy& getEnemy ();
-        Map& getMap ();
-        TowerArcher& getTowerArcher ();
+        Enemy& getEnemy();
+        Map& getMap();
+        TowerArcher& getTowerArcher();
 
         const Enemy& getConstEnemy () const;
         const Map& getConstMap () const;

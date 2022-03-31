@@ -3,8 +3,8 @@
 
 #include "GameTXT.h"
 
-void txtShow(WindowTXT& win, const Game& game){
-    const Enemy& enemy = game.getConstEnemy();
+void txtShow(WindowTXT& win, Game& game){
+    Enemy& enemy = game.getEnemy();
     const TowerArcher& towerArch = game.getConstTowerArcher();
     const Map& map = game.getConstMap();
     const Projectile& arrow = game.getConstProjectile();
@@ -17,11 +17,17 @@ void txtShow(WindowTXT& win, const Game& game){
         }
     }
 
-    win.print(enemy.getConstPosX(), enemy.getConstPosY(), 'X');
+    win.print((int)towerArch.getConstPosX(), (int)towerArch.getConstPosY(), 'O');
 
-    win.print(towerArch.getConstPosX(), towerArch.getConstPosY(), 'O');
+    if (enemy.isDead() == false) {
+        win.print((int)enemy.getConstPosX(), (int)enemy.getConstPosY(), 'X');
 
-    win.print(arrow.getConstPosX(), arrow.getConstPosY(), '.');
+        if (arrow.isInRange() == true) {
+            win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
+        }
+    }
+
+
 
     win.draw();
 }
@@ -30,19 +36,24 @@ void txtLoop(Game& game){
     WindowTXT win (game.getConstMap().getDimX(), game.getConstMap().getDimY());
 
     bool quit = false;
+    bool pause = false;
     int ch;
+    int ch2;
 
     do{
         txtShow(win, game);
 
-        usleep(1000000);
+        usleep(500000);
 
         game.autoEvents();
 
         ch = win.getCh();
+        ch2 = win.getCh();
+
         switch(ch){
             case 'q':
                 quit = true; break;
+            
         }
     }while(!quit);
 }
