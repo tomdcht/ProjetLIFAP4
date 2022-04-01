@@ -1,4 +1,4 @@
-CC = g++
+CC = g++ -Wall
 DEBUG = -ggdb
 
 ODIR = obj

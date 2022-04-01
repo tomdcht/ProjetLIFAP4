@@ -97,6 +97,14 @@ void WindowTXT::draw(int x, int y){
     termMove(0, dimY);
 }
 
+void WindowTXT::erase(int x, int y, char c){
+    if(x < 0) return;
+    if(y < 0) return;
+    if(x>=dimX) return;
+    if(y>=dimY) return;
+    winTab[y*dimX + x] = c;
+}
+
 int khbit(){
     struct timeval tv;
     fd_set fds;

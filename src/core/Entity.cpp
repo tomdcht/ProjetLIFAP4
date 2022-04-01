@@ -59,12 +59,20 @@ int Entity::getDamage() const{
 void Entity::setDamage(int _damage){
     damage = _damage;
 }
- 
+
 int Entity::getPV() const{
     return PV;
 }
 
 void Entity::setPV(int _PV) {
     PV = _PV;
+}
+
+void Entity::setIsDead(bool _isDead){
+    isDead = _isDead;
+}
+
+bool Entity::getIsDead(){
+    return isDead;
 }
 

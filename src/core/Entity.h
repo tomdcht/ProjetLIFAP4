@@ -36,6 +36,8 @@ class Entity{
         int getPV() const;
         void setPV(int _PV);
 
+        void setIsDead(bool _isDead);
+        bool getIsDead();
 
 };
 
