@@ -10,6 +10,12 @@ class Projectile : public Entity{
 
         TowerArcher towerArch;
         int time;
+        bool tracking;
+        bool _inRange;
+
+        float avancementX, avancementY, _DirectionX, _DirectionY, _Distance;
+
+
 
         public:
             Projectile();
@@ -22,7 +28,17 @@ class Projectile : public Entity{
             void setTime(int _time);
             const int getTime();
 
-            void track(const Enemy& enemy, const TowerArcher& towerArch);
+            const float directionX(const Enemy& enemy, const TowerArcher& tower);
+            const float directionY(const Enemy& enemy, const TowerArcher& tower);
+
+            const float distance(const Enemy& x, const TowerArcher& y);
+
+            void track(Enemy& enemy, const TowerArcher& towerArch);
+
+            void inRange(const Enemy& enemy, const TowerArcher& towerArch);
+            const bool isInRange() const;
+
+            const bool touch ();
 
 };
 

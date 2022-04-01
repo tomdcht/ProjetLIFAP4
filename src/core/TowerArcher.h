@@ -17,6 +17,8 @@ class TowerArcher : public Entity{
         void setPrice(int _price);
         int getPrice() const;
 
+        //const bool InRange(const Enemy& enemy) const;
+
 };
 
 

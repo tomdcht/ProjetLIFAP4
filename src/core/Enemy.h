@@ -9,7 +9,6 @@
 class Enemy : public Entity{
     private:
         bool isArrived;
-        bool isDead;
 
     public:
         std::list<Enemy> *enemies;
@@ -19,9 +18,9 @@ class Enemy : public Entity{
 
         void setIsArrived(bool _isArrived);
         bool getIsArrived();
+        void walk(const Map& map);
 
-        void setIsDead(bool _isDead);
-        bool getIsDead();
+        bool isDead();
 
         void walk(const Map& map);
         void appear();

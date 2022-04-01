@@ -1,10 +1,12 @@
 #include "TowerArcher.h"
 #include "Entity.h"
+#include "Enemy.h"
 #include <iostream>
 
+
 TowerArcher::TowerArcher(){
-    setPosX(11);
-    setPosY(7);
+    setPos(15.f,7.f);
+    setSpeed(2);
     range=1;
     price=100;
 }
@@ -28,3 +30,6 @@ void TowerArcher::setPrice(int _price){
 int TowerArcher::getPrice() const{
     return price;
 }
+
+
+//const bool TowerArcher::InRange(const Enemy& enemy) const { return true; }

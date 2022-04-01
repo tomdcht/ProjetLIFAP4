@@ -6,9 +6,10 @@ using namespace std;
 
 Enemy::Enemy(){
     isArrived = false;
-    isDead = false;
-    setPos(0, 10);
-
+    setPos(0.f, 11.f);
+    setSpeed(1);
+    setPV(10);
+    setIsDead(false);
 }
 
 Enemy::~Enemy(){
@@ -22,14 +23,6 @@ void Enemy::setIsArrived(bool _isArrived){
 
 bool Enemy::getIsArrived(){
     return isArrived;
-}
-
-void Enemy::setIsDead(bool _isDead){
-    isDead = _isDead;
-}
-
-bool Enemy::getIsDead(){
-    return isDead;
 }
 
 void Enemy::walk(const Map& map){
@@ -47,8 +40,13 @@ void Enemy::walk(const Map& map){
     }
 }
 
-void Enemy::appear(){
+bool Enemy::isDead() {
 
+    if (getPV() <= 0) {
+        setIsDead(true);
+    }
+
+    return isDead;
 }
 
 
