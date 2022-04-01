@@ -24,3 +24,11 @@ void Game::autoEvents(){
     enemy.walk(map);
     arrow.track(enemy,towerArch);
 }
+
+void Game::appear(){
+    if(enemy.getConstPosX() == map.getDimX()){
+        enemy.setIsArrived(true);
+        enemy.enemies->pop_front();
+        enemy.enemies->push_front(enemy);
+    }
+}

@@ -29,6 +29,7 @@ class Game{
         const Projectile& getConstProjectile () const;
 
         void autoEvents();
+        void appear();
 };
 
 #endif

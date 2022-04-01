@@ -3,7 +3,7 @@
 
 #include "GameTXT.h"
 
-void txtShow(WindowTXT& win, const Game& game){
+void txtShow(WindowTXT& win, Game& game){
     const Enemy& enemy = game.getConstEnemy();
     const TowerArcher& towerArch = game.getConstTowerArcher();
     const Map& map = game.getConstMap();
@@ -23,6 +23,12 @@ void txtShow(WindowTXT& win, const Game& game){
 
     win.print(arrow.getConstPosX(), arrow.getConstPosY(), '.');
 
+    if(enemy.getConstPosX() == win.getConstDimX() - 1){
+        win.erase(enemy.getConstPosX(), enemy.getConstPosY(), ' ');
+        game.appear();
+        win.print(enemy.enemies->front().getConstPosX(), enemy.enemies->front().getConstPosY(), 'X');
+    }
+
     win.draw();
 }
 
@@ -35,7 +41,7 @@ void txtLoop(Game& game){
     do{
         txtShow(win, game);
 
-        usleep(1000000);
+        usleep(100000);
 
         game.autoEvents();
 

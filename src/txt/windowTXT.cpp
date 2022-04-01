@@ -50,6 +50,18 @@ WindowTXT::WindowTXT(int _dimx, int _dimy){
     termInit();
 }
 
+void WindowTXT::setDimX(int _dimX){
+    dimX = _dimX;
+}
+
+int WindowTXT::getDimX(){
+    return dimX;
+}
+
+const int WindowTXT::getConstDimX() const {
+    return dimX;
+}
+
 void WindowTXT::clear(char c){
     for(int i = 0; i < dimX; i++){
         for(int j = 0; j < dimY; j++){
