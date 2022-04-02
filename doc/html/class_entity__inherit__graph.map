@@ -1,0 +1,10 @@
+<map id="Entity" name="Entity">
+<area shape="rect" id="node1" title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit..." alt="" coords="418,5,555,229"/>
+<area shape="rect" id="node2" href="$class_castle.html" title="classe representant le chateau La classe gere les fonctions du chateau" alt="" coords="5,365,104,457"/>
+<area shape="rect" id="node3" href="$class_enemy.html" title="classe representant l&#39;ennemie La classe gere les fonctions de l&#39;ennemie" alt="" coords="129,321,255,501"/>
+<area shape="rect" id="node4" href="$class_projectile.html" title="class representant les projectiles" alt="" coords="279,277,409,545"/>
+<area shape="rect" id="node5" href="$class_tower.html" title=" " alt="" coords="433,351,540,472"/>
+<area shape="rect" id="node6" href="$class_tower_archer.html" title=" " alt="" coords="564,336,703,487"/>
+<area shape="rect" id="node7" href="$class_tower_bomb.html" title=" " alt="" coords="727,336,862,487"/>
+<area shape="rect" id="node8" href="$class_tower_magic.html" title=" " alt="" coords="886,336,1021,487"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Enemy" name="Enemy">
+<area shape="rect" id="node1" title="classe representant l&#39;ennemie La classe gere les fonctions de l&#39;ennemie" alt="" coords="11,277,137,457"/>
+<area shape="rect" id="node2" href="$class_entity.html" title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit..." alt="" coords="5,5,143,229"/>
+</map>

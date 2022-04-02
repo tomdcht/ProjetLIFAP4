@@ -1,0 +1,9 @@
+<map id="Entity::getConstSpeed" name="Entity::getConstSpeed">
+<area shape="rect" id="node1" title="Fonction retournant la vitesse de l&#39;entité en const." alt="" coords="795,56,960,83"/>
+<area shape="rect" id="node2" href="$class_projectile.html#ae5645549de0ef4e2defdb3edd9fc57f0" title=" " alt="" coords="589,5,747,32"/>
+<area shape="rect" id="node3" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title=" " alt="" coords="417,56,541,83"/>
+<area shape="rect" id="node7" href="$class_projectile.html#a4fed5dda0d58cd0721bf8a20a005c594" title=" " alt="" coords="590,107,746,133"/>
+<area shape="rect" id="node4" href="$class_game.html#acd26cbdfb8fa7cec1832711e618fec45" title=" " alt="" coords="227,56,369,83"/>
+<area shape="rect" id="node5" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title=" " alt="" coords="108,56,179,83"/>
+<area shape="rect" id="node6" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,60,83"/>
+</map>

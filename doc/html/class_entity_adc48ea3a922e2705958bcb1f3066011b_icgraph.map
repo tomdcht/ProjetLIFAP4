@@ -1,0 +1,5 @@
+<map id="Entity::setSpeed" name="Entity::setSpeed">
+<area shape="rect" id="node1" title=" " alt="" coords="244,31,371,57"/>
+<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title=" " alt="" coords="25,5,177,32"/>
+<area shape="rect" id="node3" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title=" " alt="" coords="5,56,196,83"/>
+</map>
