@@ -17,6 +17,7 @@ class TowerArcher : public Entity{
 
     public:
         TowerArcher();
+        TowerArcher(const TowerArcher&);
         ~TowerArcher();
         void setRange(int range);
         int getRange() const;

@@ -20,7 +20,9 @@ class Game{
         Enemy enemy;
         Map map;
         TowerArcher towerArch;
+        TowerArcher towerArch1;
         Projectile arrow;
+        Projectile arrow1;
 
     public:
 
@@ -29,6 +31,7 @@ class Game{
         Enemy& getEnemy();
         Map& getMap();
         TowerArcher& getTowerArcher();
+        TowerArcher& getTowerArcher1();
 
         const Enemy& getConstEnemy () const;
         const Map& getConstMap () const;
@@ -36,6 +39,7 @@ class Game{
         const Projectile& getConstProjectile () const;
 
         void autoEvents();
+        void autoEvents1();
         void appear();
 };
 

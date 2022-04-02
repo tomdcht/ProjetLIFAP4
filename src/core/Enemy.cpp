@@ -46,7 +46,7 @@ bool Enemy::isDead() {
         setIsDead(true);
     }
 
-    return isDead;
+    return getIsDead();
 }
 
 

@@ -2,7 +2,8 @@
 #include <vector>
 
 Entity::Entity(){
-    posx, posy = 0.f;
+    posx=0.f;
+    posy = 0.f;
     PV = 0;
     damage = 0;
     isDead = false;

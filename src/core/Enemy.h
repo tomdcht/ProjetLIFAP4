@@ -34,8 +34,6 @@ class Enemy : public Entity{
         void walk(const Map& map);
 
         bool isDead();
-
-        void walk(const Map& map);
         void appear();
 };
 
