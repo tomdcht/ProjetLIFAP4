@@ -11,13 +11,6 @@ TowerArcher::TowerArcher(){
     price=100;
 }
 
-TowerArcher::TowerArcher(const TowerArcher&){
-    setPos(17.f, 14.f);
-    setSpeed(2);
-    range=1;
-    price=100;
-}
-
 TowerArcher::~TowerArcher(){
 
 }

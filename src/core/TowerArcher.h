@@ -1,10 +1,3 @@
-/**
- * \file TowerArcher.h
- * \author Allan.D, Tom.D
- * \version 1.0
- * \date 15 mars 2022
- */
-
 #ifndef _TOWER_H_
 #define _TOWER_H_
 #include <iostream>
@@ -17,7 +10,6 @@ class TowerArcher : public Entity{
 
     public:
         TowerArcher();
-        TowerArcher(const TowerArcher&);
         ~TowerArcher();
         void setRange(int range);
         int getRange() const;

@@ -15,13 +15,13 @@ Projectile::Projectile() : towerArch(){
     tracking = false;
     _inRange = false;
 
-    float _DirectionX = 0;
-    float _DirectionY = 0;
+    _DirectionX = 0;
+    _DirectionY = 0;
 
-    float avancementX = 0;
-    float avancementY = 0;
+    avancementX = 0;
+    avancementY = 0;
 
-    int time = 4;
+    time = 4;
 }
 
 Projectile::~Projectile(){
@@ -49,7 +49,7 @@ const float Projectile::directionY(const Enemy& enemy, const TowerArcher& tower)
 
 }
 
-const float Projectile::distance(const Enemy& x, const TowerArcher& y ) {
+const float Projectile::distance(Enemy& x, const TowerArcher& y ) {
 
     float v1,v2;
 
@@ -84,27 +84,26 @@ void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
         tracking = false;
         _inRange = false;
 
-        std::cout << "Touché" << std::endl;
-        std::cout << "PV : "<< enemy.getPV() << "   " << std::endl;
+    //     std::cout << "Touché" << std::endl;
+    //     std::cout << enemy.enemies.front()->getPV() << "   " << std::endl;
     }
 
-    else {
-        std::cout << "         " << std::endl;
-        std:: cout<< std :: endl;
-        std::cout << "appuyez sur q pour quitter la partie "<<std::endl;
-    }
+    // else {
+    //     std::cout << "         " << std::endl;
+    //     std::cout << enemy.getPV() << "   " << std::endl;
+    // }
 
 }
 
 void Projectile::inRange(const Enemy& enemy, const TowerArcher& tower){
 
-    if (distance(enemy,tower) <= tower.getRange() && tracking == 0) {
+    if (distance(*enemy.enemies.front(), tower) <= tower.getRange() && tracking == 0) {
         _inRange = true;
     }
 
 }
 
-const bool Projectile::isInRange() const{
+bool Projectile::isInRange() const{
     return _inRange;
 }
 

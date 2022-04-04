@@ -19,8 +19,8 @@ void txtShow(WindowTXT& win, Game& game){
 
     win.print((int)towerArch.getConstPosX(), (int)towerArch.getConstPosY(), 'O');
 
-    if (enemy.isDead() == false) {
-        win.print((int)enemy.getConstPosX(), (int)enemy.getConstPosY(), 'X');
+    if (enemy.enemies.front()->isDead() == false) {
+        win.print((int)enemy.enemies.front()->getConstPosX(), (int)enemy.enemies.front()->getConstPosY(), 'X');
 
         if (arrow.isInRange() == true) {
             win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
@@ -28,14 +28,33 @@ void txtShow(WindowTXT& win, Game& game){
     }
 
 
+    if (enemy.enemies.front()->isDead() == true) {
+        win.print((int)enemy.enemies.front()->getConstPosX(), (int)enemy.enemies.front()->getConstPosY(), ' ');
+        // enemy.enemies.front()->setIsDead(false);
 
-    // if(enemy.getConstPosX() == win.getConstDimX() - 1){
-    //     win.erase(enemy.getConstPosX(), enemy.getConstPosY(), ' ');
-    //     game.appear();
-    //     win.print(enemy.getConstPosX(), enemy.getConstPosY(), 'X');
+        if (arrow.isInRange() == false) {
+            win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), ' ');
+        }
+
+    }
+
+
+    // std::cout << std::endl;
+    // std::cout << std::endl;
+    // std::cout << std::endl;
+    // std::cout << std::endl;
+    // std::cout << "PosX : " << (int)enemy.enemies.front()->getConstPosX() << ",PosY : " << (int)enemy.enemies.front()->getConstPosY() << std::endl;
+    // std::cout << "IsDead ? " << enemy.enemies.front()->isDead() << std::endl;
+
+
+    // if(enemy.enemies.front()->getConstPosX() == win.getConstDimX() - 1){
+    //     win.erase(enemy.enemies.front()->getConstPosX(), enemy.enemies.front()->getConstPosY(), ' ');
+    //     // game.appear();
+    //     win.print(enemy.enemies.front()->getConstPosX(), enemy.enemies.front()->getConstPosY(), 'X');
     // }
 
     win.draw();
+
 }
 
 void txtLoop(Game& game){
@@ -54,7 +73,6 @@ void txtLoop(Game& game){
         game.autoEvents();
 
         ch = win.getCh();
-        ch2 = win.getCh();
 
         switch(ch){
             case 'q':

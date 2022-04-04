@@ -25,8 +25,8 @@ Enemy::Enemy(){
 }
 
 Enemy::~Enemy(){
+    enemies.~list();
     delete [] &enemies;
-    enemies.clear();
 }
 
 void Enemy::setIsArrived(bool _isArrived){
@@ -39,16 +39,8 @@ bool Enemy::getIsArrived(){
 
 void Enemy::walk(const Map& map){
 
-    if(map.IsValidPosition(getPosX(), getPosY()) && isArrived == false){
-        setPosX(getPosX() + 1);
-    }
-
-    if(getPosX() == map.getDimX()){
-        isArrived = true;
-    }
-
-    if(isArrived == true){
-
+    if(map.IsValidPosition(this->getPosX(), this->getPosY()) && this->isArrived == false){
+        this->setPosX(this->getPosX() + 1);
     }
 }
 
@@ -74,10 +66,13 @@ void Enemy::regressionTest(Enemy& enemy){
     cout << "IsDead ? " << enemy.getIsDead() << endl;
     cout << "IsArrived ? "  << enemy.getIsArrived() << endl;
 
-    cout << enemy.enemies.back()->getPosX() << " " << enemy.getPosY() << endl;
-    cout << "Speed : " << enemy.getSpeed() << "PV : " << enemy.getPV() << endl;
+    enemy.setPos(4.f, 12.f);
+
+    cout << enemy.enemies.front()->getPosX() << " " << enemy.enemies.front()->getPosY() << endl;
+    cout << "Speed : " << enemy.enemies.front()->getSpeed() << ", PV : " << enemy.enemies.front()->getPV() << endl;
     cout << "IsDead ? " << enemy.enemies.back()->getIsDead() << endl;
     cout << "IsArrived ? " << enemy.enemies.back()->getIsArrived() << endl;
+
 }
 
 // int main(void){

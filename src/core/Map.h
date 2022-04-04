@@ -1,10 +1,3 @@
-/**
- * \file Map.h
- * \author Tom.D, Aline.S
- * \version 1.0
- * \date 15 mars 2022
- */
-
 #ifndef _MAP_H
 #define _MAP_H
 

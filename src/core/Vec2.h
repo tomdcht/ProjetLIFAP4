@@ -1,10 +1,3 @@
-/**
- * \file Vec2.h
- * \author Tom.D
- * \version 1.0
- * \date 15 mars 2022
- */
-
 #ifndef _VEC2_H_
 #define _VEC2_H_
 
