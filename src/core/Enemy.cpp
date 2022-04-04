@@ -58,7 +58,11 @@ bool Enemy::isDead() {
         setIsDead(true);
     }
 
+<<<<<<< HEAD
     return true;
+=======
+    return getIsDead();
+>>>>>>> bb8ccf78abf66c738ce7d51e413429a033d6d82b
 }
 
 void Enemy::regressionTest(Enemy& enemy){

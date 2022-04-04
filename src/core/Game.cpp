@@ -12,6 +12,8 @@ Map& Game::getMap(){ return map;}
 
 TowerArcher& Game::getTowerArcher(){ return towerArch;}
 
+TowerArcher& Game::getTowerArcher1(){ return towerArch1;}
+
 const Enemy& Game::getConstEnemy() const { return enemy;}
 
 const Map& Game::getConstMap() const { return map;}

@@ -1,0 +1,4 @@
+<map id="Projectile" name="Projectile">
+<area shape="rect" id="node1" title="class representant les projectiles" alt="" coords="9,277,139,545"/>
+<area shape="rect" id="node2" href="$class_entity.html" title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit..." alt="" coords="5,5,143,229"/>
+</map>

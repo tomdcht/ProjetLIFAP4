@@ -29,11 +29,11 @@ void txtShow(WindowTXT& win, Game& game){
 
 
 
-    if(enemy.getConstPosX() == win.getConstDimX() - 1){
-        win.erase(enemy.getConstPosX(), enemy.getConstPosY(), ' ');
-        game.appear();
-        win.print(enemy.enemies->front().getConstPosX(), enemy.enemies->front().getConstPosY(), 'X');
-    }
+    // if(enemy.getConstPosX() == win.getConstDimX() - 1){
+    //     win.erase(enemy.getConstPosX(), enemy.getConstPosY(), ' ');
+    //     game.appear();
+    //     win.print(enemy.getConstPosX(), enemy.getConstPosY(), 'X');
+    // }
 
     win.draw();
 }

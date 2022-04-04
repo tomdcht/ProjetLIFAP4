@@ -1,0 +1,5 @@
+<map id="TowerArcher::TowerArcher" name="TowerArcher::TowerArcher">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,196,57"/>
+<area shape="rect" id="node2" href="$class_entity.html#abdd4f6821f64524d42bdf29baa7375b5" title="Procédure définissant la position en x et en y." alt="" coords="252,5,363,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a5cd41e16d7e711c662ca8156620f554e" title="Procédure définissant la vitesse de l&#39;entité" alt="" coords="244,56,371,83"/>
+</map>

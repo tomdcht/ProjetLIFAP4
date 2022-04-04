@@ -85,12 +85,13 @@ void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
         _inRange = false;
 
         std::cout << "Touché" << std::endl;
-        std::cout << enemy.getPV() << "   " << std::endl;
+        std::cout << "PV : "<< enemy.getPV() << "   " << std::endl;
     }
 
     else {
         std::cout << "         " << std::endl;
-        std::cout << enemy.getPV() << "   " << std::endl;
+        std:: cout<< std :: endl;
+        std::cout << "appuyez sur q pour quitter la partie "<<std::endl;
     }
 
 }
