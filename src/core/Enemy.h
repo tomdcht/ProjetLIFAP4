@@ -11,7 +11,7 @@ class Enemy : public Entity{
         bool isArrived;
 
     public:
-        std::list<Enemy> *enemies;
+        std::list<Enemy*> enemies;
 
         Enemy();
         ~Enemy();
@@ -22,8 +22,9 @@ class Enemy : public Entity{
 
         bool isDead();
 
-        void walk(const Map& map);
-        void appear();
+        // void appear();
+
+        void regressionTest(Enemy& enemy);
 };
 
 

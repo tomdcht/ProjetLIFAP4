@@ -28,6 +28,8 @@ class Entity{
         void setPosY(float _posy);
 
         void setSpeed(int _speed);
+        int getSpeed();
+
         const int getConstSpeed() const ;
 
         int getDamage() const;
