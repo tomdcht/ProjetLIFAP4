@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    WindowTXT win(60, 100);
+    WindowTXT win(60, 60);
     win.termClear();
     Game game;
     txtLoop(game);

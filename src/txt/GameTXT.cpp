@@ -22,7 +22,7 @@ void txtShow(WindowTXT& win, Game& game){
     if (enemy.enemies.front()->isDead() == false) {
         win.print((int)enemy.enemies.front()->getConstPosX(), (int)enemy.enemies.front()->getConstPosY(), 'X');
 
-        if (arrow.isInRange() == true) {
+        if (arrow.isInRange() == true){
             win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
         }
     }

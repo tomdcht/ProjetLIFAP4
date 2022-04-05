@@ -12,16 +12,6 @@ Enemy::Enemy(){
     setIsDead(false);
     isArrived = false;
     enemies.push_back(this);
-
-    /*SOIT*/
-
-    // enemies.push_back(*this);
-    // enemies.back().setPos(0.f, 11.f);
-    // enemies.back().setSpeed(1);
-    // enemies.back().setPV(10);
-    // enemies.back().setIsDead(false);
-    // enemies.back().isArrived = false;
-
 }
 
 Enemy::~Enemy(){

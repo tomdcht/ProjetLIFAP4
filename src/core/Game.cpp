@@ -28,15 +28,8 @@ void Game::autoEvents() {
     enemy.enemies.front()->walk(map);
 
     if(enemy.enemies.front()->getPosX() == map.getDimX() || enemy.enemies.front()->getIsDead() == true){
-        // std::cout << std::endl;
-        // std::cout << std::endl;
-        // std::cout << std::endl;
-        // std::cout << std::endl;
-        //enemies.emplace(enemies.begin(), --it);
-
         enemy.enemies.pop_front();
         enemy.enemies.push_front(new Enemy);
-
     }
 
     arrow.inRange(*enemy.enemies.front(),towerArch);

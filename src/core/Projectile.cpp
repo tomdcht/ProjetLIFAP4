@@ -49,12 +49,12 @@ const float Projectile::directionY(const Enemy& enemy, const TowerArcher& tower)
 
 }
 
-const float Projectile::distance(Enemy& x, const TowerArcher& y ) {
+const float Projectile::distance(Enemy& enemy, const TowerArcher& tower) {
 
     float v1,v2;
 
-    v1 = pow(x.getConstPosX() - y.getConstPosX(),2);
-    v2 = pow(x.getConstPosY() - y.getConstPosY(),2);
+    v1 = pow(enemy.getConstPosX() - tower.getConstPosX(),2);
+    v2 = pow(enemy.getConstPosY() - tower.getConstPosY(),2);
 
     return (sqrt(v1) - sqrt(v2));
 }
@@ -84,7 +84,7 @@ void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
         tracking = false;
         _inRange = false;
 
-    //     std::cout << "Touché" << std::endl;
+    //     std::cout << "TouchÃ©" << std::endl;
     //     std::cout << enemy.enemies.front()->getPV() << "   " << std::endl;
     }
 
@@ -106,7 +106,3 @@ void Projectile::inRange(const Enemy& enemy, const TowerArcher& tower){
 bool Projectile::isInRange() const{
     return _inRange;
 }
-
-
-
-
