@@ -6,6 +6,7 @@
 * \date 4 Avril 2022
 */
 
+#include "Vec2.h"
 
 #ifndef _ENTITY_H_
 #define _ENTITY_H_

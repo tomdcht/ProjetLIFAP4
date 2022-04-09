@@ -10,7 +10,7 @@ Projectile::Projectile() : towerArch(){
     setPos(towerArch.getConstPosX(), towerArch.getConstPosY());
     setTime(4);
     setSpeed(2);
-    towerArch.setRange(10);
+    //towerArch.setRange(10);
 
     tracking = false;
     _inRange = false;
@@ -49,27 +49,26 @@ const float Projectile::directionY(const Enemy& enemy, const TowerArcher& tower)
 
 }
 
-const float Projectile::distance(Enemy& enemy, const TowerArcher& tower) {
+const float Projectile::distance(const float enemy_x, const float enemy_y, const TowerArcher& tower ) {
 
     float v1,v2;
 
-    v1 = pow(enemy.getConstPosX() - tower.getConstPosX(),2);
-    v2 = pow(enemy.getConstPosY() - tower.getConstPosY(),2);
+    v1 = pow(enemy_x - tower.getConstPosX(),2);
+    v2 = pow(enemy_y - tower.getConstPosY(),2);
 
-    return (sqrt(v1) - sqrt(v2));
+    return (sqrt(v1) + sqrt(v2));
 }
 
 
 void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
 
-    if (tracking == false) { // tower.InRange(enemy) == true && tracking == 0
+    if (tracking == false) {
 
         setPos(towerArch.getConstPosX(), towerArch.getConstPosY());
         _DirectionX = directionX(enemy, tower);
         _DirectionY = directionY(enemy, tower);
         avancementX = getPosX();
         avancementY = getPosY();
-
         tracking = true;
     }
 
@@ -79,25 +78,21 @@ void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
     setPosX((int)avancementX);
     setPosY((int)avancementY);
 
+    std::cout << "Position X de l'ennemi tracké = " << enemy.getConstPosX() << std::endl;
+
     if ( getPosX() == (enemy.getConstPosX()+1) && getPosY() == enemy.getConstPosY() ) {
         enemy.setPV(enemy.getPV()-5);
         tracking = false;
         _inRange = false;
-
-    //     std::cout << "TouchÃ©" << std::endl;
-    //     std::cout << enemy.enemies.front()->getPV() << "   " << std::endl;
+        //std::cout << "Touché       " << std::endl;
     }
-
-    // else {
-    //     std::cout << "         " << std::endl;
-    //     std::cout << enemy.getPV() << "   " << std::endl;
-    // }
+    std::cout << "                     " << std::endl;
 
 }
 
 void Projectile::inRange(const Enemy& enemy, const TowerArcher& tower){
 
-    if (distance(*enemy.enemies.front(), tower) <= tower.getRange() && tracking == 0) {
+    if (distance(enemy.getConstPosX(),enemy.getConstPosY(), tower) < tower.getRange() && tracking == false) {
         _inRange = true;
     }
 
@@ -106,3 +101,7 @@ void Projectile::inRange(const Enemy& enemy, const TowerArcher& tower){
 bool Projectile::isInRange() const{
     return _inRange;
 }
+
+
+
+

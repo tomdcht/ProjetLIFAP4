@@ -4,7 +4,7 @@
 #include "GameTXT.h"
 
 void txtShow(WindowTXT& win, Game& game){
-    Enemy& enemy = game.getEnemy();
+    const Enemy& enemy = game.getConstEnemy();
     const TowerArcher& towerArch = game.getConstTowerArcher();
     const Map& map = game.getConstMap();
     const Projectile& arrow = game.getConstProjectile();
@@ -16,43 +16,33 @@ void txtShow(WindowTXT& win, Game& game){
             win.print(x, y, map.getXY(x, y));
         }
     }
+    
+    int size = enemy.enemies.size();
 
     win.print((int)towerArch.getConstPosX(), (int)towerArch.getConstPosY(), 'O');
 
-    if (enemy.enemies.front()->isDead() == false) {
-        win.print((int)enemy.enemies.front()->getConstPosX(), (int)enemy.enemies.front()->getConstPosY(), 'X');
+    for (int n = 0; n < size ; n++) {
+        win.print((int)game.getIt(enemy.enemies, n)-> getConstPosX(), (int)game.getIt(enemy.enemies, n)->getConstPosY(), 'X');
 
-        if (arrow.isInRange() == true){
-            win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
-        }
-    }
-
-
-    if (enemy.enemies.front()->isDead() == true) {
-        win.print((int)enemy.enemies.front()->getConstPosX(), (int)enemy.enemies.front()->getConstPosY(), ' ');
-        // enemy.enemies.front()->setIsDead(false);
-
-        if (arrow.isInRange() == false) {
-            win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), ' ');
+        if (game.getIt(enemy.enemies, n)->isDead() == true) {
+            win.print((int)game.getIt(enemy.enemies, n)->getConstPosX(), (int)game.getIt(enemy.enemies, n)->getConstPosY(), ' ');
+            
+            if (arrow.isInRange() == false) {
+                win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), ' ');
+            }
         }
 
     }
 
 
-    // std::cout << std::endl;
-    // std::cout << std::endl;
-    // std::cout << std::endl;
-    // std::cout << std::endl;
-    // std::cout << "PosX : " << (int)enemy.enemies.front()->getConstPosX() << ",PosY : " << (int)enemy.enemies.front()->getConstPosY() << std::endl;
-    // std::cout << "IsDead ? " << enemy.enemies.front()->isDead() << std::endl;
+    if (arrow.isInRange() == true) {
+        win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
+    }
 
+    win.print(37,1,'0');
+    win.print(38,1,'1');
 
-    // if(enemy.enemies.front()->getConstPosX() == win.getConstDimX() - 1){
-    //     win.erase(enemy.enemies.front()->getConstPosX(), enemy.enemies.front()->getConstPosY(), ' ');
-    //     // game.appear();
-    //     win.print(enemy.enemies.front()->getConstPosX(), enemy.enemies.front()->getConstPosY(), 'X');
-    // }
-
+    
     win.draw();
 
 }
@@ -61,14 +51,13 @@ void txtLoop(Game& game){
     WindowTXT win (game.getConstMap().getDimX(), game.getConstMap().getDimY());
 
     bool quit = false;
-    bool pause = false;
     int ch;
-    int ch2;
 
     do{
+        
         txtShow(win, game);
 
-        usleep(500000);
+        usleep(400000);
 
         game.autoEvents();
 

@@ -52,6 +52,9 @@ class Enemy : public Entity{
          *  \param enemy Un ennemi
          */
         void regressionTest(Enemy& enemy);
+
+         /** \fn Fonction const permettant de récupérer la taille de la liste*/
+        const int getSizeList();
 };
 
 
