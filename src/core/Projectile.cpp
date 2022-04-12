@@ -10,7 +10,6 @@ Projectile::Projectile() : towerArch(){
     setPos(towerArch.getConstPosX(), towerArch.getConstPosY());
     setTime(4);
     setSpeed(2);
-    towerArch.setRange(10);
 
     tracking = false;
     _inRange = false;
@@ -56,7 +55,7 @@ const float Projectile::distance(Enemy& enemy, const TowerArcher& tower) {
     v1 = pow(enemy.getConstPosX() - tower.getConstPosX(),2);
     v2 = pow(enemy.getConstPosY() - tower.getConstPosY(),2);
 
-    return (sqrt(v1) - sqrt(v2));
+    return (sqrt(v1) + sqrt(v2));
 }
 
 

@@ -6,13 +6,13 @@
 
 class Ressources{
     private:
-    int gold;
+        int gold;
 
     public:
-    Ressources();
-    ~Ressources();
-    int getGold() const;
-    void setGold(int _gold);
+        Ressources();
+        ~Ressources();
+        int getGold() const;
+        void setGold(int _gold);
 };
 
 #endif

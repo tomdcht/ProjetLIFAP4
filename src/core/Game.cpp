@@ -23,6 +23,12 @@ const TowerArcher& Game::getConstTowerArcher() const { return towerArch;}
 
 const Projectile& Game::getConstProjectile() const { return arrow;}
 
+const Ressources& Game::getConstRessources() const { return ressources;}
+
+void Game::earnGold(){
+    ressources.setGold(ressources.getGold() + 10);
+}
+
 void Game::autoEvents() {
 
     enemy.enemies.front()->walk(map);

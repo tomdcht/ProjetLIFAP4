@@ -16,6 +16,7 @@
 #include "Map.h"
 #include "TowerArcher.h"
 #include "Projectile.h"
+#include "Ressources.h"
 
  /** \brief Classe gérant la physique du jeu */
 class Game{
@@ -30,6 +31,8 @@ class Game{
         TowerArcher towerArch;
         /** \brief Un projectile de type flèche*/
         Projectile arrow;
+        /** \brief Les ressources géré dans le  jeu */
+        Ressources ressources;
 
     public:
 
@@ -55,6 +58,11 @@ class Game{
         const Projectile& getConstProjectile () const;
         /** \brief Accesseur renvoyant un projectile de type const*/
         Projectile& getProjectile ();
+        /** \brief Accesseur renvoyant une classe ressources de type const*/
+        const Ressources& getConstRessources() const;
+
+
+        void earnGold();
 
         /** \brief Fonction gérant tous les évènements automatiques du jeu */
         void autoEvents();
