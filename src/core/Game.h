@@ -34,6 +34,12 @@ class Game{
         /** \brief Les ressources géré dans le  jeu */
         Ressources ressources;
 
+        int time = 0;
+        int n = 0;
+        int trace = 0;
+        int n_track = 0;
+        int minimum = 0;
+
     public:
 
         /** \brief Constructeur de la classe Game*/
@@ -64,8 +70,12 @@ class Game{
 
         void earnGold();
 
+        Enemy* getIt(std::list<Enemy*> _list, int _i);
+
         /** \brief Fonction gérant tous les évènements automatiques du jeu */
         void autoEvents();
+
+        void appear(); // innutile
 };
 
 #endif

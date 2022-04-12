@@ -46,8 +46,10 @@ class Projectile : public Entity{
         /** \brief Destructeur par défaut de la classe Projectile */
         ~Projectile();
 
+        Projectile(const TowerArcher& towerArch);
+
         /** \brief Accesseur renvoyant la valeur de la donnée membre damage */
-        int getProjectile();
+        int getProjectile(int damage);
         /** \brief Accesseur modifiant la valeur de la donnée membre damage
          *  \param damage Dommage causés par un ennemi
          */
@@ -72,11 +74,7 @@ class Projectile : public Entity{
         */
         const float directionY(const Enemy& enemy, const TowerArcher& tower);
 
-        /** \brief Fonction calculant la distance depuis une tour jusqu'à un ennemi
-         *  \param enemy Un ennemi
-         *  \param tower Une tour d'archer
-        */
-        const float distance(Enemy& enemy, const TowerArcher& tower);
+
 
         /** \brief Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi
          *  \param enemy Un ennemi
@@ -88,10 +86,19 @@ class Projectile : public Entity{
          *  \param enemy Un ennemi
          *  \param tower Une tour d'archer
         */
-        void inRange(const Enemy& enemy, const TowerArcher& towerArch);
+        void inRange(const Enemy& enemy, const TowerArcher& tower);
 
         /** \brief Fonction renvoyant la valeur de la donnée membre _inRange */
         bool isInRange() const;
+
+        /** \brief Fonction calculant la distance depuis une tour jusqu'à un ennemi
+         *  \param enemy Un ennemi
+         *  \param tower Une tour d'archer
+        */
+        const float distance(const float enemy_x, const float enemy_y, const TowerArcher& tower );
+
+        /** \brief Fonction renvoyant true si l'ennemi est touché par un projectil*/
+        const bool touch ();
 };
 
 

@@ -2,7 +2,6 @@
 
 #include "Game.h"
 #include <list>
-#include <iostream>
 using namespace std;
 
 Game::Game(){
@@ -27,31 +26,59 @@ const Ressources& Game::getConstRessources() const { return ressources;}
 
 void Game::earnGold(){
     ressources.setGold(ressources.getGold() + 10);
+
+}
+
+Enemy* Game::getIt(list<Enemy*> _list, int _i){
+    list<Enemy*>::iterator it = _list.begin();
+    for(int i=0; i<_i; i++){
+        ++it;
+    }
+    return *it;
 }
 
 void Game::autoEvents() {
 
-    enemy.enemies.front()->walk(map);
+    const int size = enemy.enemies.size();
+    int tracker = 0;
 
-    if(enemy.enemies.front()->getPosX() == map.getDimX() || enemy.enemies.front()->getIsDead() == true){
-        enemy.enemies.pop_front();
-        enemy.enemies.push_front(new Enemy);
+    for (n_track = minimum ; n_track < size ; n_track++) {
+
+        arrow.inRange(*getIt(enemy.enemies, n_track),towerArch);
+
+        if(arrow.isInRange() == true && getIt(enemy.enemies, n_track)-> isDead() == false ) {
+            arrow.track(*getIt(enemy.enemies, n_track),towerArch);
+            minimum = n_track;
+            tracker = n_track;
+            break;
+        }
+    }
+    //std::cout << "Game.cpp = "<< enemy.getSizeList()<< std::endl;
+
+    for (int n = 0; n < size ; n++) {
+        getIt(enemy.enemies, n)->walk(map);
     }
 
-    arrow.inRange(*enemy.enemies.front(),towerArch);
-
-    if(arrow.isInRange() == true && enemy.enemies.front()->isDead() == false ) {
-        arrow.track(*enemy.enemies.front(),towerArch);
+    if(getIt(enemy.enemies, tracker)->getPosX() == map.getDimX()-1 || getIt(enemy.enemies, n)-> getIsDead() == true){
+            enemy.enemies.remove(getIt(enemy.enemies, n));
+            minimum = minimum-1;
+            //enemy.enemies.pop_front();
     }
 
-    for(std::list<Enemy*>::iterator it = enemy.enemies.begin(); it != enemy.enemies.end(); ++it){
-        cout << "Enemy : " << *it << std::endl;
-        std::cout << "PosX : " << (int)enemy.enemies.front()->getConstPosX() << ",PosY : " << (int)enemy.enemies.front()->getConstPosY() << std::endl;
-        std::cout << "IsDead ? " << enemy.enemies.front()->isDead() << std::endl;
+    time++;
+    if(time == 8) {
+        enemy.enemies.push_back(new Enemy);
+        time = 0;
     }
 
 
-    // std::cout << "PosX : " << (int)enemy.enemies.front()->getConstPosX() << ",PosY : " << (int)enemy.enemies.front()->getConstPosY() << std::endl;
-    // std::cout << "IsDead ? " << enemy.enemies.front()->isDead() << std::endl;
-    // cout << enemy.enemies.front()->getPV() << std::endl;
+
+
+    //for(std::list<Enemy*>::iterator it = enemy.enemies.begin(); it != enemy.enemies.end(); ++it){
+    //    cout << "Enemy : " << *it << std::endl;
+    //    std::cout << "PosX : " << (int)enemy.enemies.front()->getConstPosX() << ",PosY : " << (int)enemy.enemies.front()->getConstPosY() << std::endl;
+    //    std::cout << "IsDead ? " << enemy.enemies.front()->isDead() << std::endl;
+    //}
+
+
 }

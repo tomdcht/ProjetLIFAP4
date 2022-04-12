@@ -8,15 +8,14 @@ Enemy::Enemy(){
 
     setPos(0.f, 11.f);
     setSpeed(1);
-    setPV(10);
+    setPV(15);
     setIsDead(false);
     isArrived = false;
     enemies.push_back(this);
+
 }
 
 Enemy::~Enemy(){
-    enemies.~list();
-    delete [] &enemies;
 }
 
 void Enemy::setIsArrived(bool _isArrived){
@@ -42,6 +41,11 @@ bool Enemy::isDead() {
 
     return getIsDead();
 }
+
+const int Enemy::getSizeList() {
+    return enemies.size();
+}
+
 
 void Enemy::regressionTest(Enemy& enemy){
     enemy.setPos(0.f, 11.f);
