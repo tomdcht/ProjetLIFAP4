@@ -1,4 +1,4 @@
 <map id="Projectile::setTime" name="Projectile::setTime">
-<area shape="rect" id="node1" title=" " alt="" coords="205,5,349,32"/>
-<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title=" " alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node1" title="Accesseur modifiant la valeur de la donnée membre time." alt="" coords="205,5,349,32"/>
+<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title="Constructeur par défaut de la classe Projectile." alt="" coords="5,5,157,32"/>
 </map>

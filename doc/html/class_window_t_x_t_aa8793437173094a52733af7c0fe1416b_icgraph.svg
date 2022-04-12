@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Fonction initialisant le mode d&#39;affichage et d&#39;écriture du terminal">
 <polygon fill="#bfbfbf" stroke="black" points="173,-0.5 173,-19.5 292,-19.5 292,-0.5 173,-0.5"/>
 <text text-anchor="middle" x="232.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::termInit</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3" target="_top" xlink:title="Constructeur de la classe WindowTXT.">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 137,-19.5 137,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="68.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::WindowTXT</text>
 </a>

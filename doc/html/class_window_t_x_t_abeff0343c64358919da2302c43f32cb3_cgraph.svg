@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Constructeur de la classe WindowTXT.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-19.5 0,-38.5 137,-38.5 137,-19.5 0,-19.5"/>
 <text text-anchor="middle" x="68.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::WindowTXT</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_window_t_x_t.html#a79659c7c121f98d9021e422a69d61333" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_window_t_x_t.html#a79659c7c121f98d9021e422a69d61333" target="_top" xlink:title="Fonction permettant de remplir le terminal d&#39;un même caractère.">
 <polygon fill="none" stroke="black" points="180.5,-38.5 180.5,-57.5 284.5,-57.5 284.5,-38.5 180.5,-38.5"/>
 <text text-anchor="middle" x="232.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::clear</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="class_window_t_x_t.html#aa8793437173094a52733af7c0fe1416b" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="class_window_t_x_t.html#aa8793437173094a52733af7c0fe1416b" target="_top" xlink:title="Fonction initialisant le mode d&#39;affichage et d&#39;écriture du terminal">
 <polygon fill="none" stroke="black" points="173,-0.5 173,-19.5 292,-19.5 292,-0.5 173,-0.5"/>
 <text text-anchor="middle" x="232.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::termInit</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_window_t_x_t.html#a0243ba21b4e67a20c74b94c0192e3e02" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="class_window_t_x_t.html#a0243ba21b4e67a20c74b94c0192e3e02" target="_top" xlink:title="Fonction permettant de remplir le tableau de caractère de la fenêtre.">
 <polygon fill="none" stroke="black" points="328,-38.5 328,-57.5 430,-57.5 430,-38.5 328,-38.5"/>
 <text text-anchor="middle" x="379" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::print</text>
 </a>

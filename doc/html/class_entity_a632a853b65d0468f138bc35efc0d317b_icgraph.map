@@ -1,12 +1,11 @@
 <map id="Entity::getConstPosX" name="Entity::getConstPosX">
-<area shape="rect" id="node1" title=" " alt="" coords="815,107,972,133"/>
-<area shape="rect" id="node2" href="$class_projectile.html#ae5645549de0ef4e2defdb3edd9fc57f0" title=" " alt="" coords="609,5,767,32"/>
-<area shape="rect" id="node3" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title=" " alt="" coords="427,56,551,83"/>
-<area shape="rect" id="node7" href="$class_projectile.html#aa878bcc1843c911447425d7618b8f9de" title=" " alt="" coords="615,107,761,133"/>
-<area shape="rect" id="node9" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title=" " alt="" coords="612,157,764,184"/>
-<area shape="rect" id="node10" href="$_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" title=" " alt="" coords="261,183,335,209"/>
-<area shape="rect" id="node4" href="$class_game.html#acd26cbdfb8fa7cec1832711e618fec45" title=" " alt="" coords="227,107,369,133"/>
-<area shape="rect" id="node5" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title=" " alt="" coords="108,157,179,184"/>
-<area shape="rect" id="node6" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,157,60,184"/>
-<area shape="rect" id="node8" href="$class_projectile.html#a62f3ecf85f4a26de65c5e0e333181ed1" title=" " alt="" coords="417,107,561,133"/>
+<area shape="rect" id="node1" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="505,107,663,133"/>
+<area shape="rect" id="node2" href="$class_projectile.html#ae5645549de0ef4e2defdb3edd9fc57f0" title="Fonction calculant la direction en x depuis une tour vers un ennemi." alt="" coords="300,5,457,32"/>
+<area shape="rect" id="node3" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="118,31,242,57"/>
+<area shape="rect" id="node4" href="$class_projectile.html#af518d9b26f04aa7e5a8a13fc6060a98a" title="Fonction calculant la distance depuis une tour jusqu&#39;à un ennemi." alt="" coords="305,107,452,133"/>
+<area shape="rect" id="node6" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title="Constructeur par défaut de la classe Projectile." alt="" coords="303,157,455,184"/>
+<area shape="rect" id="node7" href="$_game_t_x_t_8h.html#a79f96f754efd066587bec9a3d0d0add7" title="Fonction dans lequel l&#39;affichage se fait." alt="" coords="341,208,416,235"/>
+<area shape="rect" id="node5" href="$class_projectile.html#a62f3ecf85f4a26de65c5e0e333181ed1" title="Fonction modifiant la donnée membre inRange en fonction de la distance entre un ennemi et une tour." alt="" coords="108,107,252,133"/>
+<area shape="rect" id="node8" href="$_game_t_x_t_8h.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title="Boucle pour l&#39;affichage et la gestion des évènements." alt="" coords="145,208,215,235"/>
+<area shape="rect" id="node9" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,208,60,235"/>
 </map>

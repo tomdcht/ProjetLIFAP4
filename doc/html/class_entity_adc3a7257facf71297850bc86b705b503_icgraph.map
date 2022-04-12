@@ -1,7 +1,5 @@
 <map id="Entity::getPosY" name="Entity::getPosY">
-<area shape="rect" id="node1" title=" " alt="" coords="589,5,708,32"/>
-<area shape="rect" id="node2" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title=" " alt="" coords="417,5,541,32"/>
-<area shape="rect" id="node3" href="$class_game.html#acd26cbdfb8fa7cec1832711e618fec45" title=" " alt="" coords="227,5,369,32"/>
-<area shape="rect" id="node4" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title=" " alt="" coords="108,5,179,32"/>
-<area shape="rect" id="node5" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node1" title="Accesseur renvoyant la position en y d&#39;une entité" alt="" coords="221,31,340,57"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a012b23beffeee74ef1422c2d7c28bb37" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node3" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="27,56,151,83"/>
 </map>

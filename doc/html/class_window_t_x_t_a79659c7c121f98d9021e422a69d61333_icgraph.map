@@ -1,7 +1,7 @@
 <map id="WindowTXT::clear" name="WindowTXT::clear">
-<area shape="rect" id="node1" title=" " alt="" coords="457,31,596,57"/>
-<area shape="rect" id="node2" href="$_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" title=" " alt="" coords="281,5,355,32"/>
-<area shape="rect" id="node5" href="$class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3" title=" " alt="" coords="227,56,409,83"/>
-<area shape="rect" id="node3" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title=" " alt="" coords="108,5,179,32"/>
+<area shape="rect" id="node1" title="Fonction permettant de remplir le terminal d&#39;un même caractère." alt="" coords="457,31,596,57"/>
+<area shape="rect" id="node2" href="$_game_t_x_t_8h.html#a79f96f754efd066587bec9a3d0d0add7" title="Fonction dans lequel l&#39;affichage se fait." alt="" coords="281,5,355,32"/>
+<area shape="rect" id="node5" href="$class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3" title="Constructeur de la classe WindowTXT." alt="" coords="227,56,409,83"/>
+<area shape="rect" id="node3" href="$_game_t_x_t_8h.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title="Boucle pour l&#39;affichage et la gestion des évènements." alt="" coords="108,5,179,32"/>
 <area shape="rect" id="node4" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
 </map>

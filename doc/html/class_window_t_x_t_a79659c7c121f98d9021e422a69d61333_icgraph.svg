@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Fonction permettant de remplir le terminal d&#39;un même caractère.">
 <polygon fill="#bfbfbf" stroke="black" points="339,-19.5 339,-38.5 443,-38.5 443,-19.5 339,-19.5"/>
 <text text-anchor="middle" x="391" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::clear</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="_game_t_x_t_8h.html#a79f96f754efd066587bec9a3d0d0add7" target="_top" xlink:title="Fonction dans lequel l&#39;affichage se fait.">
 <polygon fill="none" stroke="black" points="206.5,-38.5 206.5,-57.5 262.5,-57.5 262.5,-38.5 206.5,-38.5"/>
 <text text-anchor="middle" x="234.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">txtShow</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3" target="_top" xlink:title="Constructeur de la classe WindowTXT.">
 <polygon fill="none" stroke="black" points="166,-0.5 166,-19.5 303,-19.5 303,-0.5 166,-0.5"/>
 <text text-anchor="middle" x="234.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">WindowTXT::WindowTXT</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="_game_t_x_t_8h.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" target="_top" xlink:title="Boucle pour l&#39;affichage et la gestion des évènements.">
 <polygon fill="none" stroke="black" points="77,-38.5 77,-57.5 130,-57.5 130,-38.5 77,-38.5"/>
 <text text-anchor="middle" x="103.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">txtLoop</text>
 </a>

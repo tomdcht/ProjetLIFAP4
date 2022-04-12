@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="class_entity.html" target="_top" xlink:title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit...">
+<g id="a_node1"><a xlink:href="class_entity.html" target="_top" xlink:title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,...">
 <polygon fill="none" stroke="black" points="0,-114.5 0,-133.5 45,-133.5 45,-114.5 0,-114.5"/>
 <text text-anchor="middle" x="22.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="class_castle.html" target="_top" xlink:title="classe representant le chateau La classe gere les fonctions du chateau">
+<g id="a_node2"><a xlink:href="class_castle.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="96,-228.5 96,-247.5 143,-247.5 143,-228.5 96,-228.5"/>
 <text text-anchor="middle" x="119.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">Castle</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="class_enemy.html" target="_top" xlink:title="classe representant l&#39;ennemie La classe gere les fonctions de l&#39;ennemie">
+<g id="a_node3"><a xlink:href="class_enemy.html" target="_top" xlink:title="Classe gérant les ennemis /!\ Hérite de la classe Entity /!.">
 <polygon fill="none" stroke="black" points="94.5,-190.5 94.5,-209.5 144.5,-209.5 144.5,-190.5 94.5,-190.5"/>
 <text text-anchor="middle" x="119.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">Enemy</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="class_projectile.html" target="_top" xlink:title="class representant les projectiles">
+<g id="a_node4"><a xlink:href="class_projectile.html" target="_top" xlink:title="Classe gérant les projectiles /!\ Hérite de la classe Entity /!.">
 <polygon fill="none" stroke="black" points="88.5,-152.5 88.5,-171.5 150.5,-171.5 150.5,-152.5 88.5,-152.5"/>
 <text text-anchor="middle" x="119.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Projectile</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node5 -->
 <g id="node6" class="node">
 <title>Node5</title>
-<g id="a_node6"><a xlink:href="class_tower_archer.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="class_tower_archer.html" target="_top" xlink:title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!.">
 <polygon fill="none" stroke="black" points="81,-76.5 81,-95.5 158,-95.5 158,-76.5 81,-76.5"/>
 <text text-anchor="middle" x="119.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">TowerArcher</text>
 </a>

@@ -1,5 +1,6 @@
 <map id="Entity::setSpeed" name="Entity::setSpeed">
-<area shape="rect" id="node1" title=" " alt="" coords="244,31,371,57"/>
-<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title=" " alt="" coords="25,5,177,32"/>
-<area shape="rect" id="node3" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title=" " alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node1" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="244,56,371,83"/>
+<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title="Constructeur par défaut de la classe Projectile." alt="" coords="25,5,177,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#a012b23beffeee74ef1422c2d7c28bb37" title=" " alt="" coords="17,56,185,83"/>
+<area shape="rect" id="node4" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,107,196,133"/>
 </map>

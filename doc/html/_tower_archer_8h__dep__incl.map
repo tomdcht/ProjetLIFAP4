@@ -1,11 +1,11 @@
-<map id="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/TowerArcher.h" name="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/TowerArcher.h">
-<area shape="rect" id="node1" title=" " alt="" coords="308,5,505,61"/>
-<area shape="rect" id="node2" href="$_game_8h.html" title=" " alt="" coords="116,213,313,269"/>
-<area shape="rect" id="node7" href="$_projectile_8cpp.html" title=" " alt="" coords="363,213,560,269"/>
-<area shape="rect" id="node8" href="$_projectile_8h.html" title=" " alt="" coords="240,109,437,165"/>
-<area shape="rect" id="node9" href="$_tower_archer_8cpp.html" title=" " alt="" coords="512,109,709,165"/>
-<area shape="rect" id="node3" href="$_game_8cpp.html" title=" " alt="" coords="5,317,203,373"/>
-<area shape="rect" id="node4" href="$_game_t_x_t_8h.html" title=" " alt="" coords="227,317,424,373"/>
-<area shape="rect" id="node5" href="$_game_t_x_t_8cpp.html" title=" " alt="" coords="116,421,313,477"/>
-<area shape="rect" id="node6" href="$main_t_x_t_8cpp.html" title=" " alt="" coords="337,421,535,477"/>
+<map id="src/core/TowerArcher.h" name="src/core/TowerArcher.h">
+<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe TowerArcher." alt="" coords="217,5,385,32"/>
+<area shape="rect" id="node2" href="$_game_8h.html" title="Définition des donées membres et des fonctions membres de la classe Game." alt="" coords="95,155,223,181"/>
+<area shape="rect" id="node7" href="$_projectile_8h.html" title="Définition des donées membres et des fonctions membres de la classe Projectile." alt="" coords="169,80,320,107"/>
+<area shape="rect" id="node8" href="$_projectile_8cpp.html" title=" " alt="" coords="261,155,426,181"/>
+<area shape="rect" id="node9" href="$_tower_archer_8cpp.html" title=" " alt="" coords="396,80,579,107"/>
+<area shape="rect" id="node3" href="$_game_8cpp.html" title=" " alt="" coords="5,229,148,256"/>
+<area shape="rect" id="node4" href="$_game_t_x_t_8h.html" title="Fichier s&#39;occupant de l&#39;affichage du jeu en mode texte." alt="" coords="172,229,315,256"/>
+<area shape="rect" id="node5" href="$_game_t_x_t_8cpp.html" title=" " alt="" coords="75,304,233,331"/>
+<area shape="rect" id="node6" href="$main_t_x_t_8cpp.html" title=" " alt="" coords="257,304,408,331"/>
 </map>

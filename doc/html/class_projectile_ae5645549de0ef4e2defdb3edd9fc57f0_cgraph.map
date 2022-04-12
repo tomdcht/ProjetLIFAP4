@@ -1,5 +1,5 @@
 <map id="Projectile::directionX" name="Projectile::directionX">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,163,57"/>
-<area shape="rect" id="node2" href="$class_entity.html#a758caa46a2a259ffc63d09616def9423" title="Fonction retournant la position en x de l&#39;entité en const." alt="" coords="215,5,372,32"/>
-<area shape="rect" id="node3" href="$class_entity.html#a8e30cf9734be5d2037517b59d11ff412" title="Fonction retournant la vitesse de l&#39;entité en const." alt="" coords="211,56,376,83"/>
+<area shape="rect" id="node1" title="Fonction calculant la direction en x depuis une tour vers un ennemi." alt="" coords="5,31,163,57"/>
+<area shape="rect" id="node2" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="215,5,372,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a285dfcfbbc0ca74d0637c15f427eb6d3" title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const." alt="" coords="211,56,376,83"/>
 </map>

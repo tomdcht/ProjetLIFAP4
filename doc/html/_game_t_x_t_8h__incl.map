@@ -1,13 +1,13 @@
-<map id="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/txt/GameTXT.h" name="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/txt/GameTXT.h">
-<area shape="rect" id="node1" title=" " alt="" coords="39,5,237,61"/>
-<area shape="rect" id="node2" href="$window_t_x_t_8h.html" title=" " alt="" coords="16,109,124,136"/>
-<area shape="rect" id="node3" href="$_game_8h.html" title=" " alt="" coords="149,109,266,136"/>
-<area shape="rect" id="node4" href="$_enemy_8h.html" title=" " alt="" coords="126,259,203,285"/>
-<area shape="rect" id="node9" href="$_map_8h.html" title=" " alt="" coords="5,333,68,360"/>
-<area shape="rect" id="node10" href="$_tower_archer_8h.html" title=" " alt="" coords="335,259,448,285"/>
-<area shape="rect" id="node11" href="$_projectile_8h.html" title=" " alt="" coords="203,184,297,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="243,483,323,509"/>
-<area shape="rect" id="node6" title=" " alt="" coords="143,333,186,360"/>
-<area shape="rect" id="node7" href="$_entity_8h.html" title=" " alt="" coords="211,333,281,360"/>
-<area shape="rect" id="node8" href="$_vec2_8h.html" title=" " alt="" coords="215,408,280,435"/>
+<map id="src/txt/GameTXT.h" name="src/txt/GameTXT.h">
+<area shape="rect" id="node1" title="Fichier s&#39;occupant de l&#39;affichage du jeu en mode texte." alt="" coords="159,5,301,32"/>
+<area shape="rect" id="node2" href="$window_t_x_t_8h.html" title="Définitions de la classe WindowTXT." alt="" coords="108,80,216,107"/>
+<area shape="rect" id="node3" href="$_game_8h.html" title="Définition des donées membres et des fonctions membres de la classe Game." alt="" coords="241,80,358,107"/>
+<area shape="rect" id="node4" href="$_enemy_8h.html" title="Définition des donées membres et des fonctions membres de la classe Enemy." alt="" coords="377,229,454,256"/>
+<area shape="rect" id="node8" href="$_map_8h.html" title="Définition des donées membres et des fonctions membres de la classe Map." alt="" coords="460,304,523,331"/>
+<area shape="rect" id="node9" href="$_tower_archer_8h.html" title="Définition des donées membres et des fonctions membres de la classe TowerArcher." alt="" coords="137,229,251,256"/>
+<area shape="rect" id="node10" href="$_projectile_8h.html" title="Définition des donées membres et des fonctions membres de la classe Projectile." alt="" coords="252,155,347,181"/>
+<area shape="rect" id="node11" href="$_ressources_8h.html" title=" " alt="" coords="5,229,113,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="281,304,361,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="393,304,435,331"/>
+<area shape="rect" id="node7" href="$_entity_8h.html" title="Définition des donées membres et des fonctions membres de la classe Entity." alt="" coords="168,304,239,331"/>
 </map>

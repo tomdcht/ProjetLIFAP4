@@ -50,5 +50,9 @@ obj/App.o: src/SDL2/App.cpp src/SDL2/AppSDL.h
 obj/mainTXT.o: src/txt/mainTXT.cpp src/txt/GameTXT.cpp
 	g++ -c src/txt/mainTXT.cpp -o obj/mainTXT.o
 
+docu: doc/lifapower.doxy
+	doxygen doc/lifapower.doxy
+	firefox doc/html/index.html
+
 clean:
 	rm -r $(ODIR)/*

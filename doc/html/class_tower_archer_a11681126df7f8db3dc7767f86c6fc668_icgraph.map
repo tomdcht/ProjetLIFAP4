@@ -1,7 +1,4 @@
 <map id="TowerArcher::getRange" name="TowerArcher::getRange">
-<area shape="rect" id="node1" title=" " alt="" coords="609,5,781,32"/>
-<area shape="rect" id="node2" href="$class_projectile.html#a62f3ecf85f4a26de65c5e0e333181ed1" title=" " alt="" coords="417,5,561,32"/>
-<area shape="rect" id="node3" href="$class_game.html#acd26cbdfb8fa7cec1832711e618fec45" title=" " alt="" coords="227,5,369,32"/>
-<area shape="rect" id="node4" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title=" " alt="" coords="108,5,179,32"/>
-<area shape="rect" id="node5" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" id="node1" title="Accesseur renvoyant la valeur de la donnée membre range." alt="" coords="197,5,369,32"/>
+<area shape="rect" id="node2" href="$class_projectile.html#a62f3ecf85f4a26de65c5e0e333181ed1" title="Fonction modifiant la donnée membre inRange en fonction de la distance entre un ennemi et une tour." alt="" coords="5,5,149,32"/>
 </map>

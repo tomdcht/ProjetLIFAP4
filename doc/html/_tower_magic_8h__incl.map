@@ -1,6 +1,5 @@
-<map id="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/TowerMagic.h" name="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/TowerMagic.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,203,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="63,259,143,285"/>
-<area shape="rect" id="node3" href="$_entity_8h.html" title=" " alt="" coords="106,109,177,136"/>
-<area shape="rect" id="node4" href="$_vec2_8h.html" title=" " alt="" coords="107,184,173,211"/>
+<map id="src/core/TowerMagic.h" name="src/core/TowerMagic.h">
+<area shape="rect" id="node1" title=" " alt="" coords="11,5,178,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node3" href="$_entity_8h.html" title="Définition des donées membres et des fonctions membres de la classe Entity." alt="" coords="110,80,181,107"/>
 </map>

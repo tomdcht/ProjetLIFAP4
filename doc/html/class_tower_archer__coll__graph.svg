@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-112.5 104,-112.5 104,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="52" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">TowerArcher</text>
 <polyline fill="none" stroke="black" points="0,-93.5 104,-93.5 "/>
@@ -29,7 +29,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_entity.html" target="_top" xlink:title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit...">
+<g id="a_node2"><a xlink:href="class_entity.html" target="_top" xlink:title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,...">
 <polygon fill="none" stroke="black" points="0.5,-149.5 0.5,-316.5 103.5,-316.5 103.5,-149.5 0.5,-149.5"/>
 <text text-anchor="middle" x="52" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity</text>
 <polyline fill="none" stroke="black" points="0.5,-297.5 103.5,-297.5 "/>
@@ -45,7 +45,7 @@
 <text text-anchor="start" x="8.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPosX()</text>
 <text text-anchor="start" x="8.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPosY()</text>
 <text text-anchor="start" x="8.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setSpeed()</text>
-<text text-anchor="start" x="8.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
+<text text-anchor="start" x="8.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
 </a>
 </g>
 </g>

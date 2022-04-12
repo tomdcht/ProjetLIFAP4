@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Constructeur par défaut de la classe TowerArcher.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-19.5 0,-38.5 143,-38.5 143,-19.5 0,-19.5"/>
 <text text-anchor="middle" x="71.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">TowerArcher::TowerArcher</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_entity.html#abdd4f6821f64524d42bdf29baa7375b5" target="_top" xlink:title="Procédure définissant la position en x et en y.">
+<g id="a_node2"><a xlink:href="class_entity.html#a5b37027cb419da8f2d08aae7b6da2938" target="_top" xlink:title="Accesseur modifiant la position en x et en y d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="185,-38.5 185,-57.5 268,-57.5 268,-38.5 185,-38.5"/>
 <text text-anchor="middle" x="226.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::setPos</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_entity.html#a5cd41e16d7e711c662ca8156620f554e" target="_top" xlink:title="Procédure définissant la vitesse de l&#39;entité">
+<g id="a_node3"><a xlink:href="class_entity.html#adc48ea3a922e2705958bcb1f3066011b" target="_top" xlink:title="Accesseur modifiant la vitesse d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="179,-0.5 179,-19.5 274,-19.5 274,-0.5 179,-0.5"/>
 <text text-anchor="middle" x="226.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::setSpeed</text>
 </a>

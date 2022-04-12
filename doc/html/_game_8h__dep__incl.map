@@ -1,7 +1,7 @@
-<map id="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/Game.h" name="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/Game.h">
-<area shape="rect" id="node1" title=" " alt="" coords="116,5,313,61"/>
-<area shape="rect" id="node2" href="$_game_8cpp.html" title=" " alt="" coords="5,109,203,165"/>
-<area shape="rect" id="node3" href="$_game_t_x_t_8h.html" title=" " alt="" coords="227,109,424,165"/>
-<area shape="rect" id="node4" href="$_game_t_x_t_8cpp.html" title=" " alt="" coords="116,213,313,269"/>
-<area shape="rect" id="node5" href="$main_t_x_t_8cpp.html" title=" " alt="" coords="337,213,535,269"/>
+<map id="src/core/Game.h" name="src/core/Game.h">
+<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe Game." alt="" coords="95,5,223,32"/>
+<area shape="rect" id="node2" href="$_game_8cpp.html" title=" " alt="" coords="5,80,148,107"/>
+<area shape="rect" id="node3" href="$_game_t_x_t_8h.html" title="Fichier s&#39;occupant de l&#39;affichage du jeu en mode texte." alt="" coords="172,80,315,107"/>
+<area shape="rect" id="node4" href="$_game_t_x_t_8cpp.html" title=" " alt="" coords="75,155,233,181"/>
+<area shape="rect" id="node5" href="$main_t_x_t_8cpp.html" title=" " alt="" coords="257,155,408,181"/>
 </map>

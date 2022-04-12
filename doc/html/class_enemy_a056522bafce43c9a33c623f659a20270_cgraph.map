@@ -1,5 +1,4 @@
 <map id="Enemy::walk" name="Enemy::walk">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,111,57"/>
-<area shape="rect" id="node2" href="$class_map.html#a421954a09241f064e551c84f6f044744" title="Renvoie la largeur du terrain." alt="" coords="178,5,293,32"/>
-<area shape="rect" id="node3" href="$class_map.html#ac39389f542d1804f9f9891ee6867a103" title=" " alt="" coords="159,56,312,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node2" href="$class_map.html#ac39389f542d1804f9f9891ee6867a103" title="Fonction vérifiant si le caractère à la case de coordonnées (x,y) est valide." alt="" coords="159,5,312,32"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="Projectile" name="Projectile">
-<area shape="rect" id="node1" title="class representant les projectiles" alt="" coords="9,277,139,545"/>
-<area shape="rect" id="node2" href="$class_entity.html" title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit..." alt="" coords="5,5,143,229"/>
+<area shape="rect" id="node1" title="Classe gérant les projectiles /!\ Hérite de la classe Entity /!." alt="" coords="9,277,139,516"/>
+<area shape="rect" id="node2" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="5,5,143,229"/>
 </map>

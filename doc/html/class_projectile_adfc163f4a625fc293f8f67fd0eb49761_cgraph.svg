@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-209.5 0,-228.5 93,-228.5 93,-209.5 0,-209.5"/>
 <text text-anchor="middle" x="46.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">Projectile::track</text>
 </a>
@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_projectile.html#ae5645549de0ef4e2defdb3edd9fc57f0" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="class_projectile.html#ae5645549de0ef4e2defdb3edd9fc57f0" target="_top" xlink:title="Fonction calculant la direction en x depuis une tour vers un ennemi.">
 <polygon fill="none" stroke="black" points="129,-380.5 129,-399.5 247,-399.5 247,-380.5 129,-380.5"/>
 <text text-anchor="middle" x="188" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">Projectile::directionX</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="class_entity.html#a758caa46a2a259ffc63d09616def9423" target="_top" xlink:title="Fonction retournant la position en x de l&#39;entité en const.">
+<g id="a_node3"><a xlink:href="class_entity.html#a632a853b65d0468f138bc35efc0d317b" target="_top" xlink:title="Accesseur renvoyant la position en x d&#39;un ennemi de type const.">
 <polygon fill="none" stroke="black" points="286,-399.5 286,-418.5 404,-418.5 404,-399.5 286,-399.5"/>
 <text text-anchor="middle" x="345" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::getConstPosX</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="class_entity.html#a8e30cf9734be5d2037517b59d11ff412" target="_top" xlink:title="Fonction retournant la vitesse de l&#39;entité en const.">
+<g id="a_node4"><a xlink:href="class_entity.html#a285dfcfbbc0ca74d0637c15f427eb6d3" target="_top" xlink:title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const.">
 <polygon fill="none" stroke="black" points="283,-342.5 283,-361.5 407,-361.5 407,-342.5 283,-342.5"/>
 <text text-anchor="middle" x="345" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::getConstSpeed</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="class_projectile.html#a4fed5dda0d58cd0721bf8a20a005c594" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="class_projectile.html#a4fed5dda0d58cd0721bf8a20a005c594" target="_top" xlink:title="Fonction calculant la direction en y depuis une tour vers un ennemi.">
 <polygon fill="none" stroke="black" points="129.5,-304.5 129.5,-323.5 246.5,-323.5 246.5,-304.5 129.5,-304.5"/>
 <text text-anchor="middle" x="188" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">Projectile::directionY</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="class_entity.html#a44db7a4bd777f13d5316ca9151dffad7" target="_top" xlink:title="Fonction retournant la position en y de l&#39;entité en const.">
+<g id="a_node6"><a xlink:href="class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" target="_top" xlink:title="Accesseur renvoyant la position en y d&#39;un ennemi de type const.">
 <polygon fill="none" stroke="black" points="286.5,-285.5 286.5,-304.5 403.5,-304.5 403.5,-285.5 286.5,-285.5"/>
 <text text-anchor="middle" x="345" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::getConstPosY</text>
 </a>
@@ -95,7 +95,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="class_entity.html#aa888515055b65c5ffa3c66f667c3a5c3" target="_top" xlink:title="Fonction retournant la position en x de l&#39;entité">
+<g id="a_node7"><a xlink:href="class_entity.html#abc07607e9d85670694097ac4b6b6dd27" target="_top" xlink:title="Accesseur renvoyant la position en x d&#39;une entité">
 <polygon fill="none" stroke="black" points="143,-228.5 143,-247.5 233,-247.5 233,-228.5 143,-228.5"/>
 <text text-anchor="middle" x="188" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::getPosX</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="class_entity.html#afb4d00e5b5b27d6c69b00f8a5f6ed436" target="_top" xlink:title="Fonction retournant la position en y de l&#39;entité">
+<g id="a_node8"><a xlink:href="class_entity.html#adc3a7257facf71297850bc86b705b503" target="_top" xlink:title="Accesseur renvoyant la position en y d&#39;une entité">
 <polygon fill="none" stroke="black" points="143.5,-190.5 143.5,-209.5 232.5,-209.5 232.5,-190.5 143.5,-190.5"/>
 <text text-anchor="middle" x="188" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::getPosY</text>
 </a>
@@ -125,7 +125,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="class_entity.html#adbd6cd7e606bffb2fc7b061ddd13ea14" target="_top" xlink:title="Fonction retournant les PV de l&#39;entité en const.">
+<g id="a_node9"><a xlink:href="class_entity.html#a334b52f5de8bbd7fb81f8bbeec08992b" target="_top" xlink:title="Accesseur renvoyant les points de vie d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="148.5,-152.5 148.5,-171.5 227.5,-171.5 227.5,-152.5 148.5,-152.5"/>
 <text text-anchor="middle" x="188" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::getPV</text>
 </a>
@@ -140,7 +140,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="class_entity.html#abdd4f6821f64524d42bdf29baa7375b5" target="_top" xlink:title="Procédure définissant la position en x et en y.">
+<g id="a_node10"><a xlink:href="class_entity.html#a5b37027cb419da8f2d08aae7b6da2938" target="_top" xlink:title="Accesseur modifiant la position en x et en y d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="146.5,-114.5 146.5,-133.5 229.5,-133.5 229.5,-114.5 146.5,-114.5"/>
 <text text-anchor="middle" x="188" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::setPos</text>
 </a>
@@ -155,7 +155,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="class_entity.html#a4333a5eb508029a6ab2a34c072b3c50f" target="_top" xlink:title="Procédure définissant la position en x.">
+<g id="a_node11"><a xlink:href="class_entity.html#a36acb34214fabf4355ea9068543c2435" target="_top" xlink:title="Accesseur modifiant la position en x d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="143.5,-76.5 143.5,-95.5 232.5,-95.5 232.5,-76.5 143.5,-76.5"/>
 <text text-anchor="middle" x="188" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::setPosX</text>
 </a>
@@ -170,7 +170,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="class_entity.html#a818d626382f59946d0e0ca8111df6657" target="_top" xlink:title="Procédure définissant la position en y.">
+<g id="a_node12"><a xlink:href="class_entity.html#a2043f8c1dbb431cd210ec30f0ae8feeb" target="_top" xlink:title="Accesseur modifiant la position en y d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="143.5,-38.5 143.5,-57.5 232.5,-57.5 232.5,-38.5 143.5,-38.5"/>
 <text text-anchor="middle" x="188" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::setPosY</text>
 </a>
@@ -185,7 +185,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="class_entity.html#af43254cad39f33e56cf48d74e95e4cef" target="_top" xlink:title="Procedure définissant les PV de l&#39;entité">
+<g id="a_node13"><a xlink:href="class_entity.html#a2f1d8b793ec68f84a0adeb938ad57ee5" target="_top" xlink:title="Accesseur modifiant les points de vie d&#39;un ennemi.">
 <polygon fill="none" stroke="black" points="149,-0.5 149,-19.5 227,-19.5 227,-0.5 149,-0.5"/>
 <text text-anchor="middle" x="188" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity::setPV</text>
 </a>

@@ -27,7 +27,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_entity.html" target="_top" xlink:title="class representant l&#39;ensemble des entités La classe gere les toutes les fonctions commmunes des entit...">
+<g id="a_node2"><a xlink:href="class_entity.html" target="_top" xlink:title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,...">
 <polygon fill="none" stroke="black" points="0,-127.5 0,-294.5 103,-294.5 103,-127.5 0,-127.5"/>
 <text text-anchor="middle" x="51.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">Entity</text>
 <polyline fill="none" stroke="black" points="0,-275.5 103,-275.5 "/>
@@ -43,7 +43,7 @@
 <text text-anchor="start" x="8" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPosX()</text>
 <text text-anchor="start" x="8" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPosY()</text>
 <text text-anchor="start" x="8" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setSpeed()</text>
-<text text-anchor="start" x="8" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
+<text text-anchor="start" x="8" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
 </a>
 </g>
 </g>

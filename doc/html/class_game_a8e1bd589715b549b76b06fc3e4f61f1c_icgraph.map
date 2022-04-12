@@ -1,6 +1,6 @@
 <map id="Game::getConstTowerArcher" name="Game::getConstTowerArcher">
-<area shape="rect" id="node1" title=" " alt="" coords="349,5,556,32"/>
-<area shape="rect" id="node2" href="$_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" title=" " alt="" coords="227,5,301,32"/>
-<area shape="rect" id="node3" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title=" " alt="" coords="108,5,179,32"/>
+<area shape="rect" id="node1" title="Accesseur renvoyant une tour de type const." alt="" coords="349,5,556,32"/>
+<area shape="rect" id="node2" href="$_game_t_x_t_8h.html#a79f96f754efd066587bec9a3d0d0add7" title="Fonction dans lequel l&#39;affichage se fait." alt="" coords="227,5,301,32"/>
+<area shape="rect" id="node3" href="$_game_t_x_t_8h.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title="Boucle pour l&#39;affichage et la gestion des évènements." alt="" coords="108,5,179,32"/>
 <area shape="rect" id="node4" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
 </map>
