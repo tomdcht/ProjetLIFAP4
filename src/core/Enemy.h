@@ -17,6 +17,7 @@
 #include "Entity.h"
 #include "Map.h"
 
+
 /** \brief Classe gérant les ennemis  /!\ Hérite de la classe Entity /!\ */
 class Enemy : public Entity{
     private:
@@ -41,7 +42,7 @@ class Enemy : public Entity{
         /** \fn Fonction permettant de faire avancer un ennemi
          *  \param map La map courante
         */
-        void walk(const Map& map);
+        void walk(/*const Map& map*/);
 
         /** \fn Fonction vérifiant si les PV d'un ennemi sont à 0
          *  \return La donnée membre privée 'isDead'

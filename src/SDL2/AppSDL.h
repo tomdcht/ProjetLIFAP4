@@ -21,7 +21,7 @@
 #include "../core/Entity.h"
 #include "../core/Projectile.h"
 #include "../core/Tower.h"
-#include "../core/Vec2.h"
+#include "../core/Game.h"
 
 // #include <GLFW/glfw3.h>
 // #include "../lib/imgui/imgui_impl_sdl.h"
@@ -38,6 +38,18 @@
 /** \brief Constante de la hauteur de la fenêtre SDL */
 #define HEIGHT_WINDOW 1080
 
+#define HEIGHT_ENEMY 70
+
+#define WIDTH_ENEMY 70
+
+#define HEIGHT_TOWER 300
+
+#define WIDTH_TOWER 300
+
+#define HEIGHT_PROJECTILE 20
+
+#define WIDTH_PROJECTILE 20
+
 /**
  * \class Jeu
  * \brief Class Jeu
@@ -45,13 +57,21 @@
  * Déclaration des données membres et des fonctions de la class Jeu
  */
 
-class AppSDL {
+class AppSDL{
     private:
 
         /** \brief Fonctions gérant l'affichage avec SDL */
         void SDLAffInit();
         void SDLAffLoop();
         void SDLAffQuit();
+        void SDLAff(); //Nom provisoire
+
+        Game game;
+        ImageSDL background; //!\ Déclarer en Map et faire l'affichage de la map en ajoutant un path à la map /!\*/
+        Enemy enemy;
+        TowerArcher towerArch;
+        Projectile arrow;
+
 
     public:
 
@@ -59,13 +79,13 @@ class AppSDL {
         SDL_Window * window;
 
         /** \param Paramètres permettant la création d'un rendu SDL*/
-        SDL_Renderer * renderer;
+        SDL_Renderer *renderer;
 
-        /** \param Paramètres permettant la création d'une surface SDL*/
-        SDL_Surface *picture;
+        // /** \param Paramètres permettant la création d'une surface SDL*/
+        // SDL_Surface *picture;
 
-        /** \param Paramètres permettant la création d'une texture SDL*/
-        SDL_Texture *texture;
+        // /** \param Paramètres permettant la création d'une texture SDL*/
+        // SDL_Texture *texture;
 
 
         /** \brief Constructeur par défaut de la classe jeu*/

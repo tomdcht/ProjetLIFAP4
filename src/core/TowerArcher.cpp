@@ -5,10 +5,11 @@
 
 
 TowerArcher::TowerArcher(){
-    setPos(15.f,7.f);
+    setPos(670.f,480.f);
     setSpeed(2);
     range=10;
     price=100;
+    path = "data/Tower/PNG/ArcherTower/Lvl1/01.png";
 }
 
 TowerArcher::~TowerArcher(){

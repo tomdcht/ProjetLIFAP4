@@ -6,13 +6,13 @@
 * \date 4 Avril 2022
 */
 
-#include "Vec2.h"
+#include "../SDL2/EntitySDL.h"
 
 #ifndef _ENTITY_H_
 #define _ENTITY_H_
 
 /** \brief Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles, etc.) */
-class Entity{
+class Entity: public EntitySDL{
     private:
 
         /** \brief Coordonnée de l'ennemi en x */
@@ -33,6 +33,8 @@ class Entity{
         Entity();
         /** \brief Destructeur par défaut de la classe Entity */
         ~Entity();
+
+        const char* path;
 
         /** \brief Accesseur renvoyant la position en x d'une entité */
         float getPosX();

@@ -1,18 +1,18 @@
 #include "Enemy.h"
-#include "Entity.h"
+
 #include <unistd.h>
 #include <iostream>
 using namespace std;
 
 Enemy::Enemy(){
 
-    setPos(0.f, 11.f);
+    setPos(0.f, 800.f);
     setSpeed(1);
     setPV(15);
     setIsDead(false);
     isArrived = false;
     enemies.push_back(this);
-
+    path = "data/Wariors/Idle/Wariror_Idle_000.png";
 }
 
 Enemy::~Enemy(){
@@ -26,11 +26,11 @@ bool Enemy::getIsArrived(){
     return isArrived;
 }
 
-void Enemy::walk(const Map& map){
+void Enemy::walk(/*const Map& map*/){
 
-    if(map.IsValidPosition(this->getPosX(), this->getPosY()) && this->isArrived == false){
-        this->setPosX(this->getPosX() + 1);
-    }
+    // if(map.IsValidPosition(this->getPosX(), this->getPosY()) && this->isArrived == false){
+        this->setPosX(this->getPosX() + 5);
+    //}
 }
 
 bool Enemy::isDead() {
@@ -40,10 +40,6 @@ bool Enemy::isDead() {
     }
 
     return getIsDead();
-}
-
-const int Enemy::getSizeList() {
-    return enemies.size();
 }
 
 

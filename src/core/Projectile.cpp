@@ -11,6 +11,7 @@ Projectile::Projectile() : towerArch(){
     setTime(4);
     setSpeed(2);
     //towerArch.setRange(10);
+    path = "data/Projectile/Arrow.png";
 
     tracking = false;
     _inRange = false;

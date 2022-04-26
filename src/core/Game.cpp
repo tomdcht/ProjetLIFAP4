@@ -40,36 +40,38 @@ Enemy* Game::getIt(list<Enemy*> _list, int _i){
 void Game::autoEvents() {
 
     const int size = enemy.enemies.size();
-    int tracker = 0;
+    // int tracker = 0;
 
-    for (n_track = minimum ; n_track < size ; n_track++) {
+    // for (n_track = minimum ; n_track < size ; n_track++) {
 
-        arrow.inRange(*getIt(enemy.enemies, n_track),towerArch);
+    //     arrow.inRange(*getIt(enemy.enemies, n_track),towerArch);
 
-        if(arrow.isInRange() == true && getIt(enemy.enemies, n_track)-> isDead() == false ) {
-            arrow.track(*getIt(enemy.enemies, n_track),towerArch);
-            minimum = n_track;
-            tracker = n_track;
-            break;
-        }
-    }
+    //     if(arrow.isInRange() == true && getIt(enemy.enemies, n_track)-> isDead() == false ) {
+    //         arrow.track(*getIt(enemy.enemies, n_track),towerArch);
+    //         minimum = n_track;
+    //         tracker = n_track;
+    //         break;
+    //     }
+    // }
     //std::cout << "Game.cpp = "<< enemy.getSizeList()<< std::endl;
 
     for (int n = 0; n < size ; n++) {
-        getIt(enemy.enemies, n)->walk(map);
+        getIt(enemy.enemies, n)->walk();
     }
 
-    if(getIt(enemy.enemies, tracker)->getPosX() == map.getDimX()-1 || getIt(enemy.enemies, n)-> getIsDead() == true){
-            enemy.enemies.remove(getIt(enemy.enemies, n));
-            minimum = minimum-1;
-            //enemy.enemies.pop_front();
-    }
+    //enemy.walk();
 
-    time++;
-    if(time == 8) {
-        enemy.enemies.push_back(new Enemy);
-        time = 0;
-    }
+    // if(getIt(enemy.enemies, tracker)->getPosX() == map.getDimX()-1 || getIt(enemy.enemies, n)-> getIsDead() == true){
+    //         enemy.enemies.remove(getIt(enemy.enemies, n));
+    //         minimum = minimum-1;
+    //         //enemy.enemies.pop_front();
+    // }
+
+    // time++;
+    // if(time == 8) {
+    //     enemy.enemies.push_back(new Enemy);
+    //     time = 0;
+    // }
 
 
 
