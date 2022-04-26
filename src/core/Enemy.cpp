@@ -1,10 +1,4 @@
 #include "Enemy.h"
-<<<<<<< HEAD
-
-=======
-#include "Entity.h"
-#include "Game.h"
->>>>>>> 5f0ff1c8abf39171b26d95cd718121d0fab774ee
 #include <unistd.h>
 #include <iostream>
 using namespace std;
@@ -16,7 +10,7 @@ Enemy::Enemy() {
     setPV(15);
     setIsDead(false);
     isArrived = false;
-    enemies.push_back(this);
+    //enemies.push_back(this);
     path = "data/Wariors/Idle/Wariror_Idle_000.png";
 }
 
@@ -46,7 +40,6 @@ bool Enemy::isDead() {
 
     return getIsDead();
 }
-
 
 
 // int main(void){

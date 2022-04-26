@@ -85,3 +85,10 @@ bool Entity::getIsDead(){
     return isDead;
 }
 
+void Entity::affEntity(Entity& entity){
+    printf("PosX : %f \n", getPosX());
+    printf("PosY : %f \n", getPosY());
+    printf("PV : %i \n", getPV());
+    printf("isDead : %d \n", getIsDead());
+}
+

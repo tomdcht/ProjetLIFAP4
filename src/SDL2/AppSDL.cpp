@@ -66,7 +66,7 @@ void AppSDL::SDLAff() {
     //cout << "X : " << enemy.getPosX() << "  " << "Y : " << enemy.getPosY() << endl;
     //enemy.draw(renderer, enemy.getPosX(), enemy.getPosY(), WIDTH_ENEMY, HEIGHT_ENEMY);
 
-    int size = enemy.enemies.size();
+    int size = game.enemies.size();
 
     towerArch.draw(renderer, towerArch.getConstPosX(), towerArch.getConstPosY(), WIDTH_TOWER, HEIGHT_TOWER);
 
@@ -81,10 +81,13 @@ void AppSDL::SDLAff() {
 
     // enemy.enemies.back()->walk();
 
-    for (int n = 0; n < size ; n++) {
-        game.getIt(enemy.enemies, n)->draw(renderer, game.getIt(enemy.enemies, n)->getConstPosX(), game.getIt(enemy.enemies, n)->getConstPosY(), WIDTH_ENEMY, HEIGHT_ENEMY);
-        game.getIt(enemy.enemies, n)->walk();
-        game.getIt(enemy.enemies, n)->has_changed = true;
+    game.enemies.front()->affEntity(*game.enemies.front());
+    //game.enemies.front()->draw(renderer, game.enemies.front()->getConstPosX(), game.enemies.back()->getConstPosY(), WIDTH_ENEMY, HEIGHT_ENEMY);
+
+    // for (int n = 0; n < size ; n++) {
+    //     game.getItEnemy(game.enemies, n)->draw(renderer, game.getItEnemy(game.enemies, n)->getConstPosX(), game.getItEnemy(game.enemies, n)->getConstPosY(), WIDTH_ENEMY, HEIGHT_ENEMY);
+    //     game.getItEnemy(game.enemies, n)->walk();
+    //     game.getItEnemy(game.enemies, n)->has_changed = true;
     //     win.print((int)game.getIt(enemy.enemies, n)-> getConstPosX(), (int)game.getIt(enemy.enemies, n)->getConstPosY(), 'X');
 
     //     if (game.getIt(enemy.enemies, n)->isDead() == true) {
@@ -101,7 +104,7 @@ void AppSDL::SDLAff() {
 
     // if (arrow.isInRange() == true) {
     //     arrow.draw(renderer, arrow.getConstPosX(), arrow.getConstPosY(), WIDTH_PROJECTILE, HEIGHT_PROJECTILE);
-    }
+    // }
 
     //enemy.has_changed = true;
 

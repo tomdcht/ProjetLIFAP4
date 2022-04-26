@@ -70,15 +70,6 @@ const int Game::getSizeListProjectile() {
     return projectiles.size();
 }
 
-
-
-
-
-
-
-
-
-
 void Game::autoEvents() {
 
     const int size = enemies.size();
@@ -98,11 +89,9 @@ void Game::autoEvents() {
 
     }
 
-
-
     /// Marche des ennemies
     for (int n = 0; n < size ; n++) {
-        getItEnemy(enemies, n)->walk(map);
+        getItEnemy(enemies, n)->walk();
     }
 
 

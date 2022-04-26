@@ -11,8 +11,11 @@
 #ifndef _MAP_H
 #define _MAP_H
 
+#include "../SDL2/ImageSDL.h"
+
+
 /** Classe gérant la map */
-class Map {
+class Map : public ImageSDL{
 
 private :
 
@@ -27,6 +30,8 @@ public :
 
     /** \brief Constructeur par défaut de la classe Map */
     Map();
+
+    const char* path;
 
     /** \brief Fonction vérifiant si le caractère à la case de coordonnées (x,y) est valide
      *  \param x Coordonnée en x du caractère

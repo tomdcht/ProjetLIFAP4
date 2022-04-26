@@ -95,6 +95,9 @@ class Entity: public EntitySDL{
         /** \brief Accesseur renvoyant la valeur de la donnée membre 'isDead' d'un ennemi */
         bool getIsDead();
 
+        void affEntity(Entity& entity);
+
+
 };
 
 #endif // _ENTITY_H_
