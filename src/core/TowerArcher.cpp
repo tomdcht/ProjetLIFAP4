@@ -5,7 +5,6 @@
 
 
 TowerArcher::TowerArcher(){
-    setPos(15.f,7.f);
     setSpeed(2);
     range=10;
     price=100;

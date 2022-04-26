@@ -86,6 +86,14 @@ void WindowTXT::print(int x, int y, char* c){
     }
 }
 
+void WindowTXT::print(int x, int y, const char* c){
+    int i = 0;
+    while(c[i] != '\0'){
+        print(x+i, y, c[i]);
+        i++;
+    }
+}
+
 void WindowTXT::draw(int x, int y){
     termMove(0,0);
     for(int j=0; j<dimY; ++j){

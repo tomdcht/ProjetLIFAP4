@@ -6,13 +6,9 @@
 class Castle : public Entity{
     private:
 
-
     public:
         Castle();
         ~Castle();
-
-        char getPVUnits() const;
-        char getPVTens() const;
 };
 
 

@@ -69,6 +69,10 @@ int Entity::getPV() const{
     return PV;
 }
 
+char Entity::getPV() {
+    return (char)PV;
+}
+
 void Entity::setPV(int _PV) {
     PV = _PV;
 }

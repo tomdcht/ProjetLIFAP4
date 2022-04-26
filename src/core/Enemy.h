@@ -24,8 +24,6 @@ class Enemy : public Entity{
         bool isArrived;
 
     public:
-        /** \brief Liste d'ennemis */
-        std::list<Enemy*> enemies;
 
         /** \brief Constructeur apr défaut de la classe Enemy */
         Enemy();
@@ -53,8 +51,6 @@ class Enemy : public Entity{
          */
         void regressionTest(Enemy& enemy);
 
-         /** \fn Fonction const permettant de récupérer la taille de la liste*/
-        const int getSizeList();
 };
 
 

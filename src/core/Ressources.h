@@ -11,6 +11,7 @@ class Ressources{
     public:
         Ressources();
         ~Ressources();
+
         int getGold() const;
         void setGold(int _gold);
 };

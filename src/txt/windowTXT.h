@@ -74,6 +74,13 @@ class WindowTXT{
         */
         void print(int x, int y, char* c);
 
+        /** \brief Fonction permettant de remplir le tableau de caractère de la fenêtre depuis un tableau de caractère
+         *  \param x Coordonnée en x du caractère dans le tableau
+         *  \param y Coordonnée en y du caractère dans le tableau
+         *  \param c Le tableau de caractères
+        */
+        void print(int x, int y, const char* c);
+
         /** \brief Fonction permettant d'afficher un caractère depuis un tableau de caractère sur le terminal
          *  \param x Coordonnée en x du caractère
          *  \param y Coordonnée en y du caractère
