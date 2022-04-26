@@ -82,6 +82,7 @@ class Entity: public EntitySDL{
 
         /** \brief Accesseur renvoyant les points de vie d'un ennemi */
         int getPV() const;
+        char getPV() ;
 
         /** \brief Accesseur modifiant les points de vie d'un ennemi */
         void setPV(int _PV);

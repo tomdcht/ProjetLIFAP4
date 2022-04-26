@@ -1,18 +1,26 @@
 #include "Enemy.h"
+<<<<<<< HEAD
 
+=======
+#include "Entity.h"
+#include "Game.h"
+>>>>>>> 5f0ff1c8abf39171b26d95cd718121d0fab774ee
 #include <unistd.h>
 #include <iostream>
 using namespace std;
 
-Enemy::Enemy(){
+Enemy::Enemy() {
 
     setPos(0.f, 800.f);
     setSpeed(1);
     setPV(15);
     setIsDead(false);
     isArrived = false;
+<<<<<<< HEAD
     enemies.push_back(this);
     path = "data/Wariors/Idle/Wariror_Idle_000.png";
+=======
+>>>>>>> 5f0ff1c8abf39171b26d95cd718121d0fab774ee
 }
 
 Enemy::~Enemy(){
@@ -42,6 +50,7 @@ bool Enemy::isDead() {
     return getIsDead();
 }
 
+<<<<<<< HEAD
 
 void Enemy::regressionTest(Enemy& enemy){
     enemy.setPos(0.f, 11.f);
@@ -71,5 +80,7 @@ void Enemy::regressionTest(Enemy& enemy){
 //     enemy.regressionTest(enemy);
 //     return 0;
 // }
+=======
+>>>>>>> 5f0ff1c8abf39171b26d95cd718121d0fab774ee
 
 

@@ -1,9 +1,14 @@
 #include "Castle.h"
 
-char Castle::getPVUnits() const{
-   return '9';
+
+Castle::Castle() {
+    setPV(20); //Max 100 pv sinon erreur affichage
 }
 
-char Castle::getPVTens() const{
-    return '9';
+Castle::~Castle() {
+
 }
+
+
+
+

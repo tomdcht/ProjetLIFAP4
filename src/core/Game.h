@@ -17,6 +17,7 @@
 #include "TowerArcher.h"
 #include "Projectile.h"
 #include "Ressources.h"
+#include "Castle.h"
 
  /** \brief Classe gérant la physique du jeu */
 class Game{
@@ -32,7 +33,9 @@ class Game{
         /** \brief Un projectile de type flèche*/
         Projectile arrow;
         /** \brief Les ressources géré dans le  jeu */
-        Ressources ressources;
+        Ressources gold;
+        /** \brief Le chateau */
+        Castle castle;
 
         int time = 0;
         int n = 0;
@@ -41,6 +44,15 @@ class Game{
         int minimum = 0;
 
     public:
+
+        /** \brief Liste d'ennemis */
+        std::list<Enemy*> enemies;
+
+        /** \brief Liste d'ennemis */
+        std::list<TowerArcher*> towers;
+
+        /** \brief Liste d'ennemis */
+        std::list<Projectile*> projectiles;
 
         /** \brief Constructeur de la classe Game*/
         Game ();
@@ -51,9 +63,6 @@ class Game{
         Map& getMap();
         /** \brief Accesseur renvoyant une tour d'archer */
         TowerArcher& getTowerArcher();
-        /** \brief Accesseur renvoyant une tour d'archer */
-        TowerArcher& getTowerArcher1();
-
         /** \brief Accesseur renvoyant un ennemide type const */
         const Enemy& getConstEnemy () const;
         /** \brief Accesseur renvoyant la map de type const */
@@ -66,16 +75,23 @@ class Game{
         Projectile& getProjectile ();
         /** \brief Accesseur renvoyant une classe ressources de type const*/
         const Ressources& getConstRessources() const;
-
+        /** \brief Accesseur renvoyant le chateau de type const*/
+        const Castle& getConstCastle() const;
 
         void earnGold();
 
-        Enemy* getIt(std::list<Enemy*> _list, int _i);
+        Enemy* getItEnemy(std::list<Enemy*> _list, int _i);
+        TowerArcher* getItTower(std::list<TowerArcher*> _list, int _i);
+        Projectile* getItProjectile(std::list<Projectile*> _list, int _i);
+
+         /** \fn Fonction const permettant de récupérer la taille de la liste*/
+        const int getSizeListEnemy();
+        const int getSizeListProjectile();
+        const int getSizeListTower();
 
         /** \brief Fonction gérant tous les évènements automatiques du jeu */
         void autoEvents();
 
-        void appear(); // innutile
 };
 
 #endif

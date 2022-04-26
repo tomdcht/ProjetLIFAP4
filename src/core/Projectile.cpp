@@ -5,13 +5,15 @@
 #include <iostream>
 using namespace std;
 
-Projectile::Projectile() : towerArch(){
+Projectile::Projectile() {
 
-    setPos(towerArch.getConstPosX(), towerArch.getConstPosY());
     setTime(4);
     setSpeed(2);
+<<<<<<< HEAD
     //towerArch.setRange(10);
     path = "data/Projectile/Arrow.png";
+=======
+>>>>>>> 5f0ff1c8abf39171b26d95cd718121d0fab774ee
 
     tracking = false;
     _inRange = false;
@@ -65,7 +67,7 @@ void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
 
     if (tracking == false) {
 
-        setPos(towerArch.getConstPosX(), towerArch.getConstPosY());
+        setPos(tower.getConstPosX(), tower.getConstPosY());
         _DirectionX = directionX(enemy, tower);
         _DirectionY = directionY(enemy, tower);
         avancementX = getPosX();

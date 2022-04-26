@@ -4,10 +4,13 @@
 #include "GameTXT.h"
 
 void txtShow(WindowTXT& win, Game& game){
-    const Enemy& enemy = game.getConstEnemy();
-    const TowerArcher& towerArch = game.getConstTowerArcher();
-    const Map& map = game.getConstMap();
+
+    const TowerArcher& towerArch = game.getTowerArcher();
     const Projectile& arrow = game.getConstProjectile();
+    const Map& map = game.getConstMap();
+    const Castle& castle = game.getConstCastle();
+    const Ressources& gold = game.getConstRessources();
+    
 
     win.clear();
 
@@ -17,15 +20,17 @@ void txtShow(WindowTXT& win, Game& game){
         }
     }
     
-    int size = enemy.enemies.size();
+    int size = game.enemies.size();
 
     win.print((int)towerArch.getConstPosX(), (int)towerArch.getConstPosY(), 'O');
 
-    for (int n = 0; n < size ; n++) {
-        win.print((int)game.getIt(enemy.enemies, n)-> getConstPosX(), (int)game.getIt(enemy.enemies, n)->getConstPosY(), 'X');
+    
 
-        if (game.getIt(enemy.enemies, n)->isDead() == true) {
-            win.print((int)game.getIt(enemy.enemies, n)->getConstPosX(), (int)game.getIt(enemy.enemies, n)->getConstPosY(), ' ');
+    for (int n = 0; n < size ; n++) {
+        win.print((int)game.getItEnemy(game.enemies, n)-> getConstPosX(), (int)game.getItEnemy(game.enemies, n)->getConstPosY(), 'X');
+
+        if (game.getItEnemy(game.enemies, n)->isDead() == true) {
+            win.print((int)game.getItEnemy(game.enemies, n)->getConstPosX(), (int)game.getItEnemy(game.enemies, n)->getConstPosY(), ' ');
             
             if (arrow.isInRange() == false) {
                 win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), ' ');
@@ -39,8 +44,21 @@ void txtShow(WindowTXT& win, Game& game){
         win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
     }
 
-    win.print(37,1,'0');
-    win.print(38,1,'1');
+    
+
+
+    std::string numGoldString = std::to_string(gold.getGold());
+    const char* numGold = numGoldString.c_str();
+
+    std::string PVCastleString = std::to_string(castle.getPV());
+    const char* PVCastle = PVCastleString.c_str();
+
+    win.print(37,1, PVCastle);
+    win.print(37,2, numGold);
+
+
+    
+    
 
     
     win.draw();
