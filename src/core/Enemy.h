@@ -15,7 +15,7 @@
 #include <list>
 
 #include "Entity.h"
-#include "Map.h"
+#include "Road.h"
 
 
 /** \brief Classe gérant les ennemis  /!\ Hérite de la classe Entity /!\ */
@@ -24,7 +24,23 @@ class Enemy : public Entity{
         /** \brief Booléen permettant de savoir si un ennemi est arrivée au château */
         bool isArrived;
 
+        /** \brief Nouvelle position en x d'un enemy */
+        float enemyAvancementX;
+        /** \brief Nouvelle position en y d'un enemy */
+        float enemyAvancementY;
+        /** \brief Direction du enemy en x */
+        float _enemyDirectionX;
+        /** \brief Direction du enemy en y */
+        float _enemyDirectionY;
+        /** \brief Distance entre un enemy et sa cible */
+        float _enemyDistance;
+
+        /** \brief true si il doit aller au prochain point */
+        bool NextPoint;
+
     public:
+
+        int pointTrack;
 
         /** \brief Constructeur apr défaut de la classe Enemy */
         Enemy();
@@ -40,7 +56,7 @@ class Enemy : public Entity{
         /** \fn Fonction permettant de faire avancer un ennemi
          *  \param map La map courante
         */
-        void walk(/*const Map& map*/);
+        void walk(Road& road);
 
         /** \fn Fonction vérifiant si les PV d'un ennemi sont à 0
          *  \return La donnée membre privée 'isDead'
@@ -50,7 +66,12 @@ class Enemy : public Entity{
         /** \fn Test de régression de la classe Enemy
          *  \param enemy Un ennemi
          */
-        void regressionTest(Enemy& enemy);
+        //void regressionTest();
+
+        const float enemyDistance(Road& road) const;
+
+        const float enemyDirectionX(Road& road) const;
+        const float enemyDirectionY(Road& road) const;
 
 };
 

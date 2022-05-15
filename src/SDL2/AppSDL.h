@@ -10,19 +10,18 @@
 * \include Tower.h
 * \include Vec.h
 */
+#ifndef APPSDL_H__
+#define APPSDL_H__
 
 #include <string>
 #include <assert.h>
 #include <time.h>
 #include <stdlib.h>
 
-#include "../core/Castle.h"
-#include "../core/Enemy.h"
-#include "../core/Entity.h"
-#include "../core/Projectile.h"
-#include "../core/Tower.h"
-#include "../core/Game.h"
-
+// #include "../core/Castle.h"
+// #include "../core/Enemy.h"
+// #include "../core/Entity.h"
+// #include "../core/Projectile.h"
 // #include <GLFW/glfw3.h>
 // #include "../lib/imgui/imgui_impl_sdl.h"
 // #include "../lib/imgui/imgui_impl_opengl3.h"
@@ -30,7 +29,9 @@
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
+#include "../SDL2/ImageSDL.h"
 
+#include "../core/Game.h"
 
 /** \brief Constante de la largeur de la fenêtre SDL */
 #define WIDTH_WINDOW 1920
@@ -39,25 +40,28 @@
 #define HEIGHT_WINDOW 1080
 
 #define HEIGHT_ENEMY 70
-
 #define WIDTH_ENEMY 70
 
 #define HEIGHT_TOWER 300
-
 #define WIDTH_TOWER 300
 
-#define HEIGHT_PROJECTILE 20
+#define HEIGHT_PROJECTILE 30
+#define WIDTH_PROJECTILE 30
 
-#define WIDTH_PROJECTILE 20
+#define WIDTH_CASTLE 320
+#define HEIGHT_CASTLE 320
 
-/**
- * \class Jeu
- * \brief Class Jeu
- *
- * Déclaration des données membres et des fonctions de la class Jeu
- */
+#define HEIGHT_PAUSE_BUTTON 60
 
-class AppSDL{
+#define WIDTH_PAUSE_BUTTON 60
+
+#define WIDTH_PVCASTLE 170
+#define HEIGHT_PVCASTLE 60
+
+#define WIDTH_COINS 220
+#define HEIGHT_COINS 70
+
+class AppSDL {
     private:
 
         /** \brief Fonctions gérant l'affichage avec SDL */
@@ -66,27 +70,30 @@ class AppSDL{
         void SDLAffQuit();
         void SDLAff(); //Nom provisoire
 
-        Game game;
         ImageSDL background; //!\ Déclarer en Map et faire l'affichage de la map en ajoutant un path à la map /!\*/
-        Enemy enemy;
-        TowerArcher towerArch;
-        Projectile arrow;
+        ImageSDL menuPrinc;
+        ImageSDL quitButton;
 
+        ImageSDL castleImage1;
+        ImageSDL castleImage2;
+        ImageSDL castleImage3;
+
+        ImageSDL coins;
+        ImageSDL PVCastle;
+            
+        // SDL_Surface* fontSurface;
+        // SDL_Color fColor;
+        // SDL_Rect fontRect;
+        // TTF_Font* font;
 
     public:
+        Game game;
 
         /** \param Paramètres permettant la création d'une fenêtre SDL*/
         SDL_Window * window;
 
         /** \param Paramètres permettant la création d'un rendu SDL*/
         SDL_Renderer *renderer;
-
-        // /** \param Paramètres permettant la création d'une surface SDL*/
-        // SDL_Surface *picture;
-
-        // /** \param Paramètres permettant la création d'une texture SDL*/
-        // SDL_Texture *texture;
-
 
         /** \brief Constructeur par défaut de la classe jeu*/
         AppSDL ();
@@ -97,5 +104,13 @@ class AppSDL{
         /** \brief Fonction qui effectue le lancement de l'application */
         void run();
 
+        void fontInit();
+
+        void printF(char *c, int x, int y);
+
+        void affMenuPrinc();
+
 
 };
+
+#endif

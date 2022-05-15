@@ -6,13 +6,16 @@
 * \date 4 Avril 2022
 */
 
-#include "../SDL2/EntitySDL.h"
+// #include "Vec2.h"
+
 
 #ifndef _ENTITY_H_
 #define _ENTITY_H_
+#include "../SDL2/EntitySDL.h"
+
 
 /** \brief Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles, etc.) */
-class Entity: public EntitySDL{
+class Entity : public EntitySDL {
     private:
 
         /** \brief Coordonnée de l'ennemi en x */
@@ -28,13 +31,14 @@ class Entity: public EntitySDL{
         /** \brief Vitesse de l'ennemi */
         int speed;
 
+
     public:
+        const char* path;
+
         /** \brief Constructeur par défaut de la classe Entity */
         Entity();
         /** \brief Destructeur par défaut de la classe Entity */
         ~Entity();
-
-        const char* path;
 
         /** \brief Accesseur renvoyant la position en x d'une entité */
         float getPosX();
@@ -94,9 +98,6 @@ class Entity: public EntitySDL{
 
         /** \brief Accesseur renvoyant la valeur de la donnée membre 'isDead' d'un ennemi */
         bool getIsDead();
-
-        void affEntity(Entity& entity);
-
 
 };
 

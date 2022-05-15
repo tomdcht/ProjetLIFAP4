@@ -1,28 +1,17 @@
 #include "TowerBomb.h"
-#include "Entity.h"
-#include <iostream>
+
 
 TowerBomb::TowerBomb(){
-    range=1; 
-    price=200;
+    setSpeed(1);
+    setRange(250);
+    setPrice(200);
+    setDamage(20);
+    path = "data/Tower/PNG/BombTower/Lvl1/01.png";
+    texture = NULL;
+    surface = NULL;
 }
 
 TowerBomb::~TowerBomb(){
-        
-}
-
-void TowerBomb::setRange(int _range){
-    range=_range;
-}
-
-int TowerBomb::getRange() const{
-    return range;
-}
-
-void TowerBomb::setPrice(int _price){
-    price=_price;
-}
-
-int TowerBomb::getPrice() const{
-    return price;
+    delete[] this;
+    
 }

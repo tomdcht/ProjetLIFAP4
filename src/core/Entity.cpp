@@ -10,7 +10,7 @@ Entity::Entity(){
 }
 
 Entity::~Entity(){
-
+    delete this;
 }
 
 float Entity::getPosX(){
@@ -83,12 +83,5 @@ void Entity::setIsDead(bool _isDead){
 
 bool Entity::getIsDead(){
     return isDead;
-}
-
-void Entity::affEntity(Entity& entity){
-    printf("PosX : %f \n", getPosX());
-    printf("PosY : %f \n", getPosY());
-    printf("PV : %i \n", getPV());
-    printf("isDead : %d \n", getIsDead());
 }
 

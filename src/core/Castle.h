@@ -1,14 +1,16 @@
 #ifndef _CASTLE_H_
 #define _CASTLE_H_
-#include "Entity.h"
-#include <iostream>
 
-class Castle : public Entity{
+class Castle {
     private:
+        int PVCastle;
 
     public:
         Castle();
         ~Castle();
+
+        const int getPV();
+        void damageCastle();
 };
 
 

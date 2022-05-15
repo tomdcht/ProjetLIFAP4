@@ -1,9 +1,8 @@
 #include "Ressources.h"
-#include "Entity.h"
 #include <iostream>
 
 Ressources::Ressources(){
-    gold = 220;
+    gold = 900;
 }
 
 Ressources::~Ressources(){

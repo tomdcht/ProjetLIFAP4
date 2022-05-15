@@ -1,8 +1,11 @@
+
 #include "EntitySDL.h"
 
+
 EntitySDL::EntitySDL(){
-    // src_rect.x = 0; src_rect.y = 0; src_rect.w = 0; src_rect.h = 0;
-    // dst_rect.x = getPosX(); dst_rect.y = getPosY();
+    src_rect.x = 0; src_rect.y = 0; src_rect.w = 0; src_rect.h = 0;
+    texture = NULL;
+    surface = NULL;
 }
 
 EntitySDL::~EntitySDL(){

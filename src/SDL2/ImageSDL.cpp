@@ -63,6 +63,31 @@ void ImageSDL::draw (SDL_Renderer * renderer, int x, int y, int w, int h) {
     assert(ok == 0);
 }
 
+void ImageSDL::draw(SDL_Renderer * renderer, int x_src, int y_src, int w_src, int h_src, int x_dst, int y_dst, int w_dst, int h_dst){
+    int ok;
+    SDL_Rect dst_rect;
+    dst_rect.x = x_dst;
+    dst_rect.y = y_dst;
+    dst_rect.w = (w_dst<0)?surface->w:w_dst;
+    dst_rect.h = (h_dst<0)?surface->h:h_dst;
+
+    SDL_Rect src_rect;
+    src_rect.x = x_src;
+    src_rect.y = y_src;
+    src_rect.w = (w_src<0)?surface->w:w_src;
+    src_rect.h = (h_src<0)?surface->h:h_src;
+
+    if (has_changed) {
+        ok = SDL_UpdateTexture(texture,&src_rect,surface->pixels,surface->pitch);
+        assert(ok == 0);
+        has_changed = false;
+    }
+    has_changed = true;
+
+    ok = SDL_RenderCopy(renderer,texture,&src_rect,&dst_rect);
+    assert(ok == 0);
+}
+
 SDL_Texture * ImageSDL::getTexture() const {return texture;}
 
 void ImageSDL::setSurface(SDL_Surface * surf) {surface = surf;}

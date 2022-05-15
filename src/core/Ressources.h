@@ -1,6 +1,5 @@
 #ifndef _RESSOURCES_H_
 #define _RESSOURCES_H_
-#include "Entity.h"
 #include <iostream>
 
 

@@ -1,5 +1,6 @@
 #include "Projectile.h"
-#include "TowerArcher.h"
+#include "Tower.h"
+#include "Game.h"
 #include <unistd.h>
 #include <math.h>
 #include <iostream>
@@ -9,25 +10,31 @@ Projectile::Projectile() {
 
     setTime(4);
     setSpeed(2);
-    //towerArch.setRange(10);
-    path = "data/Projectile/Arrow.png";
 
     tracking = false;
     _inRange = false;
 
-    _DirectionX = 0;
-    _DirectionY = 0;
+    _projectileDirectionX = 0;
+    _projectileDirectionY = 0;
 
-    avancementX = 0;
-    avancementY = 0;
+    projectileAvancementX = 0;
+    projectileAvancementY = 0;
 
-    time = 4;
+    time = 10;
+    timeDelete = 0;
+
+    path = "data/Projectile/Arrow01.png";
+    texture = NULL;
+    surface = NULL;
+
+    setPosX(200);
+    setPosY(200);
+
 }
 
-Projectile::~Projectile(){
-
+Projectile::~Projectile(){ 
+    delete[] this;
 }
-
 
 void Projectile::setTime(int _time) {
     time = _time;
@@ -37,20 +44,19 @@ const int Projectile::getTime() {
     return time;
 }
 
-const float Projectile::directionX(const Enemy& enemy, const TowerArcher& tower) {
-
-    return (enemy.getConstPosX()+ 1.f * ( time * enemy.getConstSpeed() ) - tower.getConstPosX() ) / ( time * getConstSpeed() ) ; // 1.f = direction X de enemy
-
+void Projectile::fctPath(const char* lien) {
+    path = lien;
 }
 
-const float Projectile::directionY(const Enemy& enemy, const TowerArcher& tower) {
+const float Projectile::projectileDirectionX(const Enemy& enemy, const Tower& tower, Road& road) {
+    return (enemy.getConstPosX()- 1.5*enemy.enemyDirectionX(road) * ( time * enemy.getConstSpeed() ) - tower.getConstPosX() ) / ( time * getConstSpeed() ) ; // 1.f = direction X de enemy
+}       //1,5 a revoir --> 1,5 parce que *1 = avant et *2 = après donc 1,5 ...
 
-    return (enemy.getConstPosY()+ 0.f * ( time * enemy.getConstSpeed() ) - tower.getConstPosY() ) / ( time * getConstSpeed() ) ; // 0.f = direction Y de enemy
-
+const float Projectile::projectileDirectionY(const Enemy& enemy, const Tower& tower, Road& road) {
+    return (enemy.getConstPosY()- 1.5*enemy.enemyDirectionY(road) * ( time * enemy.getConstSpeed() ) - tower.getConstPosY() ) / ( time * getConstSpeed() ) ; // 0.f = direction Y de enemy
 }
 
-const float Projectile::distance(const float enemy_x, const float enemy_y, const TowerArcher& tower ) {
-
+const float Projectile::projectileDistance(const float enemy_x, const float enemy_y, const Tower& tower ) {
     float v1,v2;
 
     v1 = pow(enemy_x - tower.getConstPosX(),2);
@@ -60,46 +66,54 @@ const float Projectile::distance(const float enemy_x, const float enemy_y, const
 }
 
 
-void Projectile::track(Enemy& enemy, const TowerArcher& tower) {
+void Projectile::track(Enemy& enemy, const Tower& tower, Road& road) {
 
     if (tracking == false) {
 
         setPos(tower.getConstPosX(), tower.getConstPosY());
-        _DirectionX = directionX(enemy, tower);
-        _DirectionY = directionY(enemy, tower);
-        avancementX = getPosX();
-        avancementY = getPosY();
+        _projectileDirectionX = projectileDirectionX(enemy, tower, road);
+        _projectileDirectionY = projectileDirectionY(enemy, tower, road);
+        projectileAvancementX = getPosX();
+        projectileAvancementY = getPosY();
         tracking = true;
     }
 
-    avancementX = avancementX + (tower.getConstSpeed()*_DirectionX);
-    avancementY = avancementY + (tower.getConstSpeed()*_DirectionY);
+    projectileAvancementX = projectileAvancementX + (tower.getConstSpeed()*_projectileDirectionX);
+    projectileAvancementY = projectileAvancementY + (tower.getConstSpeed()*_projectileDirectionY);
 
-    setPosX((int)avancementX);
-    setPosY((int)avancementY);
+    setPosX((int)projectileAvancementX);
+    setPosY((int)projectileAvancementY);
 
-    std::cout << "Position X de l'ennemi tracké = " << enemy.getConstPosX() << std::endl;
 
-    if ( getPosX() == (enemy.getConstPosX()+1) && getPosY() == enemy.getConstPosY() ) {
-        enemy.setPV(enemy.getPV()-5);
+
+    if ((int)getPosX() <= (int)enemy.getConstPosX()+10 && (int)getPosX() >= (int)enemy.getConstPosX()-10) {
+        if ((int)getPosY() <= (int)enemy.getConstPosY()+10 && (int)getPosY() >= (int)enemy.getConstPosY()-10) {
+            std::cout << "Touché" << std::endl;
+            enemy.setPV(enemy.getPV()- tower.getDamage());
+            tracking = false;
+            _inRange = false;
+        }
+    }
+
+
+    timeDelete += 1;
+
+    if (timeDelete >= time+10) {
+        std::cout << (int)getPosX() <<"==" << (int)enemy.getConstPosX()<< " et " <<(int)getPosY()<< "==" <<(int)enemy.getConstPosY()<< std::endl; 
         tracking = false;
         _inRange = false;
-        //std::cout << "Touché       " << std::endl;
+        timeDelete = 0;
     }
-    std::cout << "                     " << std::endl;
 
 }
 
-void Projectile::inRange(const Enemy& enemy, const TowerArcher& tower){
+void Projectile::inRange(const Enemy& enemy, const Tower& tower){
 
-    if (distance(enemy.getConstPosX(),enemy.getConstPosY(), tower) < tower.getRange() && tracking == false) {
+    if (projectileDistance(enemy.getConstPosX(),enemy.getConstPosY(), tower) < tower.getRange() && tracking == false) {
         _inRange = true;
+        
     }
 
-}
-
-bool Projectile::isInRange() const{
-    return _inRange;
 }
 
 

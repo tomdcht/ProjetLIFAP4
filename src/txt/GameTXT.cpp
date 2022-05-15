@@ -5,68 +5,109 @@
 
 void txtShow(WindowTXT& win, Game& game){
 
-    const TowerArcher& towerArch = game.getTowerArcher();
-    const Projectile& arrow = game.getConstProjectile();
     const Map& map = game.getConstMap();
     const Castle& castle = game.getConstCastle();
     const Ressources& gold = game.getConstRessources();
+
+
     
 
     win.clear();
 
-    for(int x = 0; x < map.getDimX(); ++x){
-        for(int y = 0; y < map.getDimY(); ++y){
-            win.print(x, y, map.getXY(x, y));
-        }
-    }
-    
-    int size = game.enemies.size();
-
-    win.print((int)towerArch.getConstPosX(), (int)towerArch.getConstPosY(), 'O');
-
-    
-
-    for (int n = 0; n < size ; n++) {
-        win.print((int)game.getItEnemy(game.enemies, n)-> getConstPosX(), (int)game.getItEnemy(game.enemies, n)->getConstPosY(), 'X');
-
-        if (game.getItEnemy(game.enemies, n)->isDead() == true) {
-            win.print((int)game.getItEnemy(game.enemies, n)->getConstPosX(), (int)game.getItEnemy(game.enemies, n)->getConstPosY(), ' ');
-            
-            if (arrow.isInRange() == false) {
-                win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), ' ');
+    // -------------------------------------- Affichage de la map --------------------------------------
+        for(int x = 0; x < map.getDimX(); ++x){
+            for(int y = 0; y < map.getDimY(); ++y){
+                win.print(x, y, map.getXY(x, y));
             }
         }
+    // -------------------------------------------------------------------------------------------------
+    
 
-    }
+    // ------------------------------ Déclaration de la taille des listes -------------------------------
+        const int sizeEnemies = game.enemies.size();
+        const int sizeTowers = game.towers.size();
+        const int sizeProjectiles1 = game.projectiles1.size();
+        const int sizeProjectiles2 = game.projectiles2.size();
+        const int sizeProjectiles3 = game.projectiles3.size();
+        const int sizeProjectiles4 = game.projectiles4.size();
+        const int sizeProjectiles5 = game.projectiles5.size();
+    // --------------------------------------------------------------------------------------------------
+    
+
+    int countTower = game.getCountTower();
+
+    int n = 0;
 
 
-    if (arrow.isInRange() == true) {
-        win.print((int)arrow.getConstPosX(), (int)arrow.getConstPosY(), '.');
-    }
+    // ----------------------------------------------------------------------- Affichage des tours ---------------------------------------------------------------
+        for (n = 0; n < sizeTowers ; n++) {
+            win.print((int)game.getItTower(game.towers, n)-> getConstPosX(), (int)game.getItTower(game.towers, n)->getConstPosY(), 'O');
+        }
+    // -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+    // --------------------------------------------------------------- Affichage des Projectiles -------------------------------------------------------------------
+        for (n = 0; n < sizeProjectiles1 ; n++) {
+            win.print((int)game.getItProjectile(game.projectiles1, n)-> getConstPosX(), (int)game.getItProjectile(game.projectiles1, n)->getConstPosY(), '.');
+        }
+        for (n = 0; n < sizeProjectiles2 ; n++) {
+            win.print((int)game.getItProjectile(game.projectiles2, n)-> getConstPosX(), (int)game.getItProjectile(game.projectiles2, n)->getConstPosY(), '.');
+        }
+        for (n = 0; n < sizeProjectiles3 ; n++) {
+            win.print((int)game.getItProjectile(game.projectiles3, n)-> getConstPosX(), (int)game.getItProjectile(game.projectiles3, n)->getConstPosY(), '.');
+        }
+        for (n = 0; n < sizeProjectiles4 ; n++) {
+            win.print((int)game.getItProjectile(game.projectiles4, n)-> getConstPosX(), (int)game.getItProjectile(game.projectiles4, n)->getConstPosY(), '.');
+        }
+        for (n = 0; n < sizeProjectiles5 ; n++) {
+            win.print((int)game.getItProjectile(game.projectiles5, n)-> getConstPosX(), (int)game.getItProjectile(game.projectiles5, n)->getConstPosY(), '.');
+        }
+    // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    // ----------------------------------------------------------------------- Affichage des ennemies ------------------------------------------------------------
+        for (n = 0; n < sizeEnemies ; n++) {
+            win.print((int)game.getItEnemy(game.enemies, n)-> getConstPosX(), (int)game.getItEnemy(game.enemies, n)->getConstPosY(), 'X');
+
+            if (game.getItEnemy(game.enemies, n)->isDead() == true) {
+                win.print((int)game.getItEnemy(game.enemies, n)->getConstPosX(), (int)game.getItEnemy(game.enemies, n)->getConstPosY(), ' ');
+
+            }
+        }
+    // ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     
 
+    // --------------------------------------------------------- Affichage gold, PV chateau, nombre de tours et level -------------------------------------------------
+        std::string numGoldString = std::to_string(gold.getGold());
+        const char* numGold = numGoldString.c_str();
 
-    std::string numGoldString = std::to_string(gold.getGold());
-    const char* numGold = numGoldString.c_str();
+        std::string PVCastleString = std::to_string(castle.getPV());
+        const char* PVCastle = PVCastleString.c_str();
 
-    std::string PVCastleString = std::to_string(castle.getPV());
-    const char* PVCastle = PVCastleString.c_str();
-
-    win.print(37,1, PVCastle);
-    win.print(37,2, numGold);
+        std::string countCastleString = std::to_string(countTower);
+        const char* countCastleAff = countCastleString.c_str();
 
 
-    
-    
+        win.print(97,6, PVCastle);
+        win.print(17,6, numGold);
+
+        win.print(33,37, countCastleAff);
+    //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     
     win.draw();
 
 }
 
+
+
 void txtLoop(Game& game){
+
     WindowTXT win (game.getConstMap().getDimX(), game.getConstMap().getDimY());
+
+    //game.coordTowersFonction(game.coordTowersTXT[5]);
 
     bool quit = false;
     int ch;
@@ -75,7 +116,7 @@ void txtLoop(Game& game){
         
         txtShow(win, game);
 
-        usleep(400000);
+        usleep(300000);
 
         game.autoEvents();
 
@@ -84,7 +125,16 @@ void txtLoop(Game& game){
         switch(ch){
             case 'q':
                 quit = true; break;
-
+            case 'p' :
+                std::cout << "                               Jeu en Pause ... Appuyer sur 'p' pour Reprendre" << std::endl;
+                std::cin.get();
+                break;
+            case 'b' :
+                game.addTowerBomb(); break;
+            case 'n' :
+                game.addTowerMagic(); break;
+            case 'v' :
+                game.addTowerArch(); break;
         }
     }while(!quit);
 }

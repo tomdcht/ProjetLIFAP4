@@ -1,22 +1,27 @@
-#ifndef _TOWER_BOMB_H_
-#define _TOWER_BOMB_H_
-#include <iostream>
-#include "Entity.h"
+/**
 
-class TowerBomb : public Entity{
+* \file TowerBomb.h
+* \brief Définition des donées membres et des fonctions membres de la class TowerBomb
+* \version 1.0
+* \date 4 Avril 2022
+* \include Entity.h
+
+*/
+
+#ifndef _TOWERBOMB_H_
+#define _TOWERBOMB_H_
+#include "Tower.h"
+
+
+/** \brief Classe gérant les tours d'archer /!\ Hérite de la classe Entity /!\ */
+class TowerBomb : public Tower{
     private :
-        int range;
-        int price;
 
     public:
+        /** \brief Constructeur par défaut de la classe TowerArcher */
         TowerBomb();
+        /** \brief Destructeur par défaut de la classe TowerArcher */
         ~TowerBomb();
-        void setRange(int range);
-        int getRange() const;
-
-        void setPrice(int _price);
-        int getPrice() const;
-
 };
 
 

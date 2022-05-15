@@ -1,20 +1,24 @@
 #include "Enemy.h"
+#include <math.h>
 #include <unistd.h>
 #include <iostream>
-using namespace std;
 
 Enemy::Enemy() {
 
-    setPos(0.f, 800.f);
+    setPos(0.f, 855.f);
     setSpeed(1);
-    setPV(15);
+    setPV(100);
     setIsDead(false);
     isArrived = false;
-    //enemies.push_back(this);
-    path = "data/Wariors/Idle/Wariror_Idle_000.png";
+    NextPoint = true;
+    pointTrack = 0;
+    path = "data/Wariors/Walk/spritesheet_WariorWalk.png";
+    texture = NULL;
+    surface = NULL;
 }
 
 Enemy::~Enemy(){
+    delete[] this;
 }
 
 void Enemy::setIsArrived(bool _isArrived){
@@ -25,11 +29,33 @@ bool Enemy::getIsArrived(){
     return isArrived;
 }
 
-void Enemy::walk(/*const Map& map*/){
+void Enemy::walk(Road& road){
 
-    // if(map.IsValidPosition(this->getPosX(), this->getPosY()) && this->isArrived == false){
-        this->setPosX(this->getPosX() + 5);
-    //}
+    if(this->isArrived == false) {
+
+        if (NextPoint == true) {
+            _enemyDirectionX = enemyDirectionX(road);
+            _enemyDirectionY = enemyDirectionY(road);
+
+            NextPoint = false;
+
+        }
+
+        enemyAvancementX = getPosX() - ((float)getConstSpeed()*_enemyDirectionX);
+        enemyAvancementY = getPosY() - ((float)getConstSpeed() * _enemyDirectionY);
+        
+
+        setPosX(enemyAvancementX);
+        setPosY(enemyAvancementY);
+
+    }
+
+    if ((int)getConstPosX() <= (int)road.getPointX(pointTrack)+3 && (int)getConstPosX() >= (int)road.getPointX(pointTrack)-3) {
+        if ((int)getConstPosY() <= (int)road.getPointY(pointTrack)+3 && (int)getConstPosY() >= (int)road.getPointY(pointTrack)-3) {
+            pointTrack += 1;
+            NextPoint = true;
+        }
+    }
 }
 
 bool Enemy::isDead() {
@@ -41,12 +67,25 @@ bool Enemy::isDead() {
     return getIsDead();
 }
 
+const float Enemy::enemyDistance(Road& road) const {
 
-// int main(void){
+    float v1,v2;
 
-//     Enemy enemy;
-//     enemy.regressionTest(enemy);
-//     return 0;
-// }
+    v1 = pow(getConstPosX() - road.getPointX(pointTrack),2);
+    v2 = pow(getConstPosY() - road.getPointY(pointTrack),2);
+    return (sqrt(v1) + sqrt(v2));
+}
+
+const float Enemy::enemyDirectionX(Road& road) const{
+    return (getConstPosX() - road.getPointX(pointTrack)) / enemyDistance(road)  ; 
+}
+
+const float Enemy::enemyDirectionY(Road& road) const{
+    return (getConstPosY() - road.getPointY(pointTrack)) / enemyDistance(road)  ; 
+}
 
 
+
+
+
+ 

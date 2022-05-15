@@ -2,11 +2,20 @@
 
 
 Castle::Castle() {
-    setPV(20); //Max 100 pv sinon erreur affichage
+   PVCastle = 20;
 }
 
 Castle::~Castle() {
 
+}
+
+const int Castle::getPV() {
+    return PVCastle;
+}
+
+
+void Castle::damageCastle(){
+    PVCastle = PVCastle - 1;
 }
 
 
