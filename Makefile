@@ -30,7 +30,7 @@ OBJSDL = $(addprefix $(ODIR)/, $(_OBJSDL))
 OBJTXT = $(addprefix $(ODIR)/, $(_OBJTXT))
 
 $(BDIR)/AppSDL: $(OBJCORE) $(OBJSDL)
-	$(CC) $(DEBUG) $^ -o $@ -L$(SDLLIB) -lSDL2_image -lSDL2 -lSDL2_ttf
+	$(CC) $(DEBUG) $^ -o $@ -L$(SDLLIB) -lSDL2_image -lSDL2 -lSDL2_ttf -lSDL2_mixer
 
 $(BDIR)/AppTxt: $(OBJTXT) $(OBJCORE)
 	$(CC) $^ -o $@

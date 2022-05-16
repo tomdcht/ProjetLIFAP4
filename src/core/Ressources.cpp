@@ -2,7 +2,7 @@
 #include <iostream>
 
 Ressources::Ressources(){
-    gold = 900;
+    gold = 150;
 }
 
 Ressources::~Ressources(){

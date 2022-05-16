@@ -20,7 +20,7 @@ Projectile::Projectile() {
     projectileAvancementX = 0;
     projectileAvancementY = 0;
 
-    time = 10;
+    time = 30;
     timeDelete = 0;
 
     path = "data/Projectile/Arrow01.png";
@@ -92,13 +92,14 @@ void Projectile::track(Enemy& enemy, const Tower& tower, Road& road) {
             enemy.setPV(enemy.getPV()- tower.getDamage());
             tracking = false;
             _inRange = false;
+            timeDelete = 0;
         }
     }
 
 
     timeDelete += 1;
 
-    if (timeDelete >= time+10) {
+    if (timeDelete >= time+50) {
         std::cout << (int)getPosX() <<"==" << (int)enemy.getConstPosX()<< " et " <<(int)getPosY()<< "==" <<(int)enemy.getConstPosY()<< std::endl; 
         tracking = false;
         _inRange = false;
@@ -108,9 +109,8 @@ void Projectile::track(Enemy& enemy, const Tower& tower, Road& road) {
 }
 
 void Projectile::inRange(const Enemy& enemy, const Tower& tower){
-
     if (projectileDistance(enemy.getConstPosX(),enemy.getConstPosY(), tower) < tower.getRange() && tracking == false) {
-        _inRange = true;
+         _inRange = true;
         
     }
 

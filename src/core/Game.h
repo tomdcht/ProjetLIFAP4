@@ -43,6 +43,22 @@ class Game{
         // time+1 par actualisation pour le nombre d'ennemies
         int time = 0;
         int n = 0;
+
+        int timeVague1 = 200;
+        int timeVague2 = 170;
+        int timeVague3 = 150;
+        int timeVague4 = 120;
+        bool vague1 = true;
+        bool vague3 = false;
+        bool vague4 = false;
+        bool vague2 = false;
+
+        bool vague1End = false;
+        bool vague3End = false;
+        bool vague4End = false;
+        bool vague2End = false;
+        int nbTotalEnemy = 0;
+
         
         int e_minimum = 0;    // PLACER MINIMUM DANS GAME.CPP AUTO EVENTS EN CONST
         int p_minimum = 0;  // PLACER MINIMUM DANS GAME.CPP AUTO EVENTS EN CONST
@@ -58,6 +74,9 @@ class Game{
 
         bool newEnemy = false;
         bool newTower = false;
+
+        int nbNewEnemy;
+        int tabTower[9];
 
         bool newProjectile1 = false;
         bool newProjectile2 = false;
@@ -89,13 +108,15 @@ class Game{
         void earnGold();
 
         /** \brief Procédure ajoutant une tour archer active (max 5)*/
-        void addTowerArch();
+        void addTowerArch(int num);
 
         /** \brief Procédure ajoutant une tour magique active (max 5)*/
-        void addTowerMagic();
+        void addTowerMagic(int num);
 
         /** \brief Procédure ajoutant une tour magique active (max 5)*/
-        void addTowerBomb();
+        void addTowerBomb(int num);
+
+        void coordTower(int num);
 
 
 

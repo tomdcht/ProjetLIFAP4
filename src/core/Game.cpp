@@ -21,8 +21,9 @@ Game::Game(){
     newProjectile1 = true;
     newTower = true;
     newEnemy = true;
-    
-
+    getItTower(towers, 0)-> setPos(coordTowers[0][0],coordTowers[0][1]);
+    //getItProjectile(projectiles1,0)->fctPath("data/Projectile/Arrow01.png");
+    tabTower[0] = 0;
 }
 
 
@@ -52,244 +53,208 @@ void Game::coordTowersFonction(std::vector<float> coord) {
 
 void Game::earnGold(){
     gold.setGold(gold.getGold() + 10);
-
 }
 
-void Game::addTowerArch() {
+void Game::coordTower(int num) {
+    if (num == 2) {getItTower(towers, 0) -> setPos(coordTowers[1][0],coordTowers[1][1]);}
+    if (num == 3) {getItTower(towers, 0) -> setPos(coordTowers[2][0],coordTowers[2][1]);}
+    if (num == 4) {getItTower(towers, 0) -> setPos(coordTowers[3][0],coordTowers[3][1]);}
+    if (num == 5) {getItTower(towers, 0) -> setPos(coordTowers[4][0],coordTowers[4][1]);}
+    if (num == 6) {getItTower(towers, 0) -> setPos(coordTowers[5][0],coordTowers[5][1]);}
+    if (num == 7) {getItTower(towers, 0) -> setPos(coordTowers[6][0],coordTowers[6][1]);}
+    if (num == 8) {getItTower(towers, 0) -> setPos(coordTowers[7][0],coordTowers[7][1]);}
+    if (num == 9) {getItTower(towers, 0) -> setPos(coordTowers[8][0],coordTowers[8][1]);}
+}
+
+void Game::addTowerArch(int num) {
 
     if (getCountTower()<9 && gold.getGold() >= 100) {
-        towers.push_back(new TowerArcher);
-        setCountTower(getCountTower()+1);
+        towers.push_front(new TowerArcher);
         gold.setGold(gold.getGold() - 100);
+        setCountTower(getCountTower()+1);
+        newTower = true;
+        coordTower(num);
 
         if (getCountTower() == 2) {
-            getItTower(towers, 1) -> setPos(coordTowers[1][0],coordTowers[1][1]);
             projectiles2.push_front(new Projectile);
-            getItProjectile(projectiles2,0)->setTime(10);
+            getItProjectile(projectiles2,0)->setTime(30);
             newProjectile2 = true;
-            newTower = true;
         }
 
-        if (getCountTower() == 3) {
-            getItTower(towers, 2) -> setPos(coordTowers[2][0],coordTowers[2][1]);
-            projectiles3.push_front(new Projectile);
-            getItProjectile(projectiles3,0)->setTime(10);
-            newProjectile3 = true;
-            newTower = true;
+         if (getCountTower() == 3) {
+             projectiles3.push_front(new Projectile);
+             getItProjectile(projectiles3,0)->setTime(30);
+             newProjectile3 = true;
         }
 
         if (getCountTower() == 4) {
-            getItTower(towers, 3) -> setPos(coordTowers[3][0],coordTowers[3][1]);
             projectiles4.push_front(new Projectile);
-            getItProjectile(projectiles4,0)->setTime(10);
+            getItProjectile(projectiles4,0)->setTime(30);
             newProjectile4 = true;
-            newTower = true;
         }  
 
         if (getCountTower() == 5) {
-            getItTower(towers, 4) -> setPos(coordTowers[4][0],coordTowers[4][1]);
             projectiles5.push_front(new Projectile);
-            getItProjectile(projectiles5,0)->setTime(10);
+            getItProjectile(projectiles5,0)->setTime(30);
             newProjectile5 = true;
-            newTower = true;
         }
 
         if (getCountTower() == 6) {
-            getItTower(towers, 5) -> setPos(coordTowers[5][0],coordTowers[5][1]);
             projectiles6.push_front(new Projectile);
-            getItProjectile(projectiles6,0)->setTime(10);
+            getItProjectile(projectiles6,0)->setTime(30);
             newProjectile6 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 7) {
-            getItTower(towers, 6) -> setPos(coordTowers[6][0],coordTowers[6][1]);
             projectiles7.push_front(new Projectile);
-            getItProjectile(projectiles7,0)->setTime(10);
+            getItProjectile(projectiles7,0)->setTime(30);
             newProjectile7 = true;
-            newTower = true;
+
         } 
 
         if (getCountTower() == 8) {
-            getItTower(towers, 7) -> setPos(coordTowers[7][0],coordTowers[7][1]);
             projectiles8.push_front(new Projectile);
-            getItProjectile(projectiles8,0)->setTime(10);
+            getItProjectile(projectiles8,0)->setTime(30);
             newProjectile8 = true;
             newTower = true;
+
         } 
 
         if (getCountTower() == 9) {
-            getItTower(towers, 8) -> setPos(coordTowers[8][0],coordTowers[8][1]);
             projectiles9.push_front(new Projectile);
             getItProjectile(projectiles9,0)->setTime(10);
             newProjectile9 = true;
-            newTower = true;
         }   
 
     }
 
 }
 
-void Game::addTowerMagic() {
+void Game::addTowerMagic(int num) {
 
-    if (getCountTower()<9 && gold.getGold() >= 100) {
-        towers.push_back(new TowerMagic);
+    if (getCountTower()<9 && gold.getGold() >= 200) {
+        towers.push_front(new TowerMagic);
+        gold.setGold(gold.getGold() - 200);
         setCountTower(getCountTower()+1);
-        gold.setGold(gold.getGold() - 100);
+        newTower = true;
+        coordTower(num);
 
         if (getCountTower() == 2) {
-            getItTower(towers, 1) -> setPos(coordTowers[1][0],coordTowers[1][1]);
             projectiles2.push_front(new Projectile);
-            getItProjectile(projectiles2,0)->setTime(7);
-            getItProjectile(projectiles2,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles2,0)->setTime(20);
             newProjectile2 = true;
-            newTower = true;
         }
 
         if (getCountTower() == 3) {
-            getItTower(towers, 2) -> setPos(coordTowers[2][0],coordTowers[2][1]);
             projectiles3.push_front(new Projectile);
-            getItProjectile(projectiles3,0)->setTime(7);
-            getItProjectile(projectiles3,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles3,0)->setTime(20);
             newProjectile3 = true;
-            newTower = true;
         }
 
         if (getCountTower() == 4) {
-            getItTower(towers, 3) -> setPos(coordTowers[3][0],coordTowers[3][1]);
             projectiles4.push_front(new Projectile);
-            getItProjectile(projectiles4,0)->setTime(7);
-            getItProjectile(projectiles4,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles4,0)->setTime(20);
             newProjectile4 = true;
-            newTower = true;
         }  
 
         if (getCountTower() == 5) {
-            getItTower(towers, 4) -> setPos(coordTowers[4][0],coordTowers[4][1]);
             projectiles5.push_front(new Projectile);
-            getItProjectile(projectiles5,0)->setTime(7);
-            getItProjectile(projectiles5,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles5,0)->setTime(20);
             newProjectile5 = true;
-            newTower = true;
         }  
 
         if (getCountTower() == 6) {
-            getItTower(towers, 5) -> setPos(coordTowers[5][0],coordTowers[5][1]);
             projectiles6.push_front(new Projectile);
-            getItProjectile(projectiles6,0)->setTime(7);
-            getItProjectile(projectiles6,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles6,0)->setTime(20);
             newProjectile6 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 7) {
-            getItTower(towers, 6) -> setPos(coordTowers[6][0],coordTowers[6][1]);
             projectiles7.push_front(new Projectile);
-            getItProjectile(projectiles7,0)->setTime(7);
-            getItProjectile(projectiles7,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles7,0)->setTime(20);
             newProjectile7 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 8) {
-            getItTower(towers, 7) -> setPos(coordTowers[7][0],coordTowers[7][1]);
             projectiles8.push_front(new Projectile);
-            getItProjectile(projectiles8,0)->setTime(7);
-            getItProjectile(projectiles8,0)->fctPath("data/Projectile/Magic01.png");
+            getItProjectile(projectiles8,0)->setTime(20);
             newProjectile8 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 9) {
-            getItTower(towers, 8) -> setPos(coordTowers[8][0],coordTowers[8][1]);
             projectiles9.push_front(new Projectile);
-            getItProjectile(projectiles9,0)->setTime(7);
+            getItProjectile(projectiles9,0)->setTime(20);
             getItProjectile(projectiles9,0)->fctPath("data/Projectile/Magic01.png");
             newProjectile9 = true;
-            newTower = true;
         }   
 
     }
 
 }
 
-void Game::addTowerBomb() {
+void Game::addTowerBomb(int num) {
 
-    if (getCountTower()<9 && gold.getGold() >= 100) {
-        towers.push_back(new TowerBomb);
+    if (getCountTower()<9 && gold.getGold() >= 150) {
+        towers.push_front(new TowerBomb);
         setCountTower(getCountTower()+1);
-        gold.setGold(gold.getGold() - 100);
+        gold.setGold(gold.getGold() - 150);
+        newTower = true;
+        coordTower(num);
 
         if (getCountTower() == 2) {
-            getItTower(towers, 1) -> setPos(coordTowers[1][0],coordTowers[1][1]);
             projectiles2.push_front(new Projectile);
-            getItProjectile(projectiles2,0)->setTime(15);
+            getItProjectile(projectiles2,0)->setTime(50);
             getItProjectile(projectiles2,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile2 = true;
-            newTower = true;
         }
 
         if (getCountTower() == 3) {
-            getItTower(towers, 2) -> setPos(coordTowers[2][0],coordTowers[2][1]);
             projectiles3.push_front(new Projectile);
-            getItProjectile(projectiles3,0)->setTime(15);
+            getItProjectile(projectiles3,0)->setTime(50);
             getItProjectile(projectiles3,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile3 = true;
-            newTower = true;
         }
 
         if (getCountTower() == 4) {
-            getItTower(towers, 3) -> setPos(coordTowers[3][0],coordTowers[3][1]);
             projectiles4.push_front(new Projectile);
-            getItProjectile(projectiles4,0)->setTime(15);
+            getItProjectile(projectiles4,0)->setTime(50);
             getItProjectile(projectiles4,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile4 = true;
-            newTower = true;
         }  
 
         if (getCountTower() == 5) {
-            getItTower(towers, 4) -> setPos(coordTowers[4][0],coordTowers[4][1]);
             projectiles5.push_front(new Projectile);
-            getItProjectile(projectiles5,0)->setTime(15);
+            getItProjectile(projectiles5,0)->setTime(50);
             getItProjectile(projectiles5,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile5 = true;
-            newTower = true;
         }  
 
         if (getCountTower() == 6) {
-            getItTower(towers, 5) -> setPos(coordTowers[5][0],coordTowers[5][1]);
             projectiles6.push_front(new Projectile);
-            getItProjectile(projectiles6,0)->setTime(15);
+            getItProjectile(projectiles6,0)->setTime(50);
             getItProjectile(projectiles6,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile6 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 7) {
-            getItTower(towers, 6) -> setPos(coordTowers[6][0],coordTowers[6][1]);
             projectiles7.push_front(new Projectile);
-            getItProjectile(projectiles7,0)->setTime(15);
+            getItProjectile(projectiles7,0)->setTime(50);
             getItProjectile(projectiles7,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile7 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 8) {
-            getItTower(towers, 7) -> setPos(coordTowers[7][0],coordTowers[7][1]);
             projectiles8.push_front(new Projectile);
-            getItProjectile(projectiles8,0)->setTime(15);
+            getItProjectile(projectiles8,0)->setTime(50);
             getItProjectile(projectiles8,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile8 = true;
-            newTower = true;
         } 
 
         if (getCountTower() == 9) {
-            getItTower(towers, 8) -> setPos(coordTowers[8][0],coordTowers[8][1]);
             projectiles9.push_front(new Projectile);
-            getItProjectile(projectiles9,0)->setTime(15);
+            getItProjectile(projectiles9,0)->setTime(50);
             getItProjectile(projectiles9,0)->fctPath("data/Projectile/Bomb01.png");
             newProjectile9 = true;
-            newTower = true;
         }   
 
     }
@@ -384,14 +349,11 @@ void Game::setCountTower(int _count) { countTower = _count; }
 
 void Game::autoEvents() {
 
-    const int sizeTowers = towers.size();
-
 
     int e_track = 0;
     int p_track = 0;
     int t_track = 0;
 
-    getItTower(towers, 0)-> setPos(coordTowers[0][0],coordTowers[0][1]);
 
 
     // ---------------------------------------------------------- Avancement et Mort des ennemies ---------------------------------------------------------
@@ -414,12 +376,10 @@ void Game::autoEvents() {
 
     // ------------------------------------------------------------ Avancement des Projectiles ------------------------------------------------------------
 
-
-        for (t_track = 0 ; t_track < sizeTowers ; t_track++) {
+        p_track = 0;
+        for (t_track = 0 ; t_track < getSizeListTower() ; t_track++) {
 
             std::list<Projectile*> projectiles;
-
-            
             if(t_track == 0){projectiles.assign(projectiles1.begin(),projectiles1.end());}
             if(t_track == 1){projectiles.assign(projectiles2.begin(),projectiles2.end());}
             if(t_track == 2){projectiles.assign(projectiles3.begin(),projectiles3.end());}
@@ -433,7 +393,7 @@ void Game::autoEvents() {
             
 
             for (p_track = 0; p_track < getSizeListProjectile(p_track+1) ; p_track ++) {
-
+                
                 for (e_track = 0 ; e_track < enemies.size() ; e_track++) {
 
                     // Calcule si l'enemie est dans le range : _inRange = true or false
@@ -448,16 +408,17 @@ void Game::autoEvents() {
 
                         } 
                     }
+                    
                     if (getItEnemy(enemies, e_track)-> isDead() == true) {
                             earnGold();
-                            std::cout << "Enemy Dead" << std::endl;
                             enemies.remove(getItEnemy(enemies, e_track));
                             if (e_track > 0) {e_track = e_track+1;}
                             getItProjectile(projectiles,p_track)-> setPos(coordTowers[t_track-1][0],coordTowers[t_track-1][1]);
                             
                     }
                 }
-            }
+                
+             }
         
             if(t_track == 0){projectiles1.assign(projectiles.begin(),projectiles.end());}
             if(t_track == 1){projectiles2.assign(projectiles.begin(),projectiles.end());}
@@ -477,16 +438,87 @@ void Game::autoEvents() {
 
 
     time++;
-    if(time == 200) {
-        enemies.push_back(new Enemy);
+
+    std::cout << "vague1" << std::endl;
+
+    if(vague1 && nbTotalEnemy<6){
+        if(time == timeVague1){
+            enemies.push_back(new Enemy);
+            time = 0;
+            newEnemy = true;
+            nbTotalEnemy ++;
+        }
+    }  else {
+        if(vague1 && time == timeVague1*4){
+            enemies.push_back(new Enemy);
+            getItEnemy(enemies,enemies.size()-1)->path = "data/Boss/Boss1Walk.png";
+            getItEnemy(enemies,6)->setPV(110);
+            time = 0;
+            newEnemy = true;
+            nbTotalEnemy ++;
+            vague1 = false;
+            vague1End = true;
+        }
+
+    }
+
+    if (vague1End == true && time == 1000) {
+        vague2 = true;
         time = 0;
-        newEnemy = true;
+        std::cout << "vague2" << std::endl;
+        vague1End = false;
+    }
+
+    
+
+    if(vague2 && nbTotalEnemy<20){
+        if(time == timeVague2){
+            enemies.push_back(new Enemy);
+            time = 0;
+            newEnemy = true;
+            nbTotalEnemy ++;
+        }
+    }  else {
+        if(vague2 && time == timeVague2*2){
+            enemies.push_back(new Enemy);
+            getItEnemy(enemies,enemies.size()-1)->path = "data/Boss/Boss1Walk.png";
+            time = 0;
+            newEnemy = true;
+            nbTotalEnemy ++;
+            vague2 = false;
+            vague2End = true;
+        }
 
     }
 
 
+    if (vague2End == true && time == 1000) {
+        vague3 = true;
+        time = 0;
+        std::cout << "vague3" << std::endl;
+        vague2End = false;
+    }
 
 
+    if(vague3 && nbTotalEnemy<40){
+        if(time == timeVague3){
+            enemies.push_back(new Enemy);
+            time = 0;
+            newEnemy = true;
+            nbTotalEnemy ++;
+        }
+    }  else {
+        if(vague3 && time == timeVague3*2){
+            enemies.push_back(new Enemy);
+            getItEnemy(enemies,enemies.size()-1)->path = "data/Boss/Boss1Walk.png";
+            time = 0;
+            newEnemy = true;
+            nbTotalEnemy ++;
+            vague3 = false;
+            vague3End = true;
+        }
+
+    }
 
 
 

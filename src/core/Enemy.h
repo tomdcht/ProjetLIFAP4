@@ -40,6 +40,7 @@ class Enemy : public Entity{
 
     public:
 
+        /** */
         int pointTrack;
 
         /** \brief Constructeur apr défaut de la classe Enemy */

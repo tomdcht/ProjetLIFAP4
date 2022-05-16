@@ -88,6 +88,19 @@ void ImageSDL::draw(SDL_Renderer * renderer, int x_src, int y_src, int w_src, in
     assert(ok == 0);
 }
 
+void ImageSDL::write(SDL_Renderer* renderer, const char* text, TTF_Font* font, const char* font_name, int font_size, SDL_Color color, int x, int y, int w, int h){
+    int ok;
+    SDL_Rect dst_rect = {x, y, w, h};
+    font = TTF_OpenFont(font_name, font_size);
+    surface = TTF_RenderText_Solid(font, text, color);
+
+    texture = SDL_CreateTextureFromSurface(renderer, surface);
+    TTF_CloseFont(font);
+    SDL_FreeSurface(surface);
+    ok = SDL_RenderCopy(renderer,texture, NULL, &dst_rect);
+    assert(ok == 0);
+}
+
 SDL_Texture * ImageSDL::getTexture() const {return texture;}
 
 void ImageSDL::setSurface(SDL_Surface * surf) {surface = surf;}

@@ -6,7 +6,7 @@ TowerMagic::TowerMagic(){
     setRange(400);
     setPrice(200);
     setDamage(3);
-    path = "data/Tower/PNG/MagicTower/Lvl1/01.png";
+    path = "data/Tower/PNG/MagicTower/Lvl1/sprites_TowerMagic.png";
     texture = NULL;
     surface = NULL;
 }

@@ -2,6 +2,7 @@
 
 
 Tower::Tower(){
+    level = 0;
 }
 
 Tower::~Tower(){

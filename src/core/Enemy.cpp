@@ -7,7 +7,7 @@ Enemy::Enemy() {
 
     setPos(0.f, 855.f);
     setSpeed(1);
-    setPV(100);
+    setPV(30);
     setIsDead(false);
     isArrived = false;
     NextPoint = true;

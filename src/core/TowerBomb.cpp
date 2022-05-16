@@ -6,7 +6,7 @@ TowerBomb::TowerBomb(){
     setRange(250);
     setPrice(200);
     setDamage(20);
-    path = "data/Tower/PNG/BombTower/Lvl1/01.png";
+    path = "data/Tower/PNG/BombTower/Lvl1/sprites_TowerBomb.png";
     texture = NULL;
     surface = NULL;
 }

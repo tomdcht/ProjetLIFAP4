@@ -9,10 +9,9 @@ class Tower : public Entity{
         /** \brief Prix d'une tour d'archer */
         int price;
 
-        /** \brief Prix d'une tour d'archer */
-        int level;
-
     public:
+
+        int level;
         Tower();
         ~Tower();
 

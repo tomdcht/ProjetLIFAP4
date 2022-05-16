@@ -29,6 +29,7 @@
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_mixer.h>
 #include "../SDL2/ImageSDL.h"
 
 #include "../core/Game.h"
@@ -52,7 +53,6 @@
 #define HEIGHT_CASTLE 320
 
 #define HEIGHT_PAUSE_BUTTON 60
-
 #define WIDTH_PAUSE_BUTTON 60
 
 #define WIDTH_PVCASTLE 170
@@ -60,6 +60,9 @@
 
 #define WIDTH_COINS 220
 #define HEIGHT_COINS 70
+
+#define WIDTH_MENU_PERDU 600
+#define HEIGHT_MENU_PERDU 600
 
 class AppSDL {
     private:
@@ -72,7 +75,16 @@ class AppSDL {
 
         ImageSDL background; //!\ Déclarer en Map et faire l'affichage de la map en ajoutant un path à la map /!\*/
         ImageSDL menuPrinc;
+        ImageSDL menuPerdu;
         ImageSDL quitButton;
+        ImageSDL textGold;
+        ImageSDL textPvCastle;
+        ImageSDL infoButton;
+        ImageSDL menuInfo;
+        ImageSDL shopButton;
+        ImageSDL menuShop;
+        ImageSDL settingsButton;
+        ImageSDL menuSettings;
 
         ImageSDL castleImage1;
         ImageSDL castleImage2;
@@ -80,11 +92,12 @@ class AppSDL {
 
         ImageSDL coins;
         ImageSDL PVCastle;
-            
-        // SDL_Surface* fontSurface;
-        // SDL_Color fColor;
-        // SDL_Rect fontRect;
-        // TTF_Font* font;
+
+        ImageSDL MenuBuy;
+        ImageSDL MenuUpgrade1;
+        ImageSDL MenuUpgrade2;
+        ImageSDL MenuUpgrade3;
+        ImageSDL MenuUpgradeMax;
 
     public:
         Game game;
@@ -94,6 +107,12 @@ class AppSDL {
 
         /** \param Paramètres permettant la création d'un rendu SDL*/
         SDL_Renderer *renderer;
+
+        TTF_Font* font;
+
+        SDL_Color color = {255, 255 ,255};
+
+        Mix_Music* music;
 
         /** \brief Constructeur par défaut de la classe jeu*/
         AppSDL ();
@@ -106,9 +125,29 @@ class AppSDL {
 
         void fontInit();
 
-        void printF(char *c, int x, int y);
+        void playSound(Mix_Music* music, const char* filename);
 
+        void affMenuTower(int n, int posx, int posy);
+        void affMenuTowerUpgrade1(int n, int posx, int posy);
+        void affMenuTowerUpgrade2(int n, int posx, int posy);
+        void affMenuTowerUpgrade3(int n, int posx, int posy);
+        void affMenuTowerUpgradeMax(int n, int posx, int posy);
+
+         /** \brief Procédure qui affiche la page d'acceuil donc le menu principal */
         void affMenuPrinc();
+
+        /** \brief Procédure qui affiche la page relié aux infos concernant les tours et leur niveau */
+        void affInfo();
+
+        /** \brief Procédure qui affiche la page de la boutique */
+        void affShop();
+
+        /** \brief Procédure qui affiche les parametres du jeu*/
+        void affSettings();
+
+        void endGame();
+
+        bool pause();
 
 
 };
