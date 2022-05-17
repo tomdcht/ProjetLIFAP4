@@ -1,11 +1,10 @@
 <map id="src/core/Game.h" name="src/core/Game.h">
-<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe Game." alt="" coords="235,5,363,32"/>
-<area shape="rect" id="node2" href="$_enemy_8h.html" title="Définition des donées membres et des fonctions membres de la classe Enemy." alt="" coords="377,155,454,181"/>
-<area shape="rect" id="node6" href="$_map_8h.html" title="Définition des donées membres et des fonctions membres de la classe Map." alt="" coords="460,229,523,256"/>
-<area shape="rect" id="node7" href="$_tower_archer_8h.html" title="Définition des donées membres et des fonctions membres de la classe TowerArcher." alt="" coords="137,155,251,181"/>
-<area shape="rect" id="node8" href="$_projectile_8h.html" title="Définition des donées membres et des fonctions membres de la classe Projectile." alt="" coords="252,80,347,107"/>
-<area shape="rect" id="node9" href="$_ressources_8h.html" title=" " alt="" coords="5,155,113,181"/>
-<area shape="rect" id="node3" title=" " alt="" coords="281,229,361,256"/>
-<area shape="rect" id="node4" title=" " alt="" coords="393,229,435,256"/>
-<area shape="rect" id="node5" href="$_entity_8h.html" title="Définition des donées membres et des fonctions membres de la classe Entity." alt="" coords="168,229,239,256"/>
+<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe Game." alt="" coords="213,5,341,32"/>
+<area shape="rect" id="node2" href="$_ressources_8h.html" title=" " alt="" coords="5,80,113,107"/>
+<area shape="rect" id="node4" href="$_road_8h.html" title=" " alt="" coords="138,80,205,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="175,155,237,181"/>
+<area shape="rect" id="node6" href="$_map_8h.html" title="Définition des donées membres et des fonctions membres de la classe Map." alt="" coords="280,80,343,107"/>
+<area shape="rect" id="node7" href="$_castle_8h.html" title="Définition des donées membres et des fonctions membres de la classe Castle." alt="" coords="367,80,442,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="466,80,509,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="62,155,142,181"/>
 </map>

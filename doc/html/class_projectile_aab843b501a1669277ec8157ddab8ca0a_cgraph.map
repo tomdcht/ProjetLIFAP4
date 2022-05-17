@@ -1,0 +1,10 @@
+<map id="Projectile::projectileDirectionX" name="Projectile::projectileDirectionX">
+<area shape="rect" id="node1" title="Fonction calculant la direction en x depuis une tour vers un ennemi." alt="" coords="5,81,225,108"/>
+<area shape="rect" id="node2" href="$class_enemy.html#adf23e5e83dc77b5b9896df6deaab9528" title=" " alt="" coords="273,81,460,108"/>
+<area shape="rect" id="node4" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="732,5,889,32"/>
+<area shape="rect" id="node8" href="$class_entity.html#a285dfcfbbc0ca74d0637c15f427eb6d3" title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const." alt="" coords="284,132,449,159"/>
+<area shape="rect" id="node3" href="$class_enemy.html#ae96ba0b49cf1ab2f02087e1025d68e4a" title=" " alt="" coords="508,107,684,133"/>
+<area shape="rect" id="node6" href="$class_road.html#a3d9af22c8a684b0fde2ce1b390d27d2a" title="Accesseur du PointX, recupère sa valeur." alt="" coords="747,157,874,184"/>
+<area shape="rect" id="node5" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="733,56,889,83"/>
+<area shape="rect" id="node7" href="$class_road.html#ab7507b9872a1990388e7fa18d3c3253f" title="Accesseur du PointY, récupère sa valeur." alt="" coords="748,107,873,133"/>
+</map>

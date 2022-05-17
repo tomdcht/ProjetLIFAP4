@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['x_118',['x',['../class_vec2.html#a0ee7118259bcfc2fe997d4bf816ed682',1,'Vec2']]]
+  ['setconstdimx_127',['setConstDimX',['../class_window_t_x_t.html#a14d6b2bd82ee129b50c801378a2f79f4',1,'WindowTXT']]],
+  ['setcounttower_128',['setCountTower',['../class_game.html#af57d23ca6bcac76839e6ca0b713aa361',1,'Game']]],
+  ['setdamage_129',['setDamage',['../class_entity.html#aa3e4324343ffa8395c40468d6966654e',1,'Entity']]],
+  ['setdamagearrow_130',['setDamageArrow',['../class_game.html#aa7dee026ba5ef8c0d073f76364bfad3a',1,'Game']]],
+  ['setdimx_131',['setDimX',['../class_window_t_x_t.html#a74d57d574fc1a214472ac395a6031437',1,'WindowTXT']]],
+  ['setgold_132',['setGold',['../class_ressources.html#a75e34ffd849c67500c1b292df9186a2f',1,'Ressources']]],
+  ['setisarrived_133',['setIsArrived',['../class_enemy.html#aa43f1dedcced3cab663e25ab2c7d5b4a',1,'Enemy']]],
+  ['setisdead_134',['setIsDead',['../class_entity.html#a048e30a0b851dc9073d5ec40396e38a4',1,'Entity']]],
+  ['setlevel_135',['setLevel',['../class_tower.html#af2396c645d62dea416578d13c82192ba',1,'Tower']]],
+  ['setpos_136',['setPos',['../class_entity.html#a5b37027cb419da8f2d08aae7b6da2938',1,'Entity']]],
+  ['setposx_137',['setPosX',['../class_entity.html#a36acb34214fabf4355ea9068543c2435',1,'Entity']]],
+  ['setposy_138',['setPosY',['../class_entity.html#a2043f8c1dbb431cd210ec30f0ae8feeb',1,'Entity']]],
+  ['setprice_139',['setPrice',['../class_tower.html#aef61dd07944b209caf0a1bdcf9b568af',1,'Tower']]],
+  ['setprojectile_140',['setProjectile',['../class_projectile.html#ae9c35f356ee00586d5b22c14ff2e1ab0',1,'Projectile']]],
+  ['setpv_141',['setPV',['../class_castle.html#a04341ae704056f1d982d7b42f84a321f',1,'Castle::setPV()'],['../class_entity.html#a2f1d8b793ec68f84a0adeb938ad57ee5',1,'Entity::setPV()']]],
+  ['setrange_142',['setRange',['../class_tower.html#adc0cce29130f8b3c35f416f88eb097be',1,'Tower']]],
+  ['setspeed_143',['setSpeed',['../class_entity.html#adc48ea3a922e2705958bcb1f3066011b',1,'Entity']]],
+  ['settime_144',['setTime',['../class_projectile.html#ad8f541084dea689d7f2c8d6893c77129',1,'Projectile']]]
 ];

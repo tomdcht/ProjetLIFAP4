@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_271',['y',['../class_vec2.html#a9c6f37b5242919bccff799c8f05dee55',1,'Vec2']]]
+  ['gold_359',['gold',['../class_game.html#a43ceaddc511dd58c6eb5cf151c44f2e1',1,'Game']]]
 ];

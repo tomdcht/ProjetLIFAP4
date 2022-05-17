@@ -1,0 +1,5 @@
+<map id="Enemy::enemyDirectionY" name="Enemy::enemyDirectionY">
+<area shape="rect" id="node1" title=" " alt="" coords="272,31,459,57"/>
+<area shape="rect" id="node2" href="$class_projectile.html#ab75864403c68d4d2f2b0f80004cd2778" title="Fonction calculant la direction en y depuis une tour vers un ennemi." alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#a8d79bf0666d466e582c41e513dcb7b24" title=" " alt="" coords="62,56,167,83"/>
+</map>

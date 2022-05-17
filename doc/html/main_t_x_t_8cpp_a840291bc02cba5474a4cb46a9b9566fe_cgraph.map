@@ -1,23 +1,33 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,60,133"/>
-<area shape="rect" id="node2" href="$class_window_t_x_t.html#a83ebb5f49e60aa4ad260a1f34a412a8f" title="Fonction permettant d&#39;effacer tout le terminal." alt="" coords="108,81,279,108"/>
-<area shape="rect" id="node3" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title="Boucle pour l&#39;affichage et la gestion des évènements." alt="" coords="158,132,229,159"/>
-<area shape="rect" id="node4" href="$class_game.html#acd26cbdfb8fa7cec1832711e618fec45" title="Fonction gérant tous les évènements automatiques du jeu." alt="" coords="327,5,470,32"/>
-<area shape="rect" id="node5" href="$class_window_t_x_t.html#a05997a70b080e106a15520a52d82fd2c" title="Fonction permettant de recevoir un caractère tapé au clavier." alt="" coords="327,56,471,83"/>
-<area shape="rect" id="node7" href="$class_game.html#a74dda151003b81807c663d07eda2c657" title="Accesseur renvoyant la map de type const." alt="" coords="545,107,699,133"/>
-<area shape="rect" id="node8" href="$class_map.html#a421954a09241f064e551c84f6f044744" title="Renvoie la largeur du terrain." alt="" coords="565,157,679,184"/>
-<area shape="rect" id="node9" href="$class_map.html#a1de1775f4a648f64d2310763dc10affe" title="Renvoie la hauteur du terrain." alt="" coords="565,208,679,235"/>
-<area shape="rect" id="node10" href="$_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" title="Fonction dans lequel l&#39;affichage se fait." alt="" coords="361,385,436,412"/>
-<area shape="rect" id="node6" href="$window_t_x_t_8cpp.html#a22f527b59d86c3eb3e750e7e2057ca4f" title=" " alt="" coords="595,56,649,83"/>
-<area shape="rect" id="node11" href="$class_window_t_x_t.html#a79659c7c121f98d9021e422a69d61333" title="Fonction permettant de remplir le terminal d&#39;un même caractère." alt="" coords="553,411,691,437"/>
-<area shape="rect" id="node12" href="$class_window_t_x_t.html#a0243ba21b4e67a20c74b94c0192e3e02" title="Fonction permettant de remplir le tableau de caractère de la fenêtre." alt="" coords="792,385,928,412"/>
-<area shape="rect" id="node13" href="$class_window_t_x_t.html#a25d39d051d4874b61fe20311ab1b0f19" title="Fonction permettant d&#39;afficher un caractère depuis un tableau de caractère sur le terminal." alt="" coords="553,461,691,488"/>
-<area shape="rect" id="node15" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="543,512,701,539"/>
-<area shape="rect" id="node16" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="544,563,700,589"/>
-<area shape="rect" id="node17" href="$class_game.html#a590078d6a58c9b1fa63d560df0b30ee6" title="Accesseur renvoyant un projectile de type const." alt="" coords="528,613,716,640"/>
-<area shape="rect" id="node18" href="$class_game.html#a8e1bd589715b549b76b06fc3e4f61f1c" title="Accesseur renvoyant une tour de type const." alt="" coords="519,664,725,691"/>
-<area shape="rect" id="node19" href="$class_game.html#a61492cc55812183eeddc681a5f5a4f1b" title="Accesseur renvoyant un ennemi." alt="" coords="555,715,689,741"/>
-<area shape="rect" id="node20" href="$class_map.html#a988891fac3660f96ca3b205244a30406" title="Fonction renvoyant le caractère aux coordonnées (x,y) de la map." alt="" coords="574,259,670,285"/>
-<area shape="rect" id="node21" href="$class_projectile.html#aa165871b916e32d9b69150e0dcd7a889" title="Fonction renvoyant la valeur de la donnée membre _inRange." alt="" coords="545,309,699,336"/>
-<area shape="rect" id="node14" href="$class_window_t_x_t.html#a73e94d4d47e2948899bc75c6b32e177a" title="Fonction permettant de bouger le curseur du terminal." alt="" coords="773,461,947,488"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,60,209"/>
+<area shape="rect" id="node2" href="$class_window_t_x_t.html#a83ebb5f49e60aa4ad260a1f34a412a8f" title="Fonction permettant d&#39;effacer tout le terminal." alt="" coords="108,157,279,184"/>
+<area shape="rect" id="node3" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title="Boucle pour l&#39;affichage et la gestion des évènements." alt="" coords="158,208,229,235"/>
+<area shape="rect" id="node4" href="$class_game.html#ab2b46f22140705ec36019c777fd7eaa6" title="Procédure ajoutant une tour archer active (max 5)" alt="" coords="332,5,492,32"/>
+<area shape="rect" id="node5" href="$class_game.html#a4e6bf45020c047f7ad8c0d7a5444d5ee" title="Procédure ajoutant une tour magique active (max 5)" alt="" coords="327,56,497,83"/>
+<area shape="rect" id="node6" href="$class_game.html#ac2fa476218f3ad100f7029e7d78183e9" title="Procédure ajoutant une tour magique active (max 5)" alt="" coords="327,107,497,133"/>
+<area shape="rect" id="node7" href="$class_game.html#acd26cbdfb8fa7cec1832711e618fec45" title="Fonction gérant tous les évènements automatiques du jeu." alt="" coords="341,157,483,184"/>
+<area shape="rect" id="node8" href="$class_window_t_x_t.html#a05997a70b080e106a15520a52d82fd2c" title="Fonction permettant de recevoir un caractère tapé au clavier." alt="" coords="340,208,484,235"/>
+<area shape="rect" id="node10" href="$class_game.html#a74dda151003b81807c663d07eda2c657" title=" " alt="" coords="569,259,723,285"/>
+<area shape="rect" id="node11" href="$class_map.html#a421954a09241f064e551c84f6f044744" title="Renvoie la largeur du terrain." alt="" coords="589,309,703,336"/>
+<area shape="rect" id="node12" href="$class_map.html#a1de1775f4a648f64d2310763dc10affe" title="Renvoie la hauteur du terrain." alt="" coords="589,360,703,387"/>
+<area shape="rect" id="node13" href="$_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" title="Fonction dans lequel l&#39;affichage se fait." alt="" coords="375,639,449,665"/>
+<area shape="rect" id="node9" href="$window_t_x_t_8cpp.html#a22f527b59d86c3eb3e750e7e2057ca4f" title=" " alt="" coords="619,208,673,235"/>
+<area shape="rect" id="node14" href="$class_window_t_x_t.html#a79659c7c121f98d9021e422a69d61333" title="Fonction permettant de remplir le terminal d&#39;un même caractère." alt="" coords="577,1069,715,1096"/>
+<area shape="rect" id="node15" href="$class_window_t_x_t.html#a0243ba21b4e67a20c74b94c0192e3e02" title="Fonction permettant de remplir le tableau de caractère de la fenêtre." alt="" coords="813,1069,949,1096"/>
+<area shape="rect" id="node16" href="$class_window_t_x_t.html#a25d39d051d4874b61fe20311ab1b0f19" title="Fonction permettant d&#39;afficher un caractère depuis un tableau de caractère sur le terminal." alt="" coords="577,411,715,437"/>
+<area shape="rect" id="node18" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="567,461,725,488"/>
+<area shape="rect" id="node19" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="568,512,724,539"/>
+<area shape="rect" id="node20" href="$class_game.html#a74d75c5a787ceb100cad9f5c75894ff7" title="Accesseur renvoyant ressources de type const." alt="" coords="545,563,747,589"/>
+<area shape="rect" id="node21" href="$class_game.html#a15f72ecbe312a7d7d2e4939a7174d16e" title=" " alt="" coords="563,613,729,640"/>
+<area shape="rect" id="node22" href="$class_ressources.html#a49874b04539b14db66b1d70a0dc226c8" title="Accesseur de la donnée membre gold." alt="" coords="569,664,723,691"/>
+<area shape="rect" id="node23" href="$class_game.html#a12bc238997269a5a7056ae8e61a0ed32" title="Fonction modifiant le nombre de tours actives." alt="" coords="574,715,718,741"/>
+<area shape="rect" id="node24" href="$class_game.html#a01ba88b54739851f18d26a91c448b063" title="Fonction modifiant le nombre de tours actives." alt="" coords="566,765,726,792"/>
+<area shape="rect" id="node25" href="$class_game.html#a696cd9a1e18e88e31672cc1cd894cbc4" title="Fonction modifiant le nombre de tours actives." alt="" coords="577,816,715,843"/>
+<area shape="rect" id="node26" href="$class_castle.html#a1a0ffead4bbaaf276f73a37875e12aba" title="Accesseur de la donnée membre PVCastle." alt="" coords="591,867,701,893"/>
+<area shape="rect" id="node27" href="$class_map.html#a988891fac3660f96ca3b205244a30406" title="Fonction renvoyant le caractère aux coordonnées (x,y) de la map." alt="" coords="598,917,694,944"/>
+<area shape="rect" id="node28" href="$class_enemy.html#a038e636d16b708f92627348a36750702" title=" " alt="" coords="587,968,705,995"/>
+<area shape="rect" id="node17" href="$class_window_t_x_t.html#a73e94d4d47e2948899bc75c6b32e177a" title="Fonction permettant de bouger le curseur du terminal." alt="" coords="795,411,968,437"/>
+<area shape="rect" id="node29" href="$class_entity.html#a4c3de4661a585b0bd42bd16ce9cc5002" title="Accesseur renvoyant la valeur de la donnée membre &#39;isDead&#39; d&#39;un ennemi." alt="" coords="815,1019,948,1045"/>
+<area shape="rect" id="node30" href="$class_entity.html#a334b52f5de8bbd7fb81f8bbeec08992b" title="Accesseur renvoyant les points de vie d&#39;un ennemi." alt="" coords="829,917,934,944"/>
+<area shape="rect" id="node31" href="$class_entity.html#a048e30a0b851dc9073d5ec40396e38a4" title="Accesseur modifiant la données membre &#39;isDead&#39; d&#39;un ennemi." alt="" coords="815,968,947,995"/>
 </map>

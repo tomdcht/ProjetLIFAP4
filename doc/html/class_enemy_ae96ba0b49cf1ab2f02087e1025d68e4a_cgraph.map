@@ -1,0 +1,7 @@
+<map id="Enemy::enemyDistance" name="Enemy::enemyDistance">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,181,108"/>
+<area shape="rect" id="node2" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="229,5,387,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="230,56,386,83"/>
+<area shape="rect" id="node4" href="$class_road.html#a3d9af22c8a684b0fde2ce1b390d27d2a" title="Accesseur du PointX, recupère sa valeur." alt="" coords="245,107,371,133"/>
+<area shape="rect" id="node5" href="$class_road.html#ab7507b9872a1990388e7fa18d3c3253f" title="Accesseur du PointY, récupère sa valeur." alt="" coords="245,157,371,184"/>
+</map>

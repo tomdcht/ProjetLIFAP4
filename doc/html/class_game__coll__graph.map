@@ -1,3 +1,5 @@
 <map id="Game" name="Game">
-<area shape="rect" id="node1" title="Classe gérant la physique du jeu." alt="" coords="5,5,191,259"/>
+<area shape="rect" id="node1" title="Classe gérant la physique du jeu." alt="" coords="65,204,247,575"/>
+<area shape="rect" id="node2" href="$class_castle.html" title=" " alt="" coords="5,5,147,141"/>
+<area shape="rect" id="node3" href="$class_ressources.html" title=" " alt="" coords="171,13,303,134"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="Enemy::Enemy" name="Enemy::Enemy">
+<area shape="rect" id="node1" title="Constructeur apr défaut de la classe Enemy." alt="" coords="5,81,124,108"/>
+<area shape="rect" id="node2" href="$class_entity.html#a048e30a0b851dc9073d5ec40396e38a4" title="Accesseur modifiant la données membre &#39;isDead&#39; d&#39;un ennemi." alt="" coords="172,5,304,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a5b37027cb419da8f2d08aae7b6da2938" title="Accesseur modifiant la position en x et en y d&#39;un ennemi." alt="" coords="183,56,293,83"/>
+<area shape="rect" id="node4" href="$class_entity.html#a2f1d8b793ec68f84a0adeb938ad57ee5" title="Accesseur modifiant les points de vie d&#39;un ennemi." alt="" coords="186,107,290,133"/>
+<area shape="rect" id="node5" href="$class_entity.html#adc48ea3a922e2705958bcb1f3066011b" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="175,157,301,184"/>
+</map>

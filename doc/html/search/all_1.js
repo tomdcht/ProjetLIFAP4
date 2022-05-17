@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['castle_1',['Castle',['../class_castle.html',1,'Castle'],['../class_castle.html#ab5a57307b5e4c8ecb6f8f0524684e6d6',1,'Castle::Castle()']]],
-  ['castle_2ecpp_2',['Castle.cpp',['../_castle_8cpp.html',1,'']]],
-  ['castle_2eh_3',['Castle.h',['../_castle_8h.html',1,'']]],
-  ['clear_4',['clear',['../class_window_t_x_t.html#a79659c7c121f98d9021e422a69d61333',1,'WindowTXT']]]
+  ['addtowerarch_1',['addTowerArch',['../class_game.html#ab2b46f22140705ec36019c777fd7eaa6',1,'Game']]],
+  ['addtowerbomb_2',['addTowerBomb',['../class_game.html#a4e6bf45020c047f7ad8c0d7a5444d5ee',1,'Game']]],
+  ['addtowermagic_3',['addTowerMagic',['../class_game.html#ac2fa476218f3ad100f7029e7d78183e9',1,'Game']]],
+  ['autoevents_4',['autoEvents',['../class_game.html#acd26cbdfb8fa7cec1832711e618fec45',1,'Game']]]
 ];

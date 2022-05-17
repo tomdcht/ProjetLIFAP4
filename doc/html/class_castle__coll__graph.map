@@ -1,4 +1,3 @@
 <map id="Castle" name="Castle">
-<area shape="rect" id="node1" title=" " alt="" coords="25,277,123,369"/>
-<area shape="rect" id="node2" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="5,5,143,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,147,141"/>
 </map>

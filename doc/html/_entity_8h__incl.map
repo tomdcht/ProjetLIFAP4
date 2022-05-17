@@ -1,5 +1,4 @@
-<map id="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/Entity.h" name="/home/allan/Licence2_Informatique/ProjetLIFAP4/src/core/Entity.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,203,61"/>
-<area shape="rect" id="node2" href="$_vec2_8h.html" title=" " alt="" coords="71,109,137,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="64,184,144,211"/>
+<map id="src/core/Entity.h" name="src/core/Entity.h">
+<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe Entity." alt="" coords="16,5,141,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,152,107"/>
 </map>

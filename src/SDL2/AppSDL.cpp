@@ -34,18 +34,20 @@ AppSDL::~AppSDL(){
 
 void AppSDL::SDLAffInit(){
 
+    /** Initialisation des contrôleurs utilisés pour le jeu */
     if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER | SDL_INIT_AUDIO) < 0){
         cout << "Erreur lors de l'initialisation de la SDL : " << SDL_GetError() << endl;
         SDL_Quit();
         exit(1);
     }
-
+    /** Initialisation de la font */
     if (TTF_Init() < 0){
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "[DEBUG] > %s", TTF_GetError());
         SDL_Quit();
         exit(1);
     }
 
+    /** Création de la fenêtre */
     window = SDL_CreateWindow("LifaPower Defense", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIDTH_WINDOW, HEIGHT_WINDOW, SDL_WINDOW_FULLSCREEN );
     if(!window){
         cout << "Erreur lors de la création de la fenêtre ! " << SDL_GetError() << endl;
@@ -53,6 +55,7 @@ void AppSDL::SDLAffInit(){
         exit(1);
     }
 
+    /** Création du rendu */ 
     renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
     SDL_SetRenderDrawColor(renderer, 112, 114, 110, 255);
     SDL_RenderClear(renderer);
@@ -62,6 +65,7 @@ void AppSDL::SDLAffInit(){
         exit(1);
     }
 
+   //---------------------------------Chargement de images--------------------------------------
     background.loadFromFile("data/Map/PNG/game_background_1/game_background_1.png", renderer);
 
     castleImage1.loadFromFile("data/Castle/Castle01.png",renderer);
@@ -86,33 +90,37 @@ void AppSDL::SDLAffInit(){
     MenuUpgrade2.loadFromFile("data/Menu/MenuUpgrade2.png", renderer);
     MenuUpgrade3.loadFromFile("data/Menu/MenuUpgrade3.png", renderer);
     MenuUpgradeMax.loadFromFile("data/Menu/MenuUpgradeMax.png", renderer);
+   //-------------------------------------------------------------------------------------------
 
     playSound(music, "sound/musicMenu.mp3");
 }
 
 void AppSDL::SDLAff() {
 
-        Uint32 ticks = SDL_GetTicks();
-        Uint32 time = ticks / 10;
-        Uint32 spriteEnemy = time % 15;
+        Uint32 ticks = SDL_GetTicks(); //On récupère les ticks depuis le lancement du programme
+        Uint32 time = ticks / 50; //On divise par 50 pour ralentir l'animation des ennemies
+        Uint32 spriteEnemy = time % 15; //Puis on fait modulo le nombre de sprite sur l'animation
         Uint32 spriteTowerArch = time % 5;
 
+   //----------------------------------------Chargement des images des ennemies---------------------------------
     if (game.newEnemy == true) {
         for(int n = 0 ; n < game.getSizeListEnemy(); n++){
             game.getItEnemy(game.enemies, n)->loadFromFile(game.getItEnemy(game.enemies, n)->path, renderer);
         }
         game.newEnemy = false;
     }
-    
+   //-----------------------------------------------------------------------------------------------------------   
 
+   //-----------------------------------------Chargement de images des tours-------------------------------------
     if (game.newTower == true) {
         for(int n=0; n < game.getSizeListTower(); n++){
             game.getItTower(game.towers, n)->loadFromFile(game.getItTower(game.towers, n)->path, renderer);
         }
         game.newTower = false;
     }
+   //-----------------------------------------------------------------------------------------------------------
 
-
+   //---------------------------------------Chargement des images de projectiles-------------------------------------------------
     if (game.newProjectile1 == true) {
         for(int n = 0 ; n < game.getSizeListProjectile(1); n++){
             game.getItProjectile(game.projectiles1, n)->loadFromFile(game.getItProjectile(game.projectiles1, n)->path, renderer);
@@ -178,14 +186,19 @@ void AppSDL::SDLAff() {
         }
         game.newProjectile9 = false;
     }
+   //-----------------------------------------------------------------------------------------------------------
 
 
-
+    /** Affichage de l'arrière plan */
     background.draw(renderer, 0, 0, WIDTH_WINDOW, HEIGHT_WINDOW);
 
+   //----------------------------------------------------------Affichage de la liste d'ennemie-----------------------------------------------------------------------
     for(int n = 0 ; n < game.getSizeListEnemy(); n++){
         game.getItEnemy(game.enemies, n)->draw(renderer, 370*spriteEnemy, 0, 341, 420, game.getItEnemy(game.enemies, n)->getPosX()-(WIDTH_ENEMY/2), game.getItEnemy(game.enemies, n)->getPosY()-(HEIGHT_ENEMY/2), WIDTH_ENEMY, HEIGHT_ENEMY);
     }
+   //-----------------------------------------------------------------------------------------------------------
+
+   //-----------------------------------------------------Affichage des listes de projectiles--------------------------------------------------------------
     for(int n = 0 ; n < game.getSizeListProjectile(1); n++){
         game.getItProjectile(game.projectiles1, n)->draw(renderer, game.getItProjectile(game.projectiles1, n)->getPosX()-(WIDTH_PROJECTILE/2), game.getItProjectile(game.projectiles1, n)->getPosY()-(HEIGHT_PROJECTILE/2), WIDTH_PROJECTILE, HEIGHT_PROJECTILE);
     }
@@ -213,11 +226,15 @@ void AppSDL::SDLAff() {
     for(int n = 0 ; n < game.getSizeListProjectile(9); n++){
         game.getItProjectile(game.projectiles9, n)->draw(renderer, game.getItProjectile(game.projectiles9, n)->getPosX(), game.getItProjectile(game.projectiles9, n)->getPosY(), WIDTH_PROJECTILE, HEIGHT_PROJECTILE);
     }
+   //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+   //-------------------------------------------------------------Affichage de la liste de tours---------------------------------------------------------------
     for(int n=0; n < game.getSizeListTower(); n++){
         game.getItTower(game.towers, n)->draw(renderer, 514*spriteTowerArch, 0, 514, 514, game.getItTower(game.towers, n)->getPosX()-(WIDTH_TOWER/2), game.getItTower(game.towers, n)->getPosY()-(HEIGHT_TOWER/2), WIDTH_TOWER, HEIGHT_TOWER);
     }
+   //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+   //--------------------------------------------------------------Affichage du château selon ses points de vie-------------------------------------------------------------------------
     if (game.castle.getPV() > 10) {
         castleImage1.draw(renderer, 1775, 615, WIDTH_CASTLE, HEIGHT_CASTLE);
     } else if(game.castle.getPV() > 5) {
@@ -225,16 +242,21 @@ void AppSDL::SDLAff() {
     } else {
         castleImage3.draw(renderer, 1775, 615, WIDTH_CASTLE, HEIGHT_CASTLE);
     }
+   //----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+    /** Conversion dun int en char* pour affichage */
     string gold = to_string(game.gold.getGold());
     const char* goldChar = gold.c_str();
 
+    /** Conversion dun int en char* pour affichage */
     string PV = to_string(game.castle.getPV());
     const char* PVChar = PV.c_str();
 
+    /** Affichage des Points de vie et des golds */
     coins.draw(renderer, 20, 20, WIDTH_COINS, HEIGHT_COINS);
     PVCastle.draw(renderer, 250, 26, WIDTH_PVCASTLE, HEIGHT_PVCASTLE);
 
+    /** Affichage des textes*/
     textGold.write(renderer, goldChar , font, "font/futura/Futura Bold font.ttf", 100, color, 110, 35 ,100, 50);
     textPvCastle.write(renderer, PVChar, font, "font/futura/Futura Bold font.ttf", 100, color, 345, 35, 50, 50);
 
@@ -242,14 +264,16 @@ void AppSDL::SDLAff() {
 
 void AppSDL::SDLAffLoop(){
     SDL_Event events;
+
+   //--------------Booléens pour l'affichage------------------
 	bool quit = false;
     bool menu = true;
     bool play = false;
     bool end = false;
-    bool pause = false;
     bool info = false;
     bool shop = false;
     bool settings = false;
+   //----------------------------------------------------
 
     bool drawTower = false;
     int nbTower = NULL;
@@ -270,13 +294,22 @@ void AppSDL::SDLAffLoop(){
         while(SDL_PollEvent(&events)){
             switch (events.type) {
                 case SDL_KEYDOWN:
-                    if(events.key.keysym.scancode == SDL_SCANCODE_ESCAPE){
-                        cout << "Fermeture de la fenêtre" << endl;
-                        SDLAffQuit();
-                        quit = true; break;
+                    if(events.key.keysym.scancode == SDL_SCANCODE_ESCAPE && play == true && menu == false){
+                        if (pause() == false){
+                                quit = true;
+                                break;
+                            }
+                            break;
                     }
-                    break;
-
+                    if(events.key.keysym.scancode == SDL_SCANCODE_G){
+                        cout << "Ajout de 10 Golds" << endl;
+                        game.earnGold();
+                    }
+                    if(events.key.keysym.scancode == SDL_SCANCODE_D){
+                        cout << "Damage castle" << endl;
+                        game.castle.damageCastle();
+                    }
+                    
                 case SDL_KEYUP:
 
                 case SDL_WINDOWEVENT:
@@ -299,10 +332,18 @@ void AppSDL::SDLAffLoop(){
                             menu = false;
                             play = true;
                         }
+                    /** Bouton pause dans le jeu*/ 
+                        if( events.button.x > 1840 && events.button.x < 1890 && events.button.y > 30 && events.button.y < 78 && play == true){
+                            if (pause() == false){
+                                quit = true;
+                                break;
+                            }
+                            break;
+                        }
                     //bouton quitter en haut à droite du menu principal
-
-                        if( events.button.x > 1840 && events.button.x < 1890 && events.button.y > 30 && events.button.y < 78 && play == false && menu == true ){
-                            quit = true; break;
+                        if( events.button.x > 1840 && events.button.x < 1890 && events.button.y > 30 && events.button.y < 78 && play == false && menu == true){
+                                quit = true;
+                                break;
                         }
                     //bouton shop sur le menu principal : affiche shopMenu
                         if( events.button.x > 1770 && events.button.x < 1840 && events.button.y > 30 && events.button.y < 78 && play == false && menu == true ){
@@ -327,8 +368,6 @@ void AppSDL::SDLAffLoop(){
 
                         if(events.button.x > 851 && events.button.x < 970 && events.button.y > 747 && events.button.y < 861){
                             menu = true;
-                            game.~Game();
-                            run();
                         }
                         // ouvre le menu d'information
                         if( events.button.x > 1790 && events.button.x < 1820 && events.button.y > 150 && events.button.y < 180 && settings == true ){
@@ -344,36 +383,36 @@ void AppSDL::SDLAffLoop(){
                         
                         // Achat Tower
                           if( events.button.x > (menuTowerPosX+30) && events.button.x < (menuTowerPosX+154) && events.button.y > (menuTowerPosY-108) && events.button.y < (menuTowerPosY-69) && drawTower == true){
-                            if(nbTower == 2 && tower2level == 0) {tower2level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 3 && tower3level == 0) {tower3level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 4 && tower4level == 0) {tower4level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 5 && tower5level == 0) {tower5level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 6 && tower6level == 0) {tower6level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 7 && tower7level == 0) {tower7level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 8 && tower8level == 0) {tower8level += 1; drawTower = false; game.addTowerArch(nbTower);}
-                            if(nbTower == 9 && tower9level == 0) {tower9level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 2 && tower2level == 0 && game.gold.getGold() >= 100) {tower2level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 3 && tower3level == 0 && game.gold.getGold() >= 100) {tower3level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 4 && tower4level == 0 && game.gold.getGold() >= 100) {tower4level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 5 && tower5level == 0 && game.gold.getGold() >= 100) {tower5level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 6 && tower6level == 0 && game.gold.getGold() >= 100) {tower6level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 7 && tower7level == 0 && game.gold.getGold() >= 100) {tower7level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 8 && tower8level == 0 && game.gold.getGold() >= 100) {tower8level += 1; drawTower = false; game.addTowerArch(nbTower);}
+                            if(nbTower == 9 && tower9level == 0 && game.gold.getGold() >= 100) {tower9level += 1; drawTower = false; game.addTowerArch(nbTower);}
                         }
                         // Achat Bomb
                           if( events.button.x > (menuTowerPosX+180) && events.button.x < (menuTowerPosX+300) && events.button.y > (menuTowerPosY-108) && events.button.y < (menuTowerPosY-69) && drawTower == true){
-                            if(nbTower == 2 && tower2level == 0) {tower2level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 3 && tower3level == 0) {tower3level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 4 && tower4level == 0) {tower4level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 5 && tower5level == 0) {tower5level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 6 && tower6level == 0) {tower6level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 7 && tower7level == 0) {tower7level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 8 && tower8level == 0) {tower8level += 1; drawTower = false; game.addTowerBomb(nbTower);}
-                            if(nbTower == 9 && tower9level == 0) {tower9level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 2 && tower2level == 0 && game.gold.getGold() >= 150) {tower2level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 3 && tower3level == 0 && game.gold.getGold() >= 150) {tower3level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 4 && tower4level == 0 && game.gold.getGold() >= 150) {tower4level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 5 && tower5level == 0 && game.gold.getGold() >= 150) {tower5level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 6 && tower6level == 0 && game.gold.getGold() >= 150) {tower6level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 7 && tower7level == 0 && game.gold.getGold() >= 150) {tower7level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 8 && tower8level == 0 && game.gold.getGold() >= 150) {tower8level += 1; drawTower = false; game.addTowerBomb(nbTower);}
+                            if(nbTower == 9 && tower9level == 0 && game.gold.getGold() >= 150) {tower9level += 1; drawTower = false; game.addTowerBomb(nbTower);}
                         }
                         // Achat Magic
                           if( events.button.x > (menuTowerPosX+330) && events.button.x < (menuTowerPosX+450) && events.button.y > (menuTowerPosY-108) && events.button.y < (menuTowerPosY-69) && drawTower == true){
-                            if(nbTower == 2 && tower2level == 0) {tower2level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 3 && tower3level == 0) {tower3level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 4 && tower4level == 0) {tower4level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 5 && tower5level == 0) {tower5level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 6 && tower6level == 0) {tower6level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 7 && tower7level == 0) {tower7level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 8 && tower8level == 0) {tower8level += 1; drawTower = false; game.addTowerMagic(nbTower);}
-                            if(nbTower == 9 && tower9level == 0) {tower9level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 2 && tower2level == 0 && game.gold.getGold() >= 200) {tower2level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 3 && tower3level == 0 && game.gold.getGold() >= 200) {tower3level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 4 && tower4level == 0 && game.gold.getGold() >= 200) {tower4level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 5 && tower5level == 0 && game.gold.getGold() >= 200) {tower5level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 6 && tower6level == 0 && game.gold.getGold() >= 200) {tower6level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 7 && tower7level == 0 && game.gold.getGold() >= 200) {tower7level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 8 && tower8level == 0 && game.gold.getGold() >= 200) {tower8level += 1; drawTower = false; game.addTowerMagic(nbTower);}
+                            if(nbTower == 9 && tower9level == 0 && game.gold.getGold() >= 200) {tower9level += 1; drawTower = false; game.addTowerMagic(nbTower);}
                         }
 
                         // Upgrade
@@ -538,7 +577,7 @@ void AppSDL::SDLAffLoop(){
                 }
             }
 
-            //usleep(10000);
+            usleep(10000);
         } 
         if(game.castle.getPV() <= 0) {
             endGame();
@@ -570,9 +609,9 @@ void AppSDL::SDLAffQuit(){
     SDL_DestroyWindow(window);
     IMG_Quit(); // Quit image
     TTF_Quit(); // Quit police
-    SDL_CloseAudio(); // QUit Audio
-    Mix_CloseAudio();
-    SDL_Quit();
+    SDL_CloseAudio(); // Quit Audio
+    Mix_CloseAudio(); //Quit audio
+    SDL_Quit(); //Quit SDL
 }
 
 void AppSDL::run(){

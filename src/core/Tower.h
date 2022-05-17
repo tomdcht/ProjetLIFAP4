@@ -12,7 +12,10 @@ class Tower : public Entity{
     public:
 
         int level;
+        /** \brief Constructeur de la classe Tower */
         Tower();
+
+        /** \brief ADestructeur de la classe Tower */
         ~Tower();
 
         /** \brief Accesseur modifiant la valeur de la donnée membre range
@@ -32,6 +35,9 @@ class Tower : public Entity{
         void setLevel(int lvl);
         /** \brief Accesseur renvoyant la valeur de la donnée membre price */
         int getLevel() const;
+
+
+        void regressionTest(Tower& tower);
 };
 
 #endif

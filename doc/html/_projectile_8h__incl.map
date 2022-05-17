@@ -1,9 +1,11 @@
 <map id="src/core/Projectile.h" name="src/core/Projectile.h">
-<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe Projectile." alt="" coords="49,5,200,32"/>
-<area shape="rect" id="node2" href="$_entity_8h.html" title="Définition des donées membres et des fonctions membres de la classe Entity." alt="" coords="32,155,103,181"/>
-<area shape="rect" id="node3" href="$_enemy_8h.html" title="Définition des donées membres et des fonctions membres de la classe Enemy." alt="" coords="210,80,287,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="127,155,207,181"/>
-<area shape="rect" id="node7" href="$_tower_archer_8h.html" title="Définition des donées membres et des fonctions membres de la classe TowerArcher." alt="" coords="21,80,135,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="231,155,274,181"/>
-<area shape="rect" id="node6" href="$_map_8h.html" title="Définition des donées membres et des fonctions membres de la classe Map." alt="" coords="299,155,361,181"/>
+<area shape="rect" id="node1" title="Définition des donées membres et des fonctions membres de la classe Projectile." alt="" coords="154,5,305,32"/>
+<area shape="rect" id="node2" href="$_entity_8h.html" title="Définition des donées membres et des fonctions membres de la classe Entity." alt="" coords="75,155,146,181"/>
+<area shape="rect" id="node4" href="$_enemy_8h.html" title="Définition des donées membres et des fonctions membres de la classe Enemy." alt="" coords="240,80,317,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="264,229,344,256"/>
+<area shape="rect" id="node9" href="$_tower_8h.html" title=" " alt="" coords="145,80,215,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,229,152,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="316,155,359,181"/>
+<area shape="rect" id="node7" href="$_road_8h.html" title=" " alt="" coords="175,155,241,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="177,229,239,256"/>
 </map>

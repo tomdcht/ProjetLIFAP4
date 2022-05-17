@@ -1,0 +1,6 @@
+<map id="Enemy::isDead" name="Enemy::isDead">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,124,83"/>
+<area shape="rect" id="node2" href="$class_entity.html#a4c3de4661a585b0bd42bd16ce9cc5002" title="Accesseur renvoyant la valeur de la donnée membre &#39;isDead&#39; d&#39;un ennemi." alt="" coords="172,5,305,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a334b52f5de8bbd7fb81f8bbeec08992b" title="Accesseur renvoyant les points de vie d&#39;un ennemi." alt="" coords="186,56,291,83"/>
+<area shape="rect" id="node4" href="$class_entity.html#a048e30a0b851dc9073d5ec40396e38a4" title="Accesseur modifiant la données membre &#39;isDead&#39; d&#39;un ennemi." alt="" coords="173,107,305,133"/>
+</map>

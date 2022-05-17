@@ -1,5 +1,8 @@
 <map id="Entity::getPV" name="Entity::getPV">
-<area shape="rect" id="node1" title="Accesseur renvoyant les points de vie d&#39;un ennemi." alt="" coords="221,31,327,57"/>
-<area shape="rect" id="node2" href="$class_enemy.html#a012b23beffeee74ef1422c2d7c28bb37" title=" " alt="" coords="5,5,173,32"/>
-<area shape="rect" id="node3" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="27,56,151,83"/>
+<area shape="rect" id="node1" title="Accesseur renvoyant les points de vie d&#39;un ennemi." alt="" coords="521,31,627,57"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a038e636d16b708f92627348a36750702" title=" " alt="" coords="352,5,471,32"/>
+<area shape="rect" id="node6" href="$class_projectile.html#a73f8a1e71748a6994efba59c459385c8" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="349,56,473,83"/>
+<area shape="rect" id="node3" href="$_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7" title="Fonction dans lequel l&#39;affichage se fait." alt="" coords="227,5,301,32"/>
+<area shape="rect" id="node4" href="$_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" title="Boucle pour l&#39;affichage et la gestion des évènements." alt="" coords="108,5,179,32"/>
+<area shape="rect" id="node5" href="$main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
 </map>

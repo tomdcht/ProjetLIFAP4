@@ -1,10 +1,10 @@
 <map id="Entity" name="Entity">
-<area shape="rect" id="node1" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="433,5,570,229"/>
-<area shape="rect" id="node2" href="$class_castle.html" title=" " alt="" coords="5,351,104,443"/>
-<area shape="rect" id="node3" href="$class_enemy.html" title="Classe gérant les ennemis /!\ Hérite de la classe Entity /!." alt="" coords="128,314,269,479"/>
-<area shape="rect" id="node4" href="$class_projectile.html" title="Classe gérant les projectiles /!\ Hérite de la classe Entity /!." alt="" coords="294,277,423,516"/>
-<area shape="rect" id="node5" href="$class_tower.html" title=" " alt="" coords="448,336,555,457"/>
-<area shape="rect" id="node6" href="$class_tower_archer.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="579,321,717,472"/>
-<area shape="rect" id="node7" href="$class_tower_bomb.html" title=" " alt="" coords="742,321,877,472"/>
-<area shape="rect" id="node8" href="$class_tower_magic.html" title=" " alt="" coords="901,321,1035,472"/>
+<area shape="rect" id="node1" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="209,131,346,355"/>
+<area shape="rect" id="node3" href="$class_enemy.html" title="Classe gérant les ennemis /!\ Hérite de la classe Entity /!." alt="" coords="5,454,165,649"/>
+<area shape="rect" id="node4" href="$class_projectile.html" title="Classe gérant les projectiles /!\ Hérite de la classe Entity /!." alt="" coords="189,403,365,700"/>
+<area shape="rect" id="node5" href="$class_tower.html" title=" " alt="" coords="389,461,499,641"/>
+<area shape="rect" id="node2" title=" " alt="" coords="235,5,320,83"/>
+<area shape="rect" id="node6" href="$class_tower_archer.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="213,748,352,840"/>
+<area shape="rect" id="node7" href="$class_tower_bomb.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="377,748,511,840"/>
+<area shape="rect" id="node8" href="$class_tower_magic.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="535,748,670,840"/>
 </map>

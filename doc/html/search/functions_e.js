@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['walk_256',['walk',['../class_enemy.html#a056522bafce43c9a33c623f659a20270',1,'Enemy']]],
-  ['windowtxt_257',['WindowTXT',['../class_window_t_x_t.html#abeff0343c64358919da2302c43f32cb3',1,'WindowTXT']]]
+  ['vec2_338',['Vec2',['../class_vec2.html#a76080feed7005893ecc634f903cfbae0',1,'Vec2::Vec2()'],['../class_vec2.html#a69a58325164f559d11fa51628743c162',1,'Vec2::Vec2(double _x, double _y)']]]
 ];

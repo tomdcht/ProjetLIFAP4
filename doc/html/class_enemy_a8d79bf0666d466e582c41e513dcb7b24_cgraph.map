@@ -1,0 +1,15 @@
+<map id="Enemy::walk" name="Enemy::walk">
+<area shape="rect" id="node1" title=" " alt="" coords="5,395,111,422"/>
+<area shape="rect" id="node2" href="$class_enemy.html#adf23e5e83dc77b5b9896df6deaab9528" title=" " alt="" coords="159,91,345,118"/>
+<area shape="rect" id="node4" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="617,142,775,169"/>
+<area shape="rect" id="node5" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="618,294,774,321"/>
+<area shape="rect" id="node6" href="$class_road.html#a3d9af22c8a684b0fde2ce1b390d27d2a" title="Accesseur du PointX, recupère sa valeur." alt="" coords="633,41,759,67"/>
+<area shape="rect" id="node7" href="$class_road.html#ab7507b9872a1990388e7fa18d3c3253f" title="Accesseur du PointY, récupère sa valeur." alt="" coords="633,243,759,270"/>
+<area shape="rect" id="node8" href="$class_enemy.html#aa7a5add0fb6b2e1af8dbf174415fb482" title=" " alt="" coords="159,269,345,295"/>
+<area shape="rect" id="node9" href="$class_entity.html#a285dfcfbbc0ca74d0637c15f427eb6d3" title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const." alt="" coords="169,446,335,473"/>
+<area shape="rect" id="node10" href="$class_entity.html#abc07607e9d85670694097ac4b6b6dd27" title="Accesseur renvoyant la position en x d&#39;une entité" alt="" coords="192,497,312,523"/>
+<area shape="rect" id="node11" href="$class_entity.html#adc3a7257facf71297850bc86b705b503" title="Accesseur renvoyant la position en y d&#39;une entité" alt="" coords="193,547,311,574"/>
+<area shape="rect" id="node12" href="$class_entity.html#a36acb34214fabf4355ea9068543c2435" title="Accesseur modifiant la position en x d&#39;un ennemi." alt="" coords="193,598,311,625"/>
+<area shape="rect" id="node13" href="$class_entity.html#a2043f8c1dbb431cd210ec30f0ae8feeb" title="Accesseur modifiant la position en y d&#39;un ennemi." alt="" coords="193,649,311,675"/>
+<area shape="rect" id="node3" href="$class_enemy.html#ae96ba0b49cf1ab2f02087e1025d68e4a" title=" " alt="" coords="393,193,569,219"/>
+</map>

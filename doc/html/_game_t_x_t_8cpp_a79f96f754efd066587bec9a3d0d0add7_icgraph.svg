@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="_game_t_x_t_8h.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" target="_top" xlink:title="Boucle pour l&#39;affichage et la gestion des évènements.">
+<g id="a_node2"><a xlink:href="_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd" target="_top" xlink:title="Boucle pour l&#39;affichage et la gestion des évènements.">
 <polygon fill="none" stroke="black" points="77,-0.5 77,-19.5 130,-19.5 130,-0.5 77,-0.5"/>
 <text text-anchor="middle" x="103.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">txtLoop</text>
 </a>

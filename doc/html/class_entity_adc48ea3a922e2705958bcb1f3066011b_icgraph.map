@@ -1,6 +1,7 @@
 <map id="Entity::setSpeed" name="Entity::setSpeed">
-<area shape="rect" id="node1" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="244,56,371,83"/>
-<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title="Constructeur par défaut de la classe Projectile." alt="" coords="25,5,177,32"/>
-<area shape="rect" id="node3" href="$class_enemy.html#a012b23beffeee74ef1422c2d7c28bb37" title=" " alt="" coords="17,56,185,83"/>
-<area shape="rect" id="node4" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,107,196,133"/>
+<area shape="rect" id="node1" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="244,81,371,108"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a0eaeb6dd84980b1a3f0ea74140183fdc" title="Constructeur apr défaut de la classe Enemy." alt="" coords="41,5,160,32"/>
+<area shape="rect" id="node3" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node4" href="$class_tower_bomb.html#a7e1c2b0cbd24f82457dca1c3d57e4da2" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="9,107,192,133"/>
+<area shape="rect" id="node5" href="$class_tower_magic.html#ab5761dd7777ca7e16da74717b7866841" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="9,157,193,184"/>
 </map>

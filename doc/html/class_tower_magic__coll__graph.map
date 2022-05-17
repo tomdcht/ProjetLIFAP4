@@ -1,4 +1,6 @@
 <map id="TowerMagic" name="TowerMagic">
-<area shape="rect" id="node1" title=" " alt="" coords="7,277,141,428"/>
-<area shape="rect" id="node2" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="5,5,143,229"/>
+<area shape="rect" id="node1" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="7,631,141,723"/>
+<area shape="rect" id="node2" href="$class_tower.html" title=" " alt="" coords="19,403,129,583"/>
+<area shape="rect" id="node3" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="5,131,143,355"/>
+<area shape="rect" id="node4" title=" " alt="" coords="31,5,117,83"/>
 </map>

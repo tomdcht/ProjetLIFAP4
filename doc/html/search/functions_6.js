@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['khbit_218',['khbit',['../window_t_x_t_8cpp.html#a22f527b59d86c3eb3e750e7e2057ca4f',1,'windowTXT.cpp']]]
+  ['inrange_292',['inRange',['../class_projectile.html#a5d2b817dfcc1eb69d0840d7430b6fcb6',1,'Projectile']]],
+  ['isdead_293',['isDead',['../class_enemy.html#a038e636d16b708f92627348a36750702',1,'Enemy']]],
+  ['isvalidposition_294',['IsValidPosition',['../class_map.html#ac39389f542d1804f9f9891ee6867a103',1,'Map']]]
 ];

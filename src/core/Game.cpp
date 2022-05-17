@@ -21,9 +21,7 @@ Game::Game(){
     newProjectile1 = true;
     newTower = true;
     newEnemy = true;
-    getItTower(towers, 0)-> setPos(coordTowers[0][0],coordTowers[0][1]);
-    //getItProjectile(projectiles1,0)->fctPath("data/Projectile/Arrow01.png");
-    tabTower[0] = 0;
+    getItTower(towers, 0) -> setPos(coordTowers[0][0],coordTowers[0][1]);
 }
 
 
@@ -74,11 +72,13 @@ void Game::addTowerArch(int num) {
         setCountTower(getCountTower()+1);
         newTower = true;
         coordTower(num);
+        std::cout << "addTowerArch" << std::endl;
 
         if (getCountTower() == 2) {
             projectiles2.push_front(new Projectile);
             getItProjectile(projectiles2,0)->setTime(30);
             newProjectile2 = true;
+            std::cout << "newProjectile2" << std::endl;
         }
 
          if (getCountTower() == 3) {
@@ -438,8 +438,6 @@ void Game::autoEvents() {
 
 
     time++;
-
-    std::cout << "vague1" << std::endl;
 
     if(vague1 && nbTotalEnemy<6){
         if(time == timeVague1){

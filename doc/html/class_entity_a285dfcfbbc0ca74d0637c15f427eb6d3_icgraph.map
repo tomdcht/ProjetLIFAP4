@@ -1,6 +1,7 @@
 <map id="Entity::getConstSpeed" name="Entity::getConstSpeed">
-<area shape="rect" id="node1" title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const." alt="" coords="383,56,548,83"/>
-<area shape="rect" id="node2" href="$class_projectile.html#ae5645549de0ef4e2defdb3edd9fc57f0" title="Fonction calculant la direction en x depuis une tour vers un ennemi." alt="" coords="177,5,335,32"/>
-<area shape="rect" id="node3" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="5,56,129,83"/>
-<area shape="rect" id="node4" href="$class_projectile.html#a4fed5dda0d58cd0721bf8a20a005c594" title="Fonction calculant la direction en y depuis une tour vers un ennemi." alt="" coords="178,107,334,133"/>
+<area shape="rect" id="node1" title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const." alt="" coords="273,81,439,108"/>
+<area shape="rect" id="node2" href="$class_projectile.html#aab843b501a1669277ec8157ddab8ca0a" title="Fonction calculant la direction en x depuis une tour vers un ennemi." alt="" coords="5,5,225,32"/>
+<area shape="rect" id="node3" href="$class_projectile.html#ab75864403c68d4d2f2b0f80004cd2778" title="Fonction calculant la direction en y depuis une tour vers un ennemi." alt="" coords="6,56,225,83"/>
+<area shape="rect" id="node4" href="$class_projectile.html#a73f8a1e71748a6994efba59c459385c8" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="53,107,177,133"/>
+<area shape="rect" id="node5" href="$class_enemy.html#a8d79bf0666d466e582c41e513dcb7b24" title=" " alt="" coords="63,157,168,184"/>
 </map>

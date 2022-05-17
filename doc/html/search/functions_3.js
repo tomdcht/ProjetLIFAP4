@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['earngold_179',['earnGold',['../class_game.html#ab4f91b8f6a0687e62de3f6ae8c477668',1,'Game']]],
-  ['enemy_180',['Enemy',['../class_enemy.html#a0eaeb6dd84980b1a3f0ea74140183fdc',1,'Enemy']]],
-  ['entity_181',['Entity',['../class_entity.html#a980f368aa07ce358583982821533a54a',1,'Entity']]],
-  ['erase_182',['erase',['../class_window_t_x_t.html#acef149b4871fdb3afff9a60648592174',1,'WindowTXT']]]
+  ['earngold_245',['earnGold',['../class_game.html#ab4f91b8f6a0687e62de3f6ae8c477668',1,'Game']]],
+  ['enemy_246',['Enemy',['../class_enemy.html#a0eaeb6dd84980b1a3f0ea74140183fdc',1,'Enemy']]],
+  ['enemydirectionx_247',['enemyDirectionX',['../class_enemy.html#adf23e5e83dc77b5b9896df6deaab9528',1,'Enemy']]],
+  ['enemydirectiony_248',['enemyDirectionY',['../class_enemy.html#aa7a5add0fb6b2e1af8dbf174415fb482',1,'Enemy']]],
+  ['enemydistance_249',['enemyDistance',['../class_enemy.html#ae96ba0b49cf1ab2f02087e1025d68e4a',1,'Enemy']]],
+  ['entity_250',['Entity',['../class_entity.html#a980f368aa07ce358583982821533a54a',1,'Entity']]],
+  ['erase_251',['erase',['../class_window_t_x_t.html#acef149b4871fdb3afff9a60648592174',1,'WindowTXT']]]
 ];

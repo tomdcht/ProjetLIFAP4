@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_game.html" title="Classe gérant la physique du jeu." alt="" coords="5,5,67,32"/>
+<area shape="rect" id="node1" href="$class_projectile.html" title="Classe gérant les projectiles /!\ Hérite de la classe Entity /!." alt="" coords="5,31,88,57"/>
+<area shape="rect" id="node2" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="136,31,196,57"/>
+<area shape="rect" id="node3" href="$class_enemy.html" title="Classe gérant les ennemis /!\ Hérite de la classe Entity /!." alt="" coords="244,5,311,32"/>
+<area shape="rect" id="node4" href="$class_tower.html" title=" " alt="" coords="247,56,307,83"/>
+<area shape="rect" id="node5" href="$class_tower_archer.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="359,5,461,32"/>
+<area shape="rect" id="node6" href="$class_tower_bomb.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="361,56,459,83"/>
+<area shape="rect" id="node7" href="$class_tower_magic.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="361,107,459,133"/>
 </map>

@@ -36,20 +36,7 @@ organisions bien dès maintenant.
 Vis à vis du coût du projet il sera nul.
 
 
-4. Déroulement du projet :
 
-Tache 0: Faire le cahier des charges, se mettre d’accord sur l'organisation et sur les tâches à effectuer, quand, par qui et comment ? Diagramme UML + définir toutes les classes.
-
-Tache 1 : Dans un premier temps il nous faudra faire apparaître un personnage et le faire se déplacer d’un point A à un point B sur une carte que nous coderons à l’aide de imgUI.
-
-Tache 2 : Après cela, nous nous occuperons de mettre en place un premier niveau, sur lequel se trouvera ce personnage, qui effectuera un trajet plus complexe. Mise en place de l’animation d’une tour.
-
-Tache 3 : Gestion de l’attaque des tours sur le personnage. Apparition de nouveaux personnages, peaufinage du premier niveau. Gestion des points de vie des personnages. (Démo mi-parcours).
-
-Tache 4 : Création de l’interface du jeu avec les points de vie, l’or etc...Gestion de l’or, gain d’or lorsque un ennemi est tué, perte d’or lors de la création d’une tour.
-
-Tache 5 : Création de la carte des niveaux. Création d’une deuxième carte, donc d’un deuxième niveau. Apparition d’une nouvelle tour : tour magique.
-
-Tache 6 : Mise en place des emplacements pour les tours. Création de menu de démarrage.
-
-Tache 7 : Amélioration d’une tour
+Code de triche :
+    Appuyer sur : G pour obtenir 10 golds de plus
+    Appuyer sur : D pour faire 1 PV de dégâts à la tour

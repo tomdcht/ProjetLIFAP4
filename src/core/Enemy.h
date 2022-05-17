@@ -17,6 +17,8 @@
 #include "Entity.h"
 #include "Road.h"
 
+#include "assert.h"
+
 
 /** \brief Classe gérant les ennemis  /!\ Hérite de la classe Entity /!\ */
 class Enemy : public Entity{
@@ -68,11 +70,27 @@ class Enemy : public Entity{
          *  \param enemy Un ennemi
          */
         //void regressionTest();
-
+        
+        /** \fn Retourne la distance à parcourrir avec le prochain point à atteindre
+         *  \param road Un ennemi
+         */
         const float enemyDistance(Road& road) const;
 
+        /** \fn Retourne la direction X de l'enemy en fonction de la route
+         *  \param road route a suivre
+         */
         const float enemyDirectionX(Road& road) const;
+
+        /** \fn Retourne la direction Y de l'enemy en fonction de la route
+         *  \param road route a suivre
+         */
         const float enemyDirectionY(Road& road) const;
+
+
+        /** \fn Test de régression Enemy
+         *  \param enemy l'ennemi
+         */
+        void regressionTest(Enemy& enemy);
 
 };
 

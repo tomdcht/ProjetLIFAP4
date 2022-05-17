@@ -1,0 +1,5 @@
+<map id="Projectile::projectileDistance" name="Projectile::projectileDistance">
+<area shape="rect" id="node1" title="Fonction calculant la distance depuis une tour jusqu&#39;à un ennemi." alt="" coords="5,31,215,57"/>
+<area shape="rect" id="node2" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="263,5,420,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="263,56,419,83"/>
+</map>

@@ -1,4 +1,4 @@
 <map id="Entity::setPosY" name="Entity::setPosY">
-<area shape="rect" id="node1" title="Accesseur modifiant la position en y d&#39;un ennemi." alt="" coords="177,5,296,32"/>
-<area shape="rect" id="node2" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node1" title="Accesseur modifiant la position en y d&#39;un ennemi." alt="" coords="159,5,277,32"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a8d79bf0666d466e582c41e513dcb7b24" title=" " alt="" coords="5,5,111,32"/>
 </map>

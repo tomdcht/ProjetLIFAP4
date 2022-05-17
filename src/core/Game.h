@@ -69,27 +69,43 @@ class Game{
 
     public:
 
+        /** \brief Création du chateau*/
         Castle castle;
+        /** \brief Création des ressources*/
         Ressources gold;
 
+        /** \brief si true load la liste des enemies dans appSDL*/
         bool newEnemy = false;
+
+        /** \brief si true load la liste des tours dans appSDL*/
         bool newTower = false;
 
+        /** \brief Nombre d'enemies au total ajouté*/
         int nbNewEnemy;
-        int tabTower[9];
 
+        /** \brief si true load la liste des projectiles1 dans appSDL*/
         bool newProjectile1 = false;
+        /** \brief si true load la liste des projectiles2 dans appSDL*/
         bool newProjectile2 = false;
+        /** \brief si true load la liste des projectiles3 dans appSDL*/
         bool newProjectile3 = false;
+        /** \brief si true load la liste des projectiles4 dans appSDL*/
         bool newProjectile4 = false;
+        /** \brief si true load la liste des projectiles5 dans appSDL*/
         bool newProjectile5 = false;
+        /** \brief si true load la liste des projectiles6 dans appSDL*/
         bool newProjectile6 = false;
+        /** \brief si true load la liste des projectiles7 dans appSDL*/
         bool newProjectile7 = false;
+        /** \brief si true load la liste des projectiles8 dans appSDL*/
         bool newProjectile8 = false;
+        /** \brief si true load la liste des projectiles9 dans appSDL*/
         bool newProjectile9 = false;
 
+        /** \brief Coordonées des tours pour le TXT*/
         std::vector<float> coordTowersTXT[5] = {{18.f,19.f},{49.f,16.f},{67.f,20.f}, {76.f,16.f}, {96.f,27.f}};
 
+        /** \brief Coordonnées des tours pour la map 1 SDL*/
         std::vector<float> coordTowers[9]= {{160.f, 970.f},{560.f,970.f},{820.f,640.f},{1050.f,420.f},{1200.f,680.f},{1315.f,970.f},{1720.f,970.f},{1425.f,360.f},{1750.f,450.f}};
        
 
@@ -97,6 +113,7 @@ class Game{
         /** \brief Constructeur de la classe Game*/
         Game ();
 
+        /** \brief Destructeur de la classe Game*/
         ~Game();
 
         void coordTowersFonction(std::vector<float> coord);
@@ -107,15 +124,24 @@ class Game{
         /** \brief Procédure ajoutant +10 gold*/
         void earnGold();
 
-        /** \brief Procédure ajoutant une tour archer active (max 5)*/
+        /** \brief Procédure ajoutant une tour archer active (max 5)
+        *   \param num numero de la tour
+        */
         void addTowerArch(int num);
 
-        /** \brief Procédure ajoutant une tour magique active (max 5)*/
+        /** \brief Procédure ajoutant une tour magique active (max 5)
+        *   \param num numero de la tour
+        */
         void addTowerMagic(int num);
 
-        /** \brief Procédure ajoutant une tour magique active (max 5)*/
+        /** \brief Procédure ajoutant une tour magique active (max 5)
+        *   \param num numero de la tour
+        */
         void addTowerBomb(int num);
 
+        /** \brief Procédure déplacant la tour à son bon emplacement
+        *   \param num numero de la tour
+        */
         void coordTower(int num);
 
 

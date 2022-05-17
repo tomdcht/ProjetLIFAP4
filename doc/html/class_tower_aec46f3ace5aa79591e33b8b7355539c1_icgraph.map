@@ -1,0 +1,4 @@
+<map id="Tower::getRange" name="Tower::getRange">
+<area shape="rect" id="node1" title="Accesseur renvoyant la valeur de la donnée membre range." alt="" coords="197,5,328,32"/>
+<area shape="rect" id="node2" href="$class_projectile.html#a5d2b817dfcc1eb69d0840d7430b6fcb6" title="Fonction modifiant la donnée membre inRange en fonction de la distance entre un ennemi et une tour." alt="" coords="5,5,149,32"/>
+</map>

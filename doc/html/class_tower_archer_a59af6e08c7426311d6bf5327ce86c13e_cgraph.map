@@ -1,5 +1,7 @@
 <map id="TowerArcher::TowerArcher" name="TowerArcher::TowerArcher">
-<area shape="rect" id="node1" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,31,196,57"/>
-<area shape="rect" id="node2" href="$class_entity.html#a5b37027cb419da8f2d08aae7b6da2938" title="Accesseur modifiant la position en x et en y d&#39;un ennemi." alt="" coords="252,5,363,32"/>
-<area shape="rect" id="node3" href="$class_entity.html#adc48ea3a922e2705958bcb1f3066011b" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="244,56,371,83"/>
+<area shape="rect" id="node1" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,81,196,108"/>
+<area shape="rect" id="node2" href="$class_entity.html#aa3e4324343ffa8395c40468d6966654e" title="Accesseur modifiant les dommages causés par un ennemi." alt="" coords="244,5,387,32"/>
+<area shape="rect" id="node3" href="$class_tower.html#aef61dd07944b209caf0a1bdcf9b568af" title="Accesseur modifiant la valeur de la donnée membre price." alt="" coords="255,56,375,83"/>
+<area shape="rect" id="node4" href="$class_tower.html#adc0cce29130f8b3c35f416f88eb097be" title="Accesseur modifiant la valeur de la donnée membre range." alt="" coords="251,107,380,133"/>
+<area shape="rect" id="node5" href="$class_entity.html#adc48ea3a922e2705958bcb1f3066011b" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="252,157,379,184"/>
 </map>

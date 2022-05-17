@@ -7,6 +7,7 @@ var annotated_dup =
     [ "Map", "class_map.html", "class_map" ],
     [ "Projectile", "class_projectile.html", "class_projectile" ],
     [ "Ressources", "class_ressources.html", "class_ressources" ],
+    [ "Road", "class_road.html", "class_road" ],
     [ "Tower", "class_tower.html", "class_tower" ],
     [ "TowerArcher", "class_tower_archer.html", "class_tower_archer" ],
     [ "TowerBomb", "class_tower_bomb.html", "class_tower_bomb" ],

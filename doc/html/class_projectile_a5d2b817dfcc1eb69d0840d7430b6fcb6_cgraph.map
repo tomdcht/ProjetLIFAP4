@@ -1,0 +1,6 @@
+<map id="Projectile::inRange" name="Projectile::inRange">
+<area shape="rect" id="node1" title="Fonction modifiant la donnée membre inRange en fonction de la distance entre un ennemi et une tour." alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="197,5,355,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="198,56,354,83"/>
+<area shape="rect" id="node4" href="$class_tower.html#aec46f3ace5aa79591e33b8b7355539c1" title="Accesseur renvoyant la valeur de la donnée membre range." alt="" coords="211,107,341,133"/>
+</map>

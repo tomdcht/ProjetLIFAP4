@@ -1,0 +1,8 @@
+<map id="Enemy::enemyDistance" name="Enemy::enemyDistance">
+<area shape="rect" id="node1" title=" " alt="" coords="508,56,684,83"/>
+<area shape="rect" id="node2" href="$class_enemy.html#adf23e5e83dc77b5b9896df6deaab9528" title=" " alt="" coords="273,31,460,57"/>
+<area shape="rect" id="node5" href="$class_enemy.html#aa7a5add0fb6b2e1af8dbf174415fb482" title=" " alt="" coords="273,81,460,108"/>
+<area shape="rect" id="node3" href="$class_projectile.html#aab843b501a1669277ec8157ddab8ca0a" title="Fonction calculant la direction en x depuis une tour vers un ennemi." alt="" coords="5,5,225,32"/>
+<area shape="rect" id="node4" href="$class_enemy.html#a8d79bf0666d466e582c41e513dcb7b24" title=" " alt="" coords="63,56,168,83"/>
+<area shape="rect" id="node6" href="$class_projectile.html#ab75864403c68d4d2f2b0f80004cd2778" title="Fonction calculant la direction en y depuis une tour vers un ennemi." alt="" coords="6,107,225,133"/>
+</map>

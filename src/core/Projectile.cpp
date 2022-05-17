@@ -50,7 +50,7 @@ void Projectile::fctPath(const char* lien) {
 
 const float Projectile::projectileDirectionX(const Enemy& enemy, const Tower& tower, Road& road) {
     return (enemy.getConstPosX()- 1.5*enemy.enemyDirectionX(road) * ( time * enemy.getConstSpeed() ) - tower.getConstPosX() ) / ( time * getConstSpeed() ) ; // 1.f = direction X de enemy
-}       //1,5 a revoir --> 1,5 parce que *1 = avant et *2 = après donc 1,5 ...
+}   
 
 const float Projectile::projectileDirectionY(const Enemy& enemy, const Tower& tower, Road& road) {
     return (enemy.getConstPosY()- 1.5*enemy.enemyDirectionY(road) * ( time * enemy.getConstSpeed() ) - tower.getConstPosY() ) / ( time * getConstSpeed() ) ; // 0.f = direction Y de enemy
@@ -100,7 +100,6 @@ void Projectile::track(Enemy& enemy, const Tower& tower, Road& road) {
     timeDelete += 1;
 
     if (timeDelete >= time+50) {
-        std::cout << (int)getPosX() <<"==" << (int)enemy.getConstPosX()<< " et " <<(int)getPosY()<< "==" <<(int)enemy.getConstPosY()<< std::endl; 
         tracking = false;
         _inRange = false;
         timeDelete = 0;

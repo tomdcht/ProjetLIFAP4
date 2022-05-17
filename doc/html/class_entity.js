@@ -9,6 +9,7 @@ var class_entity =
     [ "getIsDead", "class_entity.html#a4c3de4661a585b0bd42bd16ce9cc5002", null ],
     [ "getPosX", "class_entity.html#abc07607e9d85670694097ac4b6b6dd27", null ],
     [ "getPosY", "class_entity.html#adc3a7257facf71297850bc86b705b503", null ],
+    [ "getPV", "class_entity.html#ad7ff1d2f09cc40bd44e277baf6ac17b8", null ],
     [ "getPV", "class_entity.html#a334b52f5de8bbd7fb81f8bbeec08992b", null ],
     [ "getSpeed", "class_entity.html#a65f27075a95287e8c0f8f101498b3e84", null ],
     [ "setDamage", "class_entity.html#aa3e4324343ffa8395c40468d6966654e", null ],
@@ -17,5 +18,6 @@ var class_entity =
     [ "setPosX", "class_entity.html#a36acb34214fabf4355ea9068543c2435", null ],
     [ "setPosY", "class_entity.html#a2043f8c1dbb431cd210ec30f0ae8feeb", null ],
     [ "setPV", "class_entity.html#a2f1d8b793ec68f84a0adeb938ad57ee5", null ],
-    [ "setSpeed", "class_entity.html#adc48ea3a922e2705958bcb1f3066011b", null ]
+    [ "setSpeed", "class_entity.html#adc48ea3a922e2705958bcb1f3066011b", null ],
+    [ "path", "class_entity.html#ac15cdf69e0b6e954dbfb0843307a1c6e", null ]
 ];

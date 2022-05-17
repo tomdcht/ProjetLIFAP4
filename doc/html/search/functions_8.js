@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['operator_2b_221',['operator+',['../class_vec2.html#af766467597fa426b9d3e5a640e9d81b9',1,'Vec2']]],
-  ['operator_2d_222',['operator-',['../class_vec2.html#ac1a90e241a91f6165321c48b545dd52e',1,'Vec2']]],
-  ['operator_3d_223',['operator=',['../class_vec2.html#a50ccddb5d917a710d3176cc8fef3429a',1,'Vec2']]]
+  ['main_296',['main',['../main_t_x_t_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'mainTXT.cpp']]],
+  ['map_297',['Map',['../class_map.html#a0f5ad0fd4563497b4214038cbca8b582',1,'Map']]]
 ];

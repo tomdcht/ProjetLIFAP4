@@ -1,6 +1,8 @@
 #include "Entity.h"
 #include <vector>
 
+#include "assert.h"
+
 Entity::Entity(){
     posx = 0.f;
     posy = 0.f;
@@ -84,4 +86,20 @@ void Entity::setIsDead(bool _isDead){
 bool Entity::getIsDead(){
     return isDead;
 }
+
+void Entity::regressionTest(Entity& entity){
+    setDamage(1);
+    setIsDead(true);
+
+    assert(getIsDead() == false);
+    assert(getDamage() == 1);
+
+}
+
+
+
+// int main(void) {
+//     Entity entity;
+//     regressionTest(entity);
+// }
 

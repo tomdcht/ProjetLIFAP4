@@ -1,13 +1,21 @@
 var searchData=
 [
-  ['termclear_245',['termClear',['../class_window_t_x_t.html#a83ebb5f49e60aa4ad260a1f34a412a8f',1,'WindowTXT']]],
-  ['terminit_246',['termInit',['../class_window_t_x_t.html#aa8793437173094a52733af7c0fe1416b',1,'WindowTXT']]],
-  ['termmove_247',['termMove',['../class_window_t_x_t.html#a73e94d4d47e2948899bc75c6b32e177a',1,'WindowTXT']]],
-  ['tower_248',['Tower',['../class_tower.html#a1b785dc1e9fb979a10620ca183b5761d',1,'Tower']]],
-  ['towerarcher_249',['TowerArcher',['../class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e',1,'TowerArcher']]],
-  ['towerbomb_250',['TowerBomb',['../class_tower_bomb.html#a7e1c2b0cbd24f82457dca1c3d57e4da2',1,'TowerBomb']]],
-  ['towermagic_251',['TowerMagic',['../class_tower_magic.html#ab5761dd7777ca7e16da74717b7866841',1,'TowerMagic']]],
-  ['track_252',['track',['../class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761',1,'Projectile']]],
-  ['txtloop_253',['txtLoop',['../_game_t_x_t_8cpp.html#aa8f70cd3510ceae6f2dd1bd542fcaabd',1,'txtLoop(Game &amp;game):&#160;GameTXT.cpp'],['../_game_t_x_t_8h.html#aa8f70cd3510ceae6f2dd1bd542fcaabd',1,'txtLoop(Game &amp;game):&#160;GameTXT.cpp']]],
-  ['txtshow_254',['txtShow',['../_game_t_x_t_8cpp.html#a79f96f754efd066587bec9a3d0d0add7',1,'txtShow(WindowTXT &amp;win, Game &amp;game):&#160;GameTXT.cpp'],['../_game_t_x_t_8h.html#a79f96f754efd066587bec9a3d0d0add7',1,'txtShow(WindowTXT &amp;win, Game &amp;game):&#160;GameTXT.cpp']]]
+  ['setconstdimx_309',['setConstDimX',['../class_window_t_x_t.html#a14d6b2bd82ee129b50c801378a2f79f4',1,'WindowTXT']]],
+  ['setcounttower_310',['setCountTower',['../class_game.html#af57d23ca6bcac76839e6ca0b713aa361',1,'Game']]],
+  ['setdamage_311',['setDamage',['../class_entity.html#aa3e4324343ffa8395c40468d6966654e',1,'Entity']]],
+  ['setdamagearrow_312',['setDamageArrow',['../class_game.html#aa7dee026ba5ef8c0d073f76364bfad3a',1,'Game']]],
+  ['setdimx_313',['setDimX',['../class_window_t_x_t.html#a74d57d574fc1a214472ac395a6031437',1,'WindowTXT']]],
+  ['setgold_314',['setGold',['../class_ressources.html#a75e34ffd849c67500c1b292df9186a2f',1,'Ressources']]],
+  ['setisarrived_315',['setIsArrived',['../class_enemy.html#aa43f1dedcced3cab663e25ab2c7d5b4a',1,'Enemy']]],
+  ['setisdead_316',['setIsDead',['../class_entity.html#a048e30a0b851dc9073d5ec40396e38a4',1,'Entity']]],
+  ['setlevel_317',['setLevel',['../class_tower.html#af2396c645d62dea416578d13c82192ba',1,'Tower']]],
+  ['setpos_318',['setPos',['../class_entity.html#a5b37027cb419da8f2d08aae7b6da2938',1,'Entity']]],
+  ['setposx_319',['setPosX',['../class_entity.html#a36acb34214fabf4355ea9068543c2435',1,'Entity']]],
+  ['setposy_320',['setPosY',['../class_entity.html#a2043f8c1dbb431cd210ec30f0ae8feeb',1,'Entity']]],
+  ['setprice_321',['setPrice',['../class_tower.html#aef61dd07944b209caf0a1bdcf9b568af',1,'Tower']]],
+  ['setprojectile_322',['setProjectile',['../class_projectile.html#ae9c35f356ee00586d5b22c14ff2e1ab0',1,'Projectile']]],
+  ['setpv_323',['setPV',['../class_castle.html#a04341ae704056f1d982d7b42f84a321f',1,'Castle::setPV()'],['../class_entity.html#a2f1d8b793ec68f84a0adeb938ad57ee5',1,'Entity::setPV()']]],
+  ['setrange_324',['setRange',['../class_tower.html#adc0cce29130f8b3c35f416f88eb097be',1,'Tower']]],
+  ['setspeed_325',['setSpeed',['../class_entity.html#adc48ea3a922e2705958bcb1f3066011b',1,'Entity']]],
+  ['settime_326',['setTime',['../class_projectile.html#ad8f541084dea689d7f2c8d6893c77129',1,'Projectile']]]
 ];

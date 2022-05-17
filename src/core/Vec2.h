@@ -1,3 +1,11 @@
+/**
+* \file Vec2.h
+* \brief
+* \version 1.0
+* \date Février 2022
+* \include iostream
+*/
+
 #ifndef _VEC2_H_
 #define _VEC2_H_
 
@@ -17,8 +25,13 @@ class Vec2{
         /** \fn Destructeur **/
         ~Vec2();
 
+        /** \fn Surcharge d'opérateur = **/
         Vec2 operator= (const Vec2& opdDroite);
+
+        /** \fn Surcharge d'opérateur  + **/
         Vec2 operator+ (const Vec2& opdDroite);
+
+        /** \fn Surcharge d'opérateur - **/
         Vec2 operator- (const Vec2& opdDroite);
 };
 

@@ -1,0 +1,9 @@
+<map id="Projectile::track" name="Projectile::track">
+<area shape="rect" id="node1" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="5,132,129,159"/>
+<area shape="rect" id="node2" href="$class_entity.html#a632a853b65d0468f138bc35efc0d317b" title="Accesseur renvoyant la position en x d&#39;un ennemi de type const." alt="" coords="181,5,339,32"/>
+<area shape="rect" id="node3" href="$class_entity.html#a280a384eddb9c7bfb96547adfbb8f515" title="Accesseur renvoyant la position en y d&#39;un ennemi de type const." alt="" coords="182,56,338,83"/>
+<area shape="rect" id="node4" href="$class_entity.html#a285dfcfbbc0ca74d0637c15f427eb6d3" title="Accesseur renvoyant la vitesse d&#39;un ennemi de type const." alt="" coords="177,107,343,133"/>
+<area shape="rect" id="node5" href="$class_entity.html#af723cc5c75855e421a0b2dcf29eb2903" title="Accesseur renvoyant les dommages causés par un ennemi." alt="" coords="189,157,331,184"/>
+<area shape="rect" id="node6" href="$class_entity.html#a334b52f5de8bbd7fb81f8bbeec08992b" title="Accesseur renvoyant les points de vie d&#39;un ennemi." alt="" coords="207,208,313,235"/>
+<area shape="rect" id="node7" href="$class_entity.html#a2f1d8b793ec68f84a0adeb938ad57ee5" title="Accesseur modifiant les points de vie d&#39;un ennemi." alt="" coords="208,259,312,285"/>
+</map>

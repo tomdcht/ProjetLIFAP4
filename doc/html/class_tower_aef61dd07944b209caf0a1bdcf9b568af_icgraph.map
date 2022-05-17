@@ -1,0 +1,6 @@
+<map id="Tower::setPrice" name="Tower::setPrice">
+<area shape="rect" id="node1" title="Accesseur modifiant la valeur de la donnée membre price." alt="" coords="244,56,364,83"/>
+<area shape="rect" id="node2" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node3" href="$class_tower_bomb.html#a7e1c2b0cbd24f82457dca1c3d57e4da2" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="9,56,192,83"/>
+<area shape="rect" id="node4" href="$class_tower_magic.html#ab5761dd7777ca7e16da74717b7866841" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="9,107,193,133"/>
+</map>

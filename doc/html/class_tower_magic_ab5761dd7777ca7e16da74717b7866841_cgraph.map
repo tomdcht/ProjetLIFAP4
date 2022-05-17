@@ -1,0 +1,7 @@
+<map id="TowerMagic::TowerMagic" name="TowerMagic::TowerMagic">
+<area shape="rect" id="node1" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,81,189,108"/>
+<area shape="rect" id="node2" href="$class_entity.html#aa3e4324343ffa8395c40468d6966654e" title="Accesseur modifiant les dommages causés par un ennemi." alt="" coords="237,5,380,32"/>
+<area shape="rect" id="node3" href="$class_tower.html#aef61dd07944b209caf0a1bdcf9b568af" title="Accesseur modifiant la valeur de la donnée membre price." alt="" coords="249,56,369,83"/>
+<area shape="rect" id="node4" href="$class_tower.html#adc0cce29130f8b3c35f416f88eb097be" title="Accesseur modifiant la valeur de la donnée membre range." alt="" coords="244,107,373,133"/>
+<area shape="rect" id="node5" href="$class_entity.html#adc48ea3a922e2705958bcb1f3066011b" title="Accesseur modifiant la vitesse d&#39;un ennemi." alt="" coords="245,157,372,184"/>
+</map>

@@ -84,6 +84,28 @@ const float Enemy::enemyDirectionY(Road& road) const{
     return (getConstPosY() - road.getPointY(pointTrack)) / enemyDistance(road)  ; 
 }
 
+void Enemy::regressionTest(Enemy& enemy){
+    setPos(0.f, 11.f);
+    setSpeed(1);
+    setPV(10);
+    setIsDead(false);
+    setIsArrived(false);
+
+    assert(getPosX() == 0.f);
+    assert(getPosY() == 11.f);
+    assert(getPV() == 10);
+    assert(isDead() == false);
+    assert(isArrived == false);
+    assert(texture != NULL);
+    assert(surface != NULL);
+}
+
+
+// int main(void) {
+//     Enemy enemy;
+//     regressionTest(enemy);
+// }
+
 
 
 

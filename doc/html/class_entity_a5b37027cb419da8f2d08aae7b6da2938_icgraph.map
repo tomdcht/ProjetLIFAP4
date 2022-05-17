@@ -1,7 +1,4 @@
 <map id="Entity::setPos" name="Entity::setPos">
-<area shape="rect" id="node1" title="Accesseur modifiant la position en x et en y d&#39;un ennemi." alt="" coords="244,81,355,108"/>
-<area shape="rect" id="node2" href="$class_projectile.html#ac536ed2aad56af866a2078b9a85aa16d" title="Constructeur par défaut de la classe Projectile." alt="" coords="25,5,177,32"/>
-<area shape="rect" id="node3" href="$class_enemy.html#a012b23beffeee74ef1422c2d7c28bb37" title=" " alt="" coords="17,56,185,83"/>
-<area shape="rect" id="node4" href="$class_tower_archer.html#a59af6e08c7426311d6bf5327ce86c13e" title="Constructeur par défaut de la classe TowerArcher." alt="" coords="5,107,196,133"/>
-<area shape="rect" id="node5" href="$class_projectile.html#adfc163f4a625fc293f8f67fd0eb49761" title="Fonction calculant toutes les positions nécessaires au projectile entre une tour et un ennemi." alt="" coords="39,157,163,184"/>
+<area shape="rect" id="node1" title="Accesseur modifiant la position en x et en y d&#39;un ennemi." alt="" coords="172,5,283,32"/>
+<area shape="rect" id="node2" href="$class_enemy.html#a0eaeb6dd84980b1a3f0ea74140183fdc" title="Constructeur apr défaut de la classe Enemy." alt="" coords="5,5,124,32"/>
 </map>

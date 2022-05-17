@@ -1,4 +1,8 @@
 <map id="Tower" name="Tower">
-<area shape="rect" id="node1" title=" " alt="" coords="21,277,127,399"/>
-<area shape="rect" id="node2" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="5,5,143,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="181,403,291,583"/>
+<area shape="rect" id="node4" href="$class_tower_archer.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="5,631,144,723"/>
+<area shape="rect" id="node5" href="$class_tower_bomb.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="169,631,303,723"/>
+<area shape="rect" id="node6" href="$class_tower_magic.html" title="Classe gérant les tours d&#39;archer /!\ Hérite de la classe Entity /!." alt="" coords="327,631,462,723"/>
+<area shape="rect" id="node2" href="$class_entity.html" title="Classe gérant toutes les entités présentes dans le jeu (Ennemis, Tours, Projectiles,..." alt="" coords="167,131,305,355"/>
+<area shape="rect" id="node3" title=" " alt="" coords="193,5,279,83"/>
 </map>
